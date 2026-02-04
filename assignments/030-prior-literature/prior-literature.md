@@ -93,6 +93,17 @@ A file named `prior-literature.md` containing:
 
 ---
 
+## If You Get Stuck
+
+**Ask Cursor AI.** If something is confusing or not working, describe your problem to the AI.
+
+If the "auto" model gives an inadequate or confusing answer, switch to a frontier model:
+- **Claude Opus 4.5** or **ChatGPT 5.2**
+
+If both frontier models agree on an answer, it's probably correct.
+
+---
+
 ## Next Step
 
 After completing this, proceed to [Assignment 040: Subsequent Literature](../040-subsequent-literature/subsequent-literature.md).

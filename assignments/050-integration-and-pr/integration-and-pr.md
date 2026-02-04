@@ -119,6 +119,8 @@ git pull origin master
 git checkout -b improve-[paper-name]-[yourname]
 ```
 
+**Stuck on git?** Ask Cursor AI to help. Describe what happened and paste any error messages.
+
 ---
 
 ### 7. Activate the environment and open in Cursor
@@ -226,3 +228,14 @@ We will:
 2. **Keep sections concise.** Prior lit: 1-2 paragraphs. Subsequent lit: 2-3 paragraphs.
 
 3. **Verify citations.** AI can hallucinate paper titles. Spot-check important references.
+
+---
+
+## If You Get Stuck
+
+**Ask Cursor AI.** Git commands, notebook editing, PR creation — if something isn't working, describe your problem and ask for help.
+
+If the "auto" model gives an inadequate or confusing answer, switch to a frontier model:
+- **Claude Opus 4.5** or **ChatGPT 5.2**
+
+If both frontier models agree on an answer, it's probably correct.

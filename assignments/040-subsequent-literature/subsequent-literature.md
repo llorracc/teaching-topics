@@ -138,6 +138,17 @@ Both are **working documents** you'll use in Assignment 050:
 
 ---
 
+## If You Get Stuck
+
+**Ask Cursor AI.** Whether it's LitMaps, BibTeX export, or the AI analysis — describe your problem and ask for help.
+
+If the "auto" model gives an inadequate or confusing answer, switch to a frontier model:
+- **Claude Opus 4.5** or **ChatGPT 5.2**
+
+If both frontier models agree on an answer, it's probably correct.
+
+---
+
 ## Next Step
 
 After completing this, proceed to [Assignment 050: Integration and PR](../050-integration-and-pr/integration-and-pr.md).
