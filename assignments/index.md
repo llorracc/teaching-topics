@@ -8,6 +8,7 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 
 | # | Assignment | Deliverable | Due |
 |---|------------|-------------|-----|
+| 025 | [AI Paper Deep Dive](025-ai-paper-deep-dive/assignment.md) | `paper-deep-dive.md` | Before Class 04 |
 | 030 | [Subsequent Literature](030-subsequent-literature/assignment.md) | `subsequent-literature.bib` | Before Class 04 |
 | 040 | [AI Literature Analysis](040-ai-literature-analysis/assignment.md) | `subsequent-literature-analysis.md` | Before Class 04 |
 | 050 | [Add Coauthor + PR](050-add-coauthor-and-pr/assignment.md) | Pull request URL | Before Class 04 |
@@ -16,14 +17,15 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 
 ## Full Assignment Sequence
 
-| # | Assignment | Prerequisite | Phase |
-|---|------------|--------------|-------|
-| 010 | [Ballpark Paper Selection](010-ballpark-paper-selection/assignment.md) | — | Tools |
-| 020 | [PaperPile Bibliography](020-paperpile-bibliography/assignment.md) | 010 | Tools |
-| 030 | [Subsequent Literature](030-subsequent-literature/assignment.md) | 020 | Skills |
-| 040 | [AI Literature Analysis](040-ai-literature-analysis/assignment.md) | 030 | Skills |
-| 050 | [Add Coauthor + PR](050-add-coauthor-and-pr/assignment.md) | 010 | Artifacts |
-| 070 | [AI Revision with Prompt Tracking](070-ai-revision-with-prompt-tracking/assignment.md) | 050 | Artifacts |
+| # | Assignment | Deliverable | Phase |
+|---|------------|-------------|-------|
+| 010 | [Ballpark Paper Selection](010-ballpark-paper-selection/assignment.md) | Paper choice + presentation | Tools |
+| 020 | [PaperPile Bibliography](020-paperpile-bibliography/assignment.md) | `.bib` file | Tools |
+| 025 | [AI Paper Deep Dive](025-ai-paper-deep-dive/assignment.md) | `paper-deep-dive.md` | Skills |
+| 030 | [Subsequent Literature](030-subsequent-literature/assignment.md) | `subsequent-literature.bib` | Skills |
+| 040 | [AI Literature Analysis](040-ai-literature-analysis/assignment.md) | `subsequent-literature-analysis.md` | Skills |
+| 050 | [Add Coauthor + PR](050-add-coauthor-and-pr/assignment.md) | PR URL | Artifacts |
+| 070 | [AI Revision with Prompt Tracking](070-ai-revision-with-prompt-tracking/assignment.md) | Improved notebook + prompts | Artifacts |
 
 ---
 
@@ -34,11 +36,24 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
     │
     ├──► 020: PaperPile Bibliography
     │        │
-    │        └──► 030: Subsequent Literature (LitMaps)
-    │                  │
-    │                  └──► 040: AI Literature Analysis
+    │        ├──► 030: Subsequent Literature (LitMaps)
+    │        │         │
+    │        │         └──► 040: AI Literature Analysis
+    │        │
+    │        └──► 025: AI Paper Deep Dive ◄── comprehensive understanding
     │
     └──► 050: Add Coauthor + PR
               │
               └──► 070: AI Revision
 ```
+
+---
+
+## What's Next (Class 05+)
+
+In the next class, you will:
+1. Learn to upgrade existing ballpark items with MyST and modern bibliography tools
+2. Prepare pull requests to modernize ballpark objects
+3. **Create your own ballpark objects** based on your deep dive
+
+Your `paper-deep-dive.md` will be the foundation for creating your ballpark entry.
