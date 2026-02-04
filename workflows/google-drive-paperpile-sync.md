@@ -4,6 +4,17 @@
 
 ---
 
+## ⚠️ Critical: Two separate steps required
+
+Connecting PaperPile to Google Drive is **not enough** to get a .bib file. You must also set up a **BibTeX Export Workflow**. These are two different things:
+
+1. **Cloud Storage connection** (Settings → Data and Files) — stores PDFs in Google Drive
+2. **BibTeX Export Workflow** (Profile → Workflows and Integrations) — creates the .bib file ⬅️ **This is what you need!**
+
+Many students miss step 2 and wonder why they don't have a .bib file.
+
+---
+
 ## Verify first
 
 ### 1. Verify Google Drive is installed
@@ -28,30 +39,32 @@ Click the Google Drive icon → check that your Gmail account appears.
 
 ## Steps
 
-### 1. Connect PaperPile to Google Drive
+### 1. Connect PaperPile to Google Drive (for PDF storage)
 
-1. In PaperPile: click your **profile icon** (top right, not Settings)
-2. Select **Settings** from the dropdown
-3. Go to **Data and Files**
-4. Scroll down to **Cloud Storage**
-5. Select **Google Drive**
+1. In PaperPile: click **Settings** (gear icon, bottom left)
+2. Go to **Data and Files**
+3. Scroll down to **Cloud Storage**
+4. Select **Google Drive**
 
-This enables PaperPile to store files in your Google Drive.
+This enables PaperPile to store PDFs in your Google Drive. **But this does NOT create a .bib file.**
 
 ---
 
-### 2. Set up BibTeX Export Workflow
+### 2. ⚠️ Set up BibTeX Export Workflow (REQUIRED for .bib file)
 
 **This is the critical step that creates a .bib file you can use locally.**
 
-1. In PaperPile: click your **profile icon** (top right)
-2. Select **Workflows and Integrations**
-3. Click **Add Workflow** → **BibTeX Export**
-4. Configure:
+1. In PaperPile: click your **profile icon** (top right — NOT the Settings gear!)
+2. Select **Workflows and Integrations** from the dropdown
+3. Click **Add Workflow**
+4. Choose **BibTeX Export**
+5. Configure:
    - **Source:** Select "My Library" or your specific ballpark folder
    - **Destination:** Select **Google Drive**
-5. Click **Finish**
-6. Click **Open File in Google Drive** to verify the .bib file was created
+6. Click **Finish**
+7. Click **Open File in Google Drive** to verify the .bib file was created
+
+**Common mistake:** Looking for this in Settings. It's NOT in Settings — it's under your profile icon → Workflows and Integrations.
 
 ---
 
@@ -80,13 +93,18 @@ You'll need this path later to copy the file to your ballpark directory.
 ## Troubleshooting
 
 **Can't find the .bib file:**
-- Check that the export workflow completed (Workflows and Integrations → your workflow should show "Last run: ...")
+- Did you set up the BibTeX Export Workflow (Step 2)? This is the most common issue.
+- Check Workflows and Integrations → your workflow should show "Last run: ..."
 - The file may be at the root of your Google Drive, not in a PaperPile subfolder
 - Search your Google Drive folder for `*.bib`
 
 **File shows cloud icon, won't open:**
 - Right-click → Make available offline
 - Wait for download to complete (cloud icon should disappear)
+
+**"Workflows and Integrations" not visible:**
+- Make sure you're clicking your **profile icon** (top right), not Settings (bottom left)
+- The profile icon is usually your photo or initials
 
 ---
 

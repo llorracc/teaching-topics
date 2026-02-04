@@ -78,6 +78,12 @@ This keeps your ballpark bibliography organized separately from other papers.
 
 ---
 
-## Next step
+## ⚠️ Next step: Set up BibTeX Export
 
-After completing this workflow, proceed to [google-drive-paperpile-sync](google-drive-paperpile-sync.md) to set up local access to your bibliography files.
+**Important:** Completing this workflow does NOT automatically create a .bib file on your computer. You must proceed to the next workflow to set up the BibTeX Export.
+
+**Proceed to:** [google-drive-paperpile-sync](google-drive-paperpile-sync.md)
+
+This will guide you through:
+1. Connecting Google Drive
+2. **Setting up "Workflows and Integrations" → BibTeX Export** (the step that creates your .bib file)
