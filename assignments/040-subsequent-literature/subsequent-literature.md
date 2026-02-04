@@ -1,8 +1,9 @@
 # Assignment: Subsequent Literature
 
-**Due:** Before next class
+**Due:** Before next class  
+**Time:** ~45-60 minutes
 
-**Prerequisite:** [Prior Literature Summary](../030-prior-literature/prior-literature.md) — complete Step 1 first.
+**Prerequisite:** Complete [Assignment 030: Prior Literature](../030-prior-literature/prior-literature.md) first.
 
 ---
 
@@ -53,7 +54,7 @@ Select 20-50 relevant citing papers. Prioritize:
 
 1. Click the **download/export icon**
 2. Select **BibTeX** format
-3. Save as `subsequent-literature.bib`
+3. Save as `subsequent-literature.bib` **in your ballpark paper's folder**
 
 ---
 
@@ -85,17 +86,9 @@ Don't accept the first answer. Push deeper:
 
 ---
 
-### 8. Compare free vs frontier AI (optional but recommended)
+### 8. Document your analysis
 
-For richer analysis, also try a frontier model (Claude Opus 4.5 or GPT-5.2):
-- Summarize what the free AI told you
-- Ask the frontier AI to go deeper or identify what might be missing
-
----
-
-### 9. Document your analysis
-
-Create `subsequent-literature-analysis.md`:
+Save `subsequent-literature-analysis.md` **in your ballpark paper's folder**:
 
 ```markdown
 # Subsequent Literature Analysis: [Paper Title]
@@ -104,32 +97,22 @@ Create `subsequent-literature-analysis.md`:
 
 I found [X] papers in LitMaps that cite [paper title].
 
-## AI Analysis
+## What the subsequent literature tells us
 
-### Research directions that emerged
-[Summary]
+[2-3 paragraphs covering: What research directions emerged? What's cutting-edge now? What open questions remain?]
 
-### Cutting-edge topics now
-[Summary]
+## Most important subsequent papers
 
-### Methodological advances
-[Summary]
-
-### Open questions
-[Summary]
-
-### Most important subsequent papers
 1. [Paper]: [Why important]
 2. [Paper]: [Why important]
 3. [Paper]: [Why important]
-
-## AI model(s) used
-[Which models did you use?]
 ```
 
 ---
 
 ## Deliverables
+
+Both files go in your ballpark paper's folder:
 
 | File | Contents |
 |------|----------|

@@ -1,10 +1,11 @@
 # Assignment: Integration and Pull Request
 
-**Due:** Before next class
+**Due:** Before next class  
+**Time:** ~60-90 minutes
 
 **Prerequisites:** 
-- [Prior Literature Summary](../030-prior-literature/prior-literature.md) — `prior-literature.md`
-- [Subsequent Literature](../040-subsequent-literature/subsequent-literature.md) — `subsequent-literature.bib` + `subsequent-literature-analysis.md`
+- [Assignment 030: Prior Literature](../030-prior-literature/prior-literature.md) — `prior-literature.md`
+- [Assignment 040: Subsequent Literature](../040-subsequent-literature/subsequent-literature.md) — `subsequent-literature.bib` + `subsequent-literature-analysis.md`
 
 ---
 
@@ -39,6 +40,18 @@ What's likely missing (what YOU will add):
 - Prior literature context
 - Subsequent literature context
 - Updated/improved explanation
+
+---
+
+### What if my paper has no existing ballpark entry?
+
+If your paper folder is empty or only has a placeholder, you're creating the initial content:
+
+1. Ask AI to help you write a summary of the paper (2-3 paragraphs)
+2. Include your Prior Literature and Subsequent Literature sections
+3. Add yourself as the initial author
+
+This is actually great — you're contributing something new!
 
 ---
 
@@ -97,18 +110,15 @@ Create `proposed-revisions.md`:
 
 ## Part C: Implement and Create PR
 
-### 5. Fork the repository (if not already done)
+### 5. Navigate to the ballpark repository
 
 ```bash
-# Go to https://github.com/econ-ark/ballpark and click Fork
-# Then add your fork as a remote:
 cd ~/GitHub/econ-ark/ballpark
-git remote add myfork https://github.com/YOUR-USERNAME/ballpark.git
 ```
 
 ---
 
-### 6. Create a branch
+### 6. Get latest changes and create a branch
 
 ```bash
 git checkout master
@@ -118,7 +128,16 @@ git checkout -b improve-[paper-name]-[yourname]
 
 ---
 
-### 7. Make your changes
+### 7. Activate the environment and open in Cursor
+
+```bash
+source .venv/bin/activate
+cursor .
+```
+
+---
+
+### 8. Make your changes
 
 Open the notebook in Cursor and:
 1. **Add yourself as coauthor** (in the authors section)
@@ -130,35 +149,48 @@ Save the notebook.
 
 ---
 
-### 8. Commit and push
+### 9. Verify your changes before committing
 
+Ask Cursor to review your work:
+
+> "Can you review my staged changes and tell me if anything looks wrong?"
+
+Also verify manually:
 ```bash
-git add models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/
-git commit -m "Add literature context and improvements to [Paper Name]"
-git push myfork improve-[paper-name]-[yourname]
+git diff
 ```
 
 ---
 
-### 9. Create the Pull Request
+### 10. Commit and push
+
+```bash
+git add models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/
+git commit -m "Add literature context and improvements to [Paper Name]"
+git push origin improve-[paper-name]-[yourname]
+```
+
+---
+
+### 11. Create the Pull Request
 
 1. Go to https://github.com/econ-ark/ballpark
-2. Click "Compare & pull request"
+2. Click "Compare & pull request" (should appear after you push)
 3. Title: "Add literature context to [Paper Name]"
 4. Description:
-   ```
-   This PR adds:
-   - Prior Literature section (context on foundational papers)
-   - Subsequent Literature section (what the field has done since)
-   - [Any other improvements]
-   
-   Adds [Your Name] as coauthor.
-   ```
+
+> This PR adds:
+> - Prior Literature section (context on foundational papers)
+> - Subsequent Literature section (what the field has done since)
+> - [Any other improvements]
+>
+> Adds [Your Name] as coauthor.
+
 5. Click **Create pull request**
 
 ---
 
-### 10. Record your PR URL
+### 12. Record your PR URL
 
 Copy the PR URL (e.g., `https://github.com/econ-ark/ballpark/pull/42`)
 
@@ -192,7 +224,4 @@ We will:
 
 2. **Keep sections concise.** Prior lit: 1-2 paragraphs. Subsequent lit: 2-3 paragraphs.
 
-3. **Ask Cursor to review before committing:**
-   > "Can you review my staged changes and tell me if anything looks wrong?"
-
-4. **Verify citations.** AI can hallucinate paper titles. Spot-check important references.
+3. **Verify citations.** AI can hallucinate paper titles. Spot-check important references.

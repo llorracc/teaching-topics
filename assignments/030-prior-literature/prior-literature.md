@@ -1,6 +1,7 @@
 # Assignment: Prior Literature Summary
 
-**Due:** Before next class
+**Due:** Before next class  
+**Time:** ~20-30 minutes
 
 **Prerequisite:** [PaperPile Bibliography](../020-paperpile-bibliography/paperpile-bibliography.md) — you need your `.bib` file containing the papers your ballpark paper cites.
 
@@ -52,7 +53,7 @@ If the summary is too generic, ask follow-up questions:
 
 ### 4. Save your summary
 
-Create a file called `prior-literature.md`:
+Save a file called `prior-literature.md` **in your ballpark paper's folder** (e.g., `models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/prior-literature.md`):
 
 ```markdown
 # Prior Literature Summary: [Paper Title]
@@ -66,10 +67,6 @@ Create a file called `prior-literature.md`:
 - [Paper 1]: [One sentence on why it matters]
 - [Paper 2]: [One sentence on why it matters]
 - [Paper 3]: [One sentence on why it matters]
-
-## AI model used
-
-[Which model did you use?]
 ```
 
 ---

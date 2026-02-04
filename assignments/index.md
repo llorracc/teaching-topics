@@ -24,12 +24,16 @@ Complete these **in order** — each builds on the previous:
 020: PaperPile Bibliography
          │
          ▼
-030: Prior Literature ──────────────────┐
-     (AI summary of cited papers)       │
-         │                              │
-         ▼                              ▼
-040: Subsequent Literature          050: Integration + PR
-     (LitMaps + AI analysis)   ◄────    (synthesize + contribute)
+030: Prior Literature
+     (AI summary of cited papers)
+         │
+         ▼
+040: Subsequent Literature
+     (LitMaps + AI analysis)
+         │
+         ▼
+050: Integration + PR
+     (synthesize + contribute)
 ```
 
 ---
@@ -51,5 +55,21 @@ Complete these **in order** — each builds on the previous:
 
 In class, we will:
 1. Review each other's PRs
-2. Learn MyST modernization techniques
-3. Update PRs with MyST conversion
+2. Discuss improvements and common patterns
+3. Learn MyST modernization techniques
+
+---
+
+## Before Class 04 Checklist
+
+Make sure you have ALL of the following before class:
+
+| File | Location | Assignment |
+|------|----------|------------|
+| `prior-literature.md` | Your paper folder | 030 |
+| `subsequent-literature.bib` | Your paper folder | 040 |
+| `subsequent-literature-analysis.md` | Your paper folder | 040 |
+| `proposed-revisions.md` | Your paper folder | 050 |
+| **PR URL** | GitHub | 050 |
+
+**Your paper folder** = `models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/`
