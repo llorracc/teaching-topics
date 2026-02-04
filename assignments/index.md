@@ -4,15 +4,33 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 
 ---
 
-## Deliverables for Next Class (Class 04)
+## Assignments for Next Class (Class 04)
 
-| # | Assignment | Deliverable | Due |
-|---|------------|-------------|-----|
-| 025 | [Literature Context & Improvements](025-ai-paper-deep-dive/assignment.md) | `literature-and-improvements.md` **+ PR URL** | Before Class 04 |
-| 030 | [Subsequent Literature](030-subsequent-literature/assignment.md) | `subsequent-literature.bib` | Before Class 04 |
-| 040 | [AI Literature Analysis](040-ai-literature-analysis/assignment.md) | `subsequent-literature-analysis.md` | Before Class 04 |
+Complete these **in order** — each builds on the previous:
 
-**Note:** Assignment 025 now includes creating and submitting a Pull Request with your improvements.
+| Order | # | Assignment | Input | Deliverable |
+|-------|---|------------|-------|-------------|
+| 1st | 030 | [Prior Literature](030-prior-literature/assignment.md) | PaperPile `.bib` | `prior-literature.md` |
+| 2nd | 040 | [Subsequent Literature](040-subsequent-literature/assignment.md) | Ballpark paper | `subsequent-literature.bib` + `subsequent-literature-analysis.md` |
+| 3rd | 050 | [Integration + PR](050-integration-and-pr/assignment.md) | 030 + 040 outputs | `proposed-revisions.md` + **PR URL** |
+
+**All three are required before Class 04.**
+
+---
+
+## Assignment Flow
+
+```
+020: PaperPile Bibliography
+         │
+         ▼
+030: Prior Literature ──────────────────┐
+     (AI summary of cited papers)       │
+         │                              │
+         ▼                              ▼
+040: Subsequent Literature          050: Integration + PR
+     (LitMaps + AI analysis)   ◄────    (synthesize + contribute)
+```
 
 ---
 
@@ -22,39 +40,16 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 |---|------------|-------------|-------|
 | 010 | [Ballpark Paper Selection](010-ballpark-paper-selection/assignment.md) | Paper choice + presentation | Tools |
 | 020 | [PaperPile Bibliography](020-paperpile-bibliography/assignment.md) | `.bib` file | Tools |
-| 025 | [Literature Context & Improvements](025-ai-paper-deep-dive/assignment.md) | `literature-and-improvements.md` | Skills |
-| 030 | [Subsequent Literature](030-subsequent-literature/assignment.md) | `subsequent-literature.bib` | Skills |
-| 040 | [AI Literature Analysis](040-ai-literature-analysis/assignment.md) | `subsequent-literature-analysis.md` | Skills |
-| 050 | [Add Coauthor + PR](050-add-coauthor-and-pr/assignment.md) | PR URL | Artifacts |
-| 070 | [AI Revision with Prompt Tracking](070-ai-revision-with-prompt-tracking/assignment.md) | Improved notebook + prompts | Artifacts |
+| 030 | [Prior Literature](030-prior-literature/assignment.md) | `prior-literature.md` | Skills |
+| 040 | [Subsequent Literature](040-subsequent-literature/assignment.md) | `.bib` + analysis | Skills |
+| 050 | [Integration + PR](050-integration-and-pr/assignment.md) | revisions + PR URL | Artifacts |
+| 070 | [AI Revision with Prompt Tracking](070-ai-revision-with-prompt-tracking/assignment.md) | Improved notebook | Artifacts |
 
 ---
 
-## Assignment Flow
+## What's Next (Class 04)
 
-```
-010: Ballpark Selection
-    │
-    ├──► 020: PaperPile Bibliography
-    │        │
-    │        ├──► 030: Subsequent Literature (LitMaps)
-    │        │         │
-    │        │         └──► 040: AI Literature Analysis
-    │        │
-    │        └──► 025: AI Paper Deep Dive ◄── comprehensive understanding
-    │
-    └──► 050: Add Coauthor + PR
-              │
-              └──► 070: AI Revision
-```
-
----
-
-## What's Next (Class 05+)
-
-In the next class, you will:
-1. Learn to upgrade existing ballpark items with MyST and modern bibliography tools
-2. Prepare pull requests to modernize ballpark objects
-3. **Create your own ballpark objects** based on your deep dive
-
-Your `paper-deep-dive.md` will be the foundation for creating your ballpark entry.
+In class, we will:
+1. Review each other's PRs
+2. Learn MyST modernization techniques
+3. Update PRs with MyST conversion
