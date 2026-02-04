@@ -17,9 +17,13 @@ cd ~/GitHub/econ-ark/ballpark && pwd
 
 ---
 
-## Verification (foundational)
+## Reference documents
+
+These are not workflows, but reference material for common issues:
 
 - [Verify terminal context](_verify-terminal-context.md) — Ensures correct filesystem and directory
+- [Paths with spaces](_paths-with-spaces.md) — How to handle paths containing spaces or special characters
+- [WSL Google Drive access](_wsl-google-drive-access.md) — Windows: accessing Google Drive files from WSL
 
 ---
 
@@ -31,7 +35,7 @@ cd ~/GitHub/econ-ark/ballpark && pwd
 ## PaperPile & LitMaps
 
 - [PaperPile setup and sharing](paperpile-setup-and-sharing.md) — Browser-based
-- [Google Drive sync for PaperPile](google-drive-paperpile-sync.md) — Browser + filesystem
+- [Google Drive sync for PaperPile](google-drive-paperpile-sync.md) — Browser + filesystem ⚠️ Includes BibTeX Export
 - [LitMaps import and visualize](litmaps-import-and-visualize.md) — Browser-based
 
 ## Cursor & environment

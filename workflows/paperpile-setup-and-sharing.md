@@ -26,11 +26,24 @@ In PaperPile, check "My Library" or "All Papers".
 
 **Expected:** You see the bibliography entries for your ballpark paper.
 
-**If empty:** You need to add your bibliography first. Options:
-- Import a .bib file (if you have one)
-- Use ChatGPT to generate a .bib file from your paper's reference list:
-  > "Give me a BibTeX file for all references in [paper title]"
-- Add papers manually via PaperPile browser extension
+**If empty:** You need to add your bibliography first. See the next section.
+
+---
+
+## Populating your bibliography
+
+Adding references one-by-one is tedious. Before doing that, **ask an AI for help**:
+
+> "I need to create a BibTeX file containing all the references from [paper title]. What's the most efficient way to do this?"
+
+Try asking:
+- Cursor (in your chat panel)
+- ChatGPT
+- Claude
+
+The AI may suggest approaches you hadn't considered. This is a skill you'll use throughout your research career: when facing a tedious task, ask whether there's a more efficient approach.
+
+**After you have a .bib file:** Import it into PaperPile via File → Import.
 
 ---
 

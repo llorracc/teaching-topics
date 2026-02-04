@@ -86,9 +86,11 @@ Click on the `.ipynb` file to open it.
 ### 2. Select the kernel
 
 When prompted "Select Kernel":
-1. Click "Python Environments"
-2. Look for your `.venv/VENV-...` environment
+1. **Click "Python Environments"** — this is the correct option
+2. Look for your `.venv/VENV-...` environment (usually at the TOP of the list)
 3. Select it
+
+**Common mistake:** Clicking "Jupyter Kernel" or "Select Another Kernel" instead. These options usually don't find your environment. Always start with **"Python Environments"**.
 
 **If the environment doesn't appear:**
 - You likely didn't activate before opening Cursor

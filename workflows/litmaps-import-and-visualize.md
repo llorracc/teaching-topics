@@ -84,10 +84,34 @@ Check that you have a `.bib` file from PaperPile (from [google-drive-paperpile-s
 - Re-export from PaperPile if needed
 
 **"Limit reached" when adding articles:**
-- Free tier has article limits
-- Focus on the most important papers
-- Consider which papers are most relevant to your ballpark project
+- Free tier has article limits (~50 articles per map)
+- See "Working within free tier limits" below
+- Consider creating multiple smaller maps for different aspects
 
 **Can't find related articles:**
 - Some papers may not be in LitMaps' database
 - Try searching for the paper by title directly in LitMaps
+
+---
+
+## Working within free tier limits
+
+With ~50 articles, prioritize strategically:
+
+**Must include:**
+1. The original paper your ballpark is based on
+2. 3-5 foundational papers it cites (the "giants" it stands on)
+
+**High priority:**
+3. 5-10 most recent papers citing your paper (forward citations)
+4. 3-5 highly cited papers from the bibliography
+
+**Skip:**
+- Tangentially related papers
+- Papers you can't access
+- Very old foundational work (unless directly relevant)
+
+**Alternative:** Create multiple focused litmaps:
+- "Foundational papers" — the theoretical basis
+- "Recent developments" — papers from last 3 years
+- "Methodology papers" — if relevant to replication

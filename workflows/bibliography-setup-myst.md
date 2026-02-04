@@ -72,10 +72,9 @@ cd ~/GitHub/econ-ark/ballpark/models/We_Would_Like_In_Econ-ARK/YourPaperFolder/
 cp "/mnt/c/Users/YourUsername/Google Drive/My Library.bib" ./references.bib
 ```
 
-**If you can't find the file:** 
-1. In Windows Explorer, navigate to the .bib file
-2. Right-click → Properties → note the full path
-3. Convert: `C:\Users\...` becomes `/mnt/c/Users/...`
+**If you can't find the file:** See [_wsl-google-drive-access](_wsl-google-drive-access.md) for detailed instructions.
+
+**If your path has spaces:** See [_paths-with-spaces](_paths-with-spaces.md) — you must use quotes around the path.
 
 ---
 
