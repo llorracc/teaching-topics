@@ -8,10 +8,11 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 
 | # | Assignment | Deliverable | Due |
 |---|------------|-------------|-----|
-| 025 | [Literature Context & Improvements](025-ai-paper-deep-dive/assignment.md) | `literature-and-improvements.md` | Before Class 04 |
+| 025 | [Literature Context & Improvements](025-ai-paper-deep-dive/assignment.md) | `literature-and-improvements.md` **+ PR URL** | Before Class 04 |
 | 030 | [Subsequent Literature](030-subsequent-literature/assignment.md) | `subsequent-literature.bib` | Before Class 04 |
 | 040 | [AI Literature Analysis](040-ai-literature-analysis/assignment.md) | `subsequent-literature-analysis.md` | Before Class 04 |
-| 050 | [Add Coauthor + PR](050-add-coauthor-and-pr/assignment.md) | Pull request URL | Before Class 04 |
+
+**Note:** Assignment 025 now includes creating and submitting a Pull Request with your improvements.
 
 ---
 

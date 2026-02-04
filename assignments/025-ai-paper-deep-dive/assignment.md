@@ -174,9 +174,62 @@ A file named `literature-and-improvements.md` containing:
 
 ---
 
-## Looking Ahead
+## Part 4: Create Your Pull Request (BEFORE CLASS)
 
-In the next class, you will:
-- Add your prior/subsequent literature sections to the ballpark
-- Implement some of your improvement suggestions
-- Create a pull request with your changes
+Once you have completed your literature summaries and improvement suggestions, **implement them and submit a Pull Request before class**.
+
+### Steps:
+
+1. **Fork the ballpark repository** (if you haven't already)
+   - Go to https://github.com/econ-ark/ballpark
+   - Click **Fork**
+
+2. **Create a branch for your changes**
+   ```bash
+   cd ~/GitHub/econ-ark/ballpark
+   git checkout master
+   git pull origin master
+   git checkout -b improve-[paper-name]-[yourname]
+   ```
+
+3. **Make your changes to the notebook**
+   - Open the notebook in Cursor
+   - Add yourself as a coauthor (in the authors section)
+   - Add your "Prior Literature" section
+   - Add your "Subsequent Literature" section
+   - Implement any other improvements you proposed
+
+4. **Commit and push**
+   ```bash
+   git add models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/
+   git commit -m "Add literature context and improvements to [Paper Name]"
+   git push myfork improve-[paper-name]-[yourname]
+   ```
+
+5. **Create the Pull Request**
+   - Go to https://github.com/econ-ark/ballpark
+   - Click "Compare & pull request"
+   - Title: "Add literature context to [Paper Name]"
+   - Description: Briefly describe what you added
+
+6. **Record your PR URL** — bring it to class
+
+---
+
+## Deliverables (BEFORE CLASS)
+
+| Deliverable | Description |
+|-------------|-------------|
+| `literature-and-improvements.md` | Your AI-assisted analysis document |
+| **Pull Request URL** | PR with your changes to the ballpark |
+
+**Both are required before class.**
+
+---
+
+## In Class
+
+We will:
+- Review each other's PRs
+- Discuss the improvements
+- Learn additional techniques for modernizing ballpark items
