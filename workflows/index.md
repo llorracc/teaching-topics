@@ -22,6 +22,7 @@ cd ~/GitHub/econ-ark/ballpark && pwd
 These are not workflows, but reference material for common issues:
 
 - [Verify terminal context](_verify-terminal-context.md) — Ensures correct filesystem and directory
+- [Pre-class verification checklist](_verify-pre-class.md) — **Complete before each class**
 - [Paths with spaces](_paths-with-spaces.md) — How to handle paths containing spaces or special characters
 - [WSL Google Drive access](_wsl-google-drive-access.md) — Windows: accessing Google Drive files from WSL
 

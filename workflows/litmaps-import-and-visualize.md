@@ -5,7 +5,7 @@
 **External resources:**
 - [The Pitch (as.180.369)](https://github.com/llorracc/as.180.369/blob/main/materials/pitch/README.md)
 
-**Note:** Free LitMaps accounts are limited to ~50 articles per map. Focus on the most relevant papers.
+**Note:** Free LitMaps accounts are limited to **2 maps**, **100 articles per map**, and **20 search inputs**. Work strategically within these limits.
 
 ---
 
@@ -48,7 +48,12 @@ Check that you have a `.bib` file from PaperPile (from [google-drive-paperpile-s
 2. LitMaps will show articles that cite your papers or are cited by them
 3. Click **Add to Litmap** for articles you want to include
 
-**Free tier limit:** You can add approximately 50 articles. Prioritize:
+**Free tier limits:** 
+- 100 articles per map (plenty for most uses)
+- 2 maps total
+- 20 search inputs
+
+**Prioritize:**
 - The original paper your ballpark is based on
 - Key citing papers (recent work that builds on the paper)
 - Don't try to add everything—focus on the most relevant
@@ -84,9 +89,9 @@ Check that you have a `.bib` file from PaperPile (from [google-drive-paperpile-s
 - Re-export from PaperPile if needed
 
 **"Limit reached" when adding articles:**
-- Free tier has article limits (~50 articles per map)
+- Free tier has article limits (100 articles per map, 2 maps total)
 - See "Working within free tier limits" below
-- Consider creating multiple smaller maps for different aspects
+- Use your second map if you need more space
 
 **Can't find related articles:**
 - Some papers may not be in LitMaps' database
@@ -96,7 +101,7 @@ Check that you have a `.bib` file from PaperPile (from [google-drive-paperpile-s
 
 ## Working within free tier limits
 
-With ~50 articles, prioritize strategically:
+With 100 articles per map and 2 maps, prioritize strategically:
 
 **Must include:**
 1. The original paper your ballpark is based on
