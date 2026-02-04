@@ -41,17 +41,7 @@ What's likely missing (what YOU will add):
 - Subsequent literature context
 - Updated/improved explanation
 
----
-
-### What if my paper has no existing ballpark entry?
-
-If your paper folder is empty or only has a placeholder, you're creating the initial content:
-
-1. Ask AI to help you write a summary of the paper (2-3 paragraphs)
-2. Include your Prior Literature and Subsequent Literature sections
-3. Add yourself as the initial author
-
-This is actually great — you're contributing something new!
+**Reminder:** You selected your ballpark item in [Assignment 010](../010-ballpark-paper-selection/ballpark-paper-selection.md). Navigate to that folder in your clone of the ballpark repo.
 
 ---
 
