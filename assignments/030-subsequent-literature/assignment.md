@@ -2,11 +2,23 @@
 
 **Due:** Before next class
 
+**Prerequisite:** [PaperPile Bibliography](../020-paperpile-bibliography/assignment.md) — you need your `.bib` file first.
+
 ---
 
 ## Objective
 
 Create a BibTeX file containing papers that have **cited** your ballpark paper (the "subsequent literature").
+
+---
+
+## Ask Cursor First
+
+Before diving into LitMaps, open Cursor and ask:
+
+> "I have a paper titled [your ballpark paper title]. I want to find papers that have cited it since publication. What's the best way to do this, and what should I look for when selecting which citing papers are most important?"
+
+This helps you think about your approach before starting the mechanical steps.
 
 ---
 

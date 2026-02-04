@@ -2,7 +2,7 @@
 
 **Due:** Before next class
 
-**Prerequisite:** [Subsequent Literature Bibliography](../040-litmaps-subsequent-citations/assignment.md) — you must have `subsequent-literature.bib` completed first.
+**Prerequisite:** [Subsequent Literature](../030-subsequent-literature/assignment.md) — you must have `subsequent-literature.bib` completed first.
 
 ---
 

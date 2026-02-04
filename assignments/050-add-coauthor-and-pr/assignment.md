@@ -2,6 +2,8 @@
 
 **Due:** Before next class
 
+**Prerequisite:** [Ballpark Paper Selection](../010-ballpark-paper-selection/assignment.md)
+
 ---
 
 ## Objective
@@ -10,6 +12,19 @@
 2. Create a pull request to the ballpark repository with this change
 
 This is your first contribution to an open-source repository.
+
+---
+
+## Ask Cursor Throughout
+
+Use Cursor as your advisor for Git commands. If you're unsure about any step:
+
+> "I'm trying to [describe what you want to do]. What Git command should I use?"
+
+For example:
+- "I want to create a new branch for my changes"
+- "I pushed to the wrong place, how do I fix it?"
+- "What does this error message mean?"
 
 ---
 
@@ -128,7 +143,17 @@ git push myfork add-coauthor-YOURNAME
 
 ---
 
-## Part G: Create a pull request
+## Part G: Ask Cursor to review your changes
+
+Before creating the PR, ask Cursor to check your work:
+
+> "I'm about to create a pull request. Can you review my staged changes and tell me if anything looks wrong?"
+
+In Cursor, you can also run `git diff --staged` to see exactly what you're about to commit.
+
+---
+
+## Part H: Create a pull request
 
 1. Go to https://github.com/econ-ark/ballpark
 2. You should see a banner: "Compare & pull request" for your recently pushed branch
@@ -145,7 +170,7 @@ git push myfork add-coauthor-YOURNAME
 
 ---
 
-## Part H: Record your PR URL
+## Part I: Record your PR URL
 
 Copy the URL of your pull request (e.g., `https://github.com/econ-ark/ballpark/pull/42`)
 
