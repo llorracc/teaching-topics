@@ -3,15 +3,15 @@
 **Due:** Before next class  
 **Time:** ~45-60 minutes
 
-**Prerequisite:** You must have selected your ballpark paper in [Assignment 010](../010-ballpark-paper-selection/ballpark-paper-selection.md).
+**Prerequisite:** You selected your ballpark paper in [Assignment 010](../010-ballpark-paper-selection/ballpark-paper-selection.md).
 
 ---
 
 ## Objective
 
 1. Use **LitMaps** to find papers that CITE your ballpark paper
-2. Export those citing papers as a `.bib` file
-3. Use **AI** to analyze what the subsequent literature tells us about where the field has gone
+2. Export as `.bib`
+3. Use **AI** to analyze where the field has gone
 
 ---
 
@@ -19,87 +19,58 @@
 
 ### 1. Sign in to LitMaps
 
-Go to https://www.litmaps.com and sign in (or create a free account).
-
-**Free account limits:** 2 maps, 100 articles per map, 20 search inputs. This is sufficient.
-
----
+Go to https://www.litmaps.com (free account is sufficient).
 
 ### 2. Find your ballpark paper
 
-Search for your ballpark paper by title or author. Add it as the **seed article** for a new LitMap.
-
----
+Search by title or author. Add it as the **seed article**.
 
 ### 3. Discover citing papers
 
-Click **Discover** to find related articles. LitMaps shows:
-- Papers **cited by** your paper (backward — older papers) 
-- Papers **citing** your paper (forward — newer papers)
-
-**You want the CITING papers** — those published AFTER your ballpark paper.
-
----
+Click **Discover**. You want papers **citing** your paper (forward/newer), not papers cited by it (backward/older).
 
 ### 4. Add citing papers to your map
 
-Select 20-50 relevant citing papers. Prioritize:
-- Highly cited papers
-- Recent papers (last 3-5 years)
-- Papers directly relevant to your topic
-
----
+Select 20-50 relevant citing papers. Prioritize highly cited and recent papers.
 
 ### 5. Export as BibTeX
 
-1. Click the **download/export icon**
-2. Select **BibTeX** format
-3. Save as `subsequent-literature.bib` (this is a working document for Assignment 050)
+Click export → BibTeX → Save as `subsequent-literature.bib`
 
 ---
 
-## Part B: AI Analysis of the Subsequent Literature
+## Part B: AI Analysis
 
 ### 6. Give the .bib to AI
 
 Open Cursor and use this prompt:
 
-> "Here is a bibliography of papers that have cited [your ballpark paper title] since it was published:
+> "Here are papers that have cited [your ballpark paper title]:
 >
-> [Paste your subsequent-literature.bib contents]
+> [Paste your subsequent-literature.bib]
 >
-> Please analyze this subsequent literature:
-> 1. What research directions have emerged from this paper?
-> 2. What are the cutting-edge topics being explored now?
-> 3. What methodological advances have been made?
-> 4. What open questions or debates exist?
-> 5. Which 3-5 papers seem most important for understanding where this field is heading?"
+> Please analyze: What research directions emerged? What's cutting-edge now? Which 3-5 papers are most important for understanding where this field is heading?"
 
----
+### 7. Iterate
 
-### 7. Iterate with follow-up questions
-
-Don't accept the first answer. Push deeper:
-- "Can you be more specific about the methodological advances?"
+Push deeper:
 - "What gaps remain in this literature?"
 - "What would a researcher need to know to contribute here?"
 
----
+### 8. Save your analysis
 
-### 8. Document your analysis
-
-Save `subsequent-literature-analysis.md`. This is a **working document** you'll use in Assignment 050 — it won't be committed to the repo itself.
+Save as `subsequent-literature-analysis.md`:
 
 ```markdown
 # Subsequent Literature Analysis: [Paper Title]
 
 ## Papers that cite my ballpark paper
 
-I found [X] papers in LitMaps that cite [paper title].
+I found [X] papers in LitMaps.
 
 ## What the subsequent literature tells us
 
-[2-3 paragraphs covering: What research directions emerged? What's cutting-edge now? What open questions remain?]
+[2-3 paragraphs: research directions, cutting-edge topics, open questions]
 
 ## Most important subsequent papers
 
@@ -110,45 +81,20 @@ I found [X] papers in LitMaps that cite [paper title].
 
 ---
 
-## Deliverables
-
-Both are **working documents** you'll use in Assignment 050:
-
-| File | Contents |
-|------|----------|
-| `subsequent-literature.bib` | BibTeX of papers citing your ballpark paper |
-| `subsequent-literature-analysis.md` | AI-assisted analysis (2-3 paragraphs + key papers) |
-
----
-
 ## Troubleshooting
 
-**"Can't find my paper in LitMaps":**
-- Try searching by DOI
-- Try exact title match
-- Some working papers may not be indexed
-
-**"No citing papers found":**
-- Your paper may be very recent
-- Document this — we'll discuss alternatives in class
-
-**"Too many citing papers":**
-- Be selective — focus on most cited and most recent
-- Quality over quantity
+- **Can't find paper:** Try DOI or exact title
+- **No citing papers:** Paper may be recent — document this
+- **Too many papers:** Be selective — quality over quantity
 
 ---
 
 ## If You Get Stuck
 
-**Ask Cursor AI.** Whether it's LitMaps, BibTeX export, or the AI analysis — describe your problem and ask for help.
-
-If the "auto" model gives an inadequate or confusing answer, switch to a frontier model:
-- **Claude Opus 4.5** or **ChatGPT 5.2**
-
-If both frontier models agree on an answer, it's probably correct.
+**Ask Cursor AI.** If the "auto" model is inadequate, try **Claude Opus 4.5** or **ChatGPT 5.2**. If both agree, the answer is probably correct.
 
 ---
 
 ## Next Step
 
-After completing this, proceed to [Assignment 050: Integration and PR](../050-integration-and-pr/integration-and-pr.md).
+[Assignment 050: Integration and PR](../050-integration-and-pr/integration-and-pr.md)
