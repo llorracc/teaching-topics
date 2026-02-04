@@ -1,4 +1,4 @@
-# Assignment: AI-Assisted Paper Deep Dive
+# Assignment: AI-Assisted Literature Context and Improvement Suggestions
 
 **Due:** Before next class
 
@@ -8,208 +8,175 @@
 
 ## Objective
 
-Use AI tools to develop a **deep understanding** of your chosen paper:
-- What the paper itself contributes
-- The prior literature it builds on
-- The subsequent literature that cites it
-- The current state of this research area
+Use AI to create content that **extends** the existing ballpark item:
+1. A summary of the **prior literature** leading up to the paper
+2. A summary of the **subsequent literature** that builds on it
+3. Specific suggestions for **improving the current ballpark content**
 
-By the end of this assignment, you should be able to explain this paper and its place in the literature to someone unfamiliar with the topic.
+The existing ballpark items summarize the paper itself. Your job is to provide the **context** that's missing.
 
 ---
 
 ## Why This Matters
 
-In the next class, we will learn how to:
+In the next class, we will:
 - Upgrade existing ballpark items using MyST and modern bibliographical tools
-- Prepare pull requests to modernize ballpark objects
-- **Create your own ballpark objects** to add to the roster
+- Create pull requests to improve ballpark objects
+- Eventually **create your own ballpark objects**
 
-This deep dive prepares you to create a high-quality ballpark entry for your paper. You can't write a good summary of a paper's contribution if you don't understand both the paper and its context.
-
----
-
-## Can I Change My Paper?
-
-Yes. If you've discovered that your original choice isn't a good fit, you may switch to a different paper. But **you must complete this deep dive for SOME paper** that you would be glad to see fully replicated in Econ-ARK.
-
-If you switch papers, briefly note why in your submission.
+This assignment gives you material to add to the ballpark and teaches you how to use AI to identify improvements.
 
 ---
 
 ## Steps
 
-### 1. Start with the paper itself
+### Part 1: Prior Literature Summary
 
-Open Cursor and ask:
-
-> "I'm studying a paper titled [full title]. The authors are [names] and it was published in [year/journal]. Can you help me understand:
-> 1. What is the main research question this paper addresses?
-> 2. What methodology or model does it use?
-> 3. What are the key findings or contributions?
-> 4. Why is this paper important to the field?"
-
-**Iterate.** If the AI's response is too general, ask follow-up questions:
-- "Can you be more specific about the methodology?"
-- "What assumptions does the model make?"
-- "What data does it use?"
-- "How does this differ from previous approaches?"
-
----
-
-### 2. Understand the prior literature
+The existing ballpark item explains what the paper does, but not **what came before it**.
 
 Ask the AI:
 
-> "What prior literature does this paper build on? What were the key papers and ideas that made this work possible?"
+> "I'm studying [paper title] by [authors], published in [year]. What prior literature does this paper build on? What were the key papers, models, and ideas that made this work possible? Please give me a 2-3 paragraph summary suitable for someone who wants to understand the intellectual lineage of this paper."
 
-Then dig deeper:
-- "What was the state of the field before this paper?"
-- "What problem or gap in the literature was this paper trying to address?"
-- "Were there competing approaches? How does this paper's approach differ?"
+Then iterate:
+- "What was the state of the field immediately before this paper?"
+- "What specific gap or limitation was this paper addressing?"
+- "Are there 3-5 key papers I should cite as foundational?"
+
+**Deliverable:** A "Prior Literature" section (2-3 paragraphs) that could be added to the ballpark item.
 
 ---
 
-### 3. Understand the subsequent literature
+### Part 2: Subsequent Literature Summary
 
 Ask the AI:
 
-> "What has happened in this research area since this paper was published? What papers have cited it, and what directions have they taken?"
+> "What has happened in this research area since [paper title] was published? What papers have cited it, and what directions have they taken? Please give me a 2-3 paragraph summary of the subsequent literature and the current state of this research area."
 
-Then explore:
+Then iterate:
 - "What aspects of this paper have been most influential?"
-- "Have there been extensions, critiques, or replications?"
-- "What's the current cutting-edge in this area?"
-- "Are there open questions that remain unresolved?"
+- "Have there been important extensions, critiques, or replications?"
+- "What are the current cutting-edge topics in this area?"
+- "What open questions remain?"
+
+**Deliverable:** A "Subsequent Literature" section (2-3 paragraphs) that could be added to the ballpark item.
 
 ---
 
-### 4. Synthesize: The paper's place in the literature
+### Part 3: Review the Current Ballpark Content
 
-Ask the AI:
+Now look at the **actual ballpark item** for your paper (or a similar one if yours doesn't exist yet).
 
-> "If I had to explain this paper to someone unfamiliar with the field, how would you summarize:
-> 1. What problem it solves
-> 2. How it fits into the broader literature
-> 3. Why it matters today"
+1. Open the ballpark repository: https://github.com/econ-ark/ballpark
+2. Navigate to `models/We_Would_Like_In_Econ-ARK/` and find your paper's folder
+3. Read through the existing notebook content
 
----
+Then ask the AI:
 
-### 5. Identify what a good replication would need
+> "Here is the current content of a ballpark item for [paper title]:
+>
+> [Paste the key content from the notebook]
+>
+> Based on what you know about this paper and its literature, what specific improvements would you suggest? Consider:
+> - Accuracy of the summary
+> - Missing context or caveats
+> - Opportunities to add code demonstrations
+> - Bibliography improvements
+> - Clarity of explanation"
 
-Ask the AI:
-
-> "If someone wanted to create a computational replication of this paper for teaching purposes, what would be the essential elements to include? What aspects of the model or analysis would be most valuable to implement?"
-
-This helps you think about what your future ballpark object should contain.
+**Deliverable:** A list of 3-5 specific, actionable improvement suggestions.
 
 ---
 
 ## Document Your Work
 
-Create a file called `paper-deep-dive.md` with the following structure:
+Create a file called `literature-and-improvements.md`:
 
 ```markdown
-# Paper Deep Dive: [Paper Title]
+# Literature Context and Improvements: [Paper Title]
 
 ## Paper Information
 
 **Title:** [Full title]
 **Authors:** [Names]
 **Year:** [Publication year]
-**Journal/Venue:** [Where published]
+**Ballpark location:** `models/We_Would_Like_In_Econ-ARK/[folder name]/`
 
 ---
 
-## Part 1: Understanding the Paper
+## Part 1: Prior Literature
 
-### My prompts and AI responses
+[Your 2-3 paragraph summary of the prior literature]
 
-[Document your key prompts and the AI's responses]
-
-### My summary of the paper's contribution
-
-[In your own words, what does this paper contribute?]
-
----
-
-## Part 2: Prior Literature
-
-### Key papers this builds on
-
-[List 3-5 key prior papers and briefly explain their relevance]
-
-### The gap this paper addresses
-
-[What was missing before this paper?]
+### Key foundational papers
+- [Paper 1]: [Brief explanation of relevance]
+- [Paper 2]: [Brief explanation of relevance]
+- [Paper 3]: [Brief explanation of relevance]
 
 ---
 
-## Part 3: Subsequent Literature
+## Part 2: Subsequent Literature
 
-### How this paper has been influential
+[Your 2-3 paragraph summary of the subsequent literature]
 
-[What directions has the field taken since?]
-
-### Current state of this research area
-
-[Where is the field now?]
+### Current state of the field
+[1 paragraph on where things stand now]
 
 ---
 
-## Part 4: Synthesis
+## Part 3: Improvement Suggestions
 
-### The paper's place in the literature
+### Current ballpark content reviewed
+[Brief description of what's currently in the ballpark item]
 
-[Your 2-3 paragraph synthesis of how this paper fits into the broader story]
+### Suggested improvements
 
-### What a good replication would include
+1. **[Improvement 1]:** [Specific, actionable suggestion]
 
-[What elements would be essential for a ballpark entry?]
+2. **[Improvement 2]:** [Specific, actionable suggestion]
+
+3. **[Improvement 3]:** [Specific, actionable suggestion]
+
+[Add more as needed]
 
 ---
 
-## Part 5: Reflection
+## AI Tools Used
 
-### What I learned from using AI for this
+**Model(s):** [Which AI model(s) did you use?]
 
-[Was the AI helpful? Where did it struggle? What did you have to verify or dig deeper on?]
-
-### Am I keeping this paper or switching?
-
-[If switching, briefly explain why]
+**Key prompts that worked well:**
+[Note any prompts that gave particularly good results]
 ```
 
 ---
 
 ## Deliverable
 
-A file named `paper-deep-dive.md` containing:
-1. Documentation of your AI-assisted exploration
-2. Your synthesis of the paper's contribution and context
-3. Your reflection on the process
+A file named `literature-and-improvements.md` containing:
+1. Prior literature summary (ready to add to ballpark)
+2. Subsequent literature summary (ready to add to ballpark)
+3. Specific improvement suggestions for the current content
 
-**Bring this file to class** — we will discuss what you learned and use it as the foundation for creating ballpark objects.
+**Bring this file to class** — we will use it when upgrading ballpark items.
 
 ---
 
 ## Tips for Success
 
-1. **Use a frontier AI model** for this assignment. The depth of analysis benefits from more capable models (Claude Opus 4.5 or GPT-5.2). See [Assignment 040](../040-ai-literature-analysis/assignment.md) for how to switch models in Cursor.
+1. **Use a frontier AI model** (Claude Opus 4.5 or GPT-5.2) for better literature knowledge.
 
-2. **Don't just accept the first answer.** Iterate. Push for specifics. Ask "why?" and "how?"
+2. **The summaries should be additive.** Don't repeat what's already in the ballpark — add context that's missing.
 
-3. **Verify key claims.** AI can hallucinate citations or mischaracterize papers. If something seems important, try to verify it.
+3. **Be specific in your improvement suggestions.** "Make it better" is not helpful. "Add a code cell demonstrating the Euler equation" is.
 
-4. **Your synthesis matters.** The AI can give you information, but YOU need to synthesize it into a coherent understanding.
-
-5. **Think about replication.** As you learn about the paper, think about what would make a good computational demonstration. What's the core insight that could be illustrated with code?
+4. **Verify citations.** AI can hallucinate paper titles. If you cite specific papers, try to verify they exist.
 
 ---
 
 ## Looking Ahead
 
-After this assignment, you'll be ready to:
-- Modernize existing ballpark items (in-class)
-- Create your own ballpark object (next assignment)
-- Contribute to the Econ-ARK repository
+In the next class, you will:
+- Add your prior/subsequent literature sections to the ballpark
+- Implement some of your improvement suggestions
+- Create a pull request with your changes
