@@ -1,10 +1,10 @@
 # Orchestrator: Ballpark editing, Jupyter, MyST, and bibliography
 
-**Unit:** [Ballpark Editing & Bibliography](../units/ballpark-editing-bibliography/unit.md)
+**Unit:** ballpark-jupyter-myst-bibliography
 
 ## Overview
 
-This session takes you from an updated ballpark clone through PaperPile/LitMaps setup, Jupyter editing, MyST conversion, bibliography configuration, and a PR.
+This session takes students from an updated ballpark clone through PaperPile/LitMaps setup, Jupyter editing, MyST conversion, bibliography configuration, and a PR.
 
 ---
 
@@ -73,4 +73,4 @@ Stage changes, commit, and create a pull request for your modifications.
 
 ## Assignment after this session
 
-See [AI revision with prompt tracking](../assignments/030-ai-revision-with-prompt-tracking/assignment.md)
+See [AI revision with prompt tracking](../assignments/ai-revision-with-prompt-tracking.md)

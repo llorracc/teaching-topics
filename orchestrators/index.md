@@ -1,9 +1,11 @@
-# Orchestrators
+# Orchestrators index
 
-Orchestrators are detailed session guides that sequence multiple workflows for a class meeting.
+Orchestrators sequence multiple workflows into coherent class sessions.
 
 ---
 
+## Available orchestrators
+
 | Orchestrator | Unit | Description |
 |--------------|------|-------------|
-| [ballpark-jupyter-myst-bibliography](ballpark-jupyter-myst-bibliography.md) | Ballpark Editing | Full workflow for editing ballpark notebooks with Jupyter, MyST, and bibliography |
+| [Ballpark editing, Jupyter, MyST, and bibliography](ballpark-jupyter-myst-bibliography.md) | ballpark-jupyter-myst-bibliography | Full session: Git update → PaperPile/LitMaps → Cursor/Jupyter → MyST → bibliography → PR |

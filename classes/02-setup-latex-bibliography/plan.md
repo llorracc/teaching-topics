@@ -1,7 +1,7 @@
 # Class 02: Setup, LaTeX, bibliography — Plan
 
-**Unit:** [Environment Setup](../../units/environment-setup/unit.md)  
-**Date:** 2026-01-27
+**Unit:** [Environment Setup](../../units/environment-setup/)  
+**Date:** 2026-01-27 (Tue)
 
 ---
 

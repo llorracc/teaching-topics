@@ -1,6 +1,6 @@
 # Workflow: PaperPile setup and sharing
 
-**Purpose:** Set up PaperPile, connect to JHU libraries, and share folders.
+**Purpose:** Set up PaperPile, connect to JHU libraries, and populate your bibliography.
 
 **External resources:**
 - [The Setup (as.180.369)](https://github.com/llorracc/as.180.369/blob/main/materials/setup/README.md)
@@ -8,10 +8,76 @@
 
 ---
 
+## Verify first
+
+### 1. Verify you have a PaperPile account
+
+Go to https://paperpile.com and sign in.
+
+**Expected:** You can access your PaperPile library.
+
+**If no account:** Create one at https://paperpile.com (free trial or paid).
+
+---
+
+### 2. Verify you have papers in your library
+
+In PaperPile, check "My Library" or "All Papers".
+
+**Expected:** You see the bibliography entries for your ballpark paper.
+
+**If empty:** You need to add your bibliography first. Options:
+- Import a .bib file (if you have one)
+- Use ChatGPT to generate a .bib file from your paper's reference list:
+  > "Give me a BibTeX file for all references in [paper title]"
+- Add papers manually via PaperPile browser extension
+
+---
+
 ## Steps
 
-1. **Connect PaperPile to JHU Libraries** — so you can locate and download papers.
-2. **Update metadata** for papers you've added (right-click → Update metadata).
-3. **Create a folder** in PaperPile for your ballpark paper's bibliography.
-4. **Share the folder** with your right-hand neighbor (PaperPile → Share).
-5. **Verify** that you can see your neighbor's shared content.
+### 1. Connect to JHU Libraries
+
+1. In PaperPile: click **Settings** (gear icon, bottom left)
+2. Select **Proxy Connection**
+3. Choose **Johns Hopkins University**
+4. Click **Test Connection** to verify
+
+**Expected:** "Connection successful" or similar message
+
+This enables PaperPile to download PDFs through Hopkins library access.
+
+---
+
+### 2. Update metadata
+
+1. In your library, click **Select All** (checkbox at top)
+2. Click **More** → **Auto Update**
+3. Wait for the update to complete
+
+This retrieves journal names, volume numbers, page numbers, abstracts, etc.
+
+---
+
+### 3. Find PDFs
+
+1. With papers still selected, click **More** → **Find PDFs Online**
+2. Wait for the search to complete
+
+Some PDFs may not be found—this is normal. Hopkins access improves the success rate.
+
+---
+
+### 4. Create a folder for your ballpark paper (optional)
+
+1. Right-click in the left sidebar → **New Folder**
+2. Name it after your ballpark paper (e.g., "SSJ2021")
+3. Drag your bibliography entries into this folder
+
+This keeps your ballpark bibliography organized separately from other papers.
+
+---
+
+## Next step
+
+After completing this workflow, proceed to [google-drive-paperpile-sync](google-drive-paperpile-sync.md) to set up local access to your bibliography files.

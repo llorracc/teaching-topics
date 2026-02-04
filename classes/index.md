@@ -1,11 +1,11 @@
 # Classes
 
-Individual class meetings. Each class has a **plan** (what we intend to do) and a **summary** (what we actually did).
+Individual class meetings, each with a plan (before) and summary (after).
 
 ---
 
-| # | Topic | Unit | Date | Plan | Summary |
-|---|-------|------|------|------|---------|
-| [01](01-git-wsl-ballpark-intro/) | Git, WSL, ballpark intro | Environment Setup | 2026-01-20 | [plan](01-git-wsl-ballpark-intro/plan.md) | [summary](01-git-wsl-ballpark-intro/summary.md) |
-| [02](02-setup-latex-bibliography/) | Setup, LaTeX, bibliography | Environment Setup | 2026-01-27 | [plan](02-setup-latex-bibliography/plan.md) | [summary](02-setup-latex-bibliography/summary.md) |
-| [03](03-ballpark-jupyter-myst/) | Ballpark, Jupyter, MyST | Ballpark Editing | TBD | [plan](03-ballpark-jupyter-myst/plan.md) | _(upcoming)_ |
+| # | Class | Unit | Plan | Summary |
+|---|-------|------|------|---------|
+| 01 | [Git, WSL, ballpark intro](01-git-wsl-ballpark-intro/) | [Environment Setup](../units/environment-setup/) | — | ✓ |
+| 02 | [Setup, LaTeX, bibliography](02-setup-latex-bibliography/) | [Environment Setup](../units/environment-setup/) | — | ✓ |
+| 03 | [Ballpark, Jupyter, MyST](03-ballpark-jupyter-myst/) | [Ballpark Editing](../units/ballpark-editing-bibliography/) | ✓ | ✓ |

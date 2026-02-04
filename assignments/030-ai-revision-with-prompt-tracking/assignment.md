@@ -1,6 +1,6 @@
-# Assignment 030: AI revision with prompt tracking
+# Assignment: AI revision with prompt tracking
 
-**Due:** After Class 03
+**Due:** Before the following class
 
 ---
 

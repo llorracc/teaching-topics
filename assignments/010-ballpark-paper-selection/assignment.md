@@ -1,17 +1,10 @@
-# Assignment 010: Ballpark paper selection and presentation
+# Assignment: Ballpark paper selection and presentation
 
-**Due:** Before Class 02
-
----
-
-## Environment setup
-
-- Install LaTeX and verify `./reproduce.sh docs main` runs.
-- Run `./reproduce.sh comp min`.
+**Source:** [Class 01: Git, WSL, ballpark intro](../../classes/01-git-wsl-ballpark-intro/summary.md) (2026-01-20)
 
 ---
 
-## Ballpark paper
+### Ballpark paper
 
 - Browse **[ballpark](https://github.com/econ-ark/ballpark)** and pick a paper of interest from the "models we'd like in Econ-ARK" section.
 - Prepare a **short presentation** on that ballpark for next class.

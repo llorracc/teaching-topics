@@ -1,4 +1,4 @@
-# Assignment 020: PaperPile bibliography capture
+# Assignment: PaperPile bibliography capture
 
 **Due:** Before Class 03
 
@@ -34,10 +34,3 @@ Zhang__ballpark__bibliography.bib
 - **The chosen paper itself**
 - **The papers it cites** (as captured in PaperPile)
 - Any additional sources you decide are important background for understanding/replicating the chosen paper
-
----
-
-## Tips
-
-- **Connect PaperPile to Johns Hopkins libraries** (or use the library proxy) so PaperPile can locate and download PDFs automatically.
-- If extraction is tedious, use AI tools to **help extract and sanity-check** the reference list (then verify against the PDF).

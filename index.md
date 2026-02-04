@@ -1,51 +1,56 @@
 # Teaching Topics
 
-Course materials for topics in computational economics.
+Course materials for computational economics research methods.
 
 ---
 
-## Course Structure
+## Quick links
 
-This course is organized into **units** (phases/modules) that span multiple **classes** (individual meetings).
-
-### [Units](units/index.md)
-
-| Unit | Topic | Classes |
-|------|-------|---------|
-| [Environment Setup](units/environment-setup/unit.md) | Git, WSL, LaTeX, Cursor, reproduce.sh | 01–02 |
-| [Ballpark Editing & Bibliography](units/ballpark-editing-bibliography/unit.md) | Forking, notebooks, PaperPile, MyST, citations | 03+ |
-
-### [Classes](classes/index.md)
-
-| # | Topic | Date | Status |
-|---|-------|------|--------|
-| [01](classes/01-git-wsl-ballpark-intro/) | Git, WSL, ballpark intro | 2026-01-20 | ✓ Complete |
-| [02](classes/02-setup-latex-bibliography/) | Setup, LaTeX, bibliography | 2026-01-27 | ✓ Complete |
-| [03](classes/03-ballpark-jupyter-myst/) | Ballpark, Jupyter, MyST | TBD | Planned |
-
-### [Assignments](assignments/index.md)
-
-| # | Assignment | Due |
-|---|------------|-----|
-| [010](assignments/010-ballpark-paper-selection/assignment.md) | Ballpark paper selection | Before Class 02 |
-| [020](assignments/020-paperpile-bibliography/assignment.md) | PaperPile bibliography | Before Class 03 |
-| [030](assignments/030-ai-revision-with-prompt-tracking/assignment.md) | AI revision with prompt tracking | After Class 03 |
+- **[Units](units/)** — Course phases/modules
+- **[Classes](classes/)** — Individual class meetings (plans and summaries)
+- **[Assignments](assignments/)** — Homework and projects
+- **[Orchestrators](orchestrators/)** — Multi-step in-class workflows
+- **[Workflows](workflows/)** — Atomic step-by-step guides
 
 ---
 
-## In-Class Resources
+## Current focus
 
-### [Orchestrators](orchestrators/index.md)
+**Unit 2: [Ballpark Editing & Bibliography Workflow](units/ballpark-editing-bibliography/)**
 
-Orchestrators are detailed session guides that sequence multiple workflows for a class meeting.
+Working with [ballpark](https://github.com/econ-ark/ballpark) papers: forking the repo, editing Jupyter notebooks, using PaperPile and LitMaps for bibliography management, converting to MyST, adding citations, and creating pull requests.
 
-### [Workflows](workflows/index.md)
-
-Workflows are atomic, step-by-step instructions for specific tasks (e.g., "Install MyST", "Add a citation").
+**In-class orchestrator:** [ballpark-jupyter-myst-bibliography](orchestrators/ballpark-jupyter-myst-bibliography.md)
 
 ---
 
-## External Resources
+## Recent classes
+
+| Date | Class | Status |
+|------|-------|--------|
+| Feb 03 | [Class 03: Ballpark, Jupyter, MyST](classes/03-ballpark-jupyter-myst/) | Completed |
+| Jan 27 | [Class 02: Setup, LaTeX, bibliography](classes/02-setup-latex-bibliography/) | Completed |
+| Jan 20 | [Class 01: Git, WSL, ballpark intro](classes/01-git-wsl-ballpark-intro/) | Completed |
+
+---
+
+## Key resources
 
 - **Econ-ARK ballpark:** https://github.com/econ-ark/ballpark
-- **Econ-ARK HARK:** https://github.com/econ-ark/HARK
+- **PaperPile:** https://paperpile.com
+- **Litmaps:** https://www.litmaps.com
+- **as.180.369 materials:** https://github.com/llorracc/as.180.369
+
+---
+
+## ⚠️ Important for Windows users
+
+All terminal work must be done **inside WSL** (Ubuntu), not Windows PowerShell.
+
+**Quick check:**
+```bash
+pwd
+```
+Should show `/home/...` not `C:\Users\...`
+
+See: [Verify terminal context](workflows/_verify-terminal-context.md)

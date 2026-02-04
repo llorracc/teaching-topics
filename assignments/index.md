@@ -1,9 +1,11 @@
 # Assignments
 
+Course assignments, numbered by when they are assigned.
+
 ---
 
 | # | Assignment | Due |
 |---|------------|-----|
-| [010](010-ballpark-paper-selection/assignment.md) | Ballpark paper selection | Before Class 02 |
-| [020](020-paperpile-bibliography/assignment.md) | PaperPile bibliography | Before Class 03 |
-| [030](030-ai-revision-with-prompt-tracking/assignment.md) | AI revision with prompt tracking | After Class 03 |
+| 010 | [Ballpark paper selection](010-ballpark-paper-selection/assignment.md) | After Class 01 |
+| 020 | [PaperPile bibliography](020-paperpile-bibliography/assignment.md) | Before Class 03 |
+| 030 | [AI revision with prompt tracking](030-ai-revision-with-prompt-tracking/assignment.md) | After Class 03 |
