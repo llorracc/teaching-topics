@@ -10,9 +10,9 @@ Complete these **in order** — each builds on the previous:
 
 | Order | # | Assignment | Input | Deliverable |
 |-------|---|------------|-------|-------------|
-| 1st | 030 | [Prior Literature](030-prior-literature/assignment.md) | PaperPile `.bib` | `prior-literature.md` |
-| 2nd | 040 | [Subsequent Literature](040-subsequent-literature/assignment.md) | Ballpark paper | `subsequent-literature.bib` + `subsequent-literature-analysis.md` |
-| 3rd | 050 | [Integration + PR](050-integration-and-pr/assignment.md) | 030 + 040 outputs | `proposed-revisions.md` + **PR URL** |
+| 1st | 030 | [Prior Literature](030-prior-literature/prior-literature.md) | PaperPile `.bib` | `prior-literature.md` |
+| 2nd | 040 | [Subsequent Literature](040-subsequent-literature/subsequent-literature.md) | Ballpark paper | `subsequent-literature.bib` + `subsequent-literature-analysis.md` |
+| 3rd | 050 | [Integration + PR](050-integration-and-pr/integration-and-pr.md) | 030 + 040 outputs | `proposed-revisions.md` + **PR URL** |
 
 **All three are required before Class 04.**
 
@@ -38,12 +38,12 @@ Complete these **in order** — each builds on the previous:
 
 | # | Assignment | Deliverable | Phase |
 |---|------------|-------------|-------|
-| 010 | [Ballpark Paper Selection](010-ballpark-paper-selection/assignment.md) | Paper choice + presentation | Tools |
-| 020 | [PaperPile Bibliography](020-paperpile-bibliography/assignment.md) | `.bib` file | Tools |
-| 030 | [Prior Literature](030-prior-literature/assignment.md) | `prior-literature.md` | Skills |
-| 040 | [Subsequent Literature](040-subsequent-literature/assignment.md) | `.bib` + analysis | Skills |
-| 050 | [Integration + PR](050-integration-and-pr/assignment.md) | revisions + PR URL | Artifacts |
-| 070 | [AI Revision with Prompt Tracking](070-ai-revision-with-prompt-tracking/assignment.md) | Improved notebook | Artifacts |
+| 010 | [Ballpark Paper Selection](010-ballpark-paper-selection/ballpark-paper-selection.md) | Paper choice + presentation | Tools |
+| 020 | [PaperPile Bibliography](020-paperpile-bibliography/paperpile-bibliography.md) | `.bib` file | Tools |
+| 030 | [Prior Literature](030-prior-literature/prior-literature.md) | `prior-literature.md` | Skills |
+| 040 | [Subsequent Literature](040-subsequent-literature/subsequent-literature.md) | `.bib` + analysis | Skills |
+| 050 | [Integration + PR](050-integration-and-pr/integration-and-pr.md) | revisions + PR URL | Artifacts |
+| 070 | [AI Revision with Prompt Tracking](070-ai-revision-with-prompt-tracking/ai-revision-with-prompt-tracking.md) | Improved notebook | Artifacts |
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Due:** Before next class
 
-**Prerequisite:** [Prior Literature Summary](../030-prior-literature/assignment.md) — complete Step 1 first.
+**Prerequisite:** [Prior Literature Summary](../030-prior-literature/prior-literature.md) — complete Step 1 first.
 
 ---
 
@@ -157,4 +157,4 @@ I found [X] papers in LitMaps that cite [paper title].
 
 ## Next Step
 
-After completing this, proceed to [Assignment 050: Integration and PR](../050-integration-and-pr/assignment.md).
+After completing this, proceed to [Assignment 050: Integration and PR](../050-integration-and-pr/integration-and-pr.md).

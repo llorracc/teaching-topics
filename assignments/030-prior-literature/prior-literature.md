@@ -2,7 +2,7 @@
 
 **Due:** Before next class
 
-**Prerequisite:** [PaperPile Bibliography](../020-paperpile-bibliography/assignment.md) — you need your `.bib` file containing the papers your ballpark paper cites.
+**Prerequisite:** [PaperPile Bibliography](../020-paperpile-bibliography/paperpile-bibliography.md) — you need your `.bib` file containing the papers your ballpark paper cites.
 
 ---
 
@@ -96,4 +96,4 @@ A file named `prior-literature.md` containing:
 
 ## Next Step
 
-After completing this, proceed to [Assignment 040: Subsequent Literature](../040-subsequent-literature/assignment.md).
+After completing this, proceed to [Assignment 040: Subsequent Literature](../040-subsequent-literature/subsequent-literature.md).

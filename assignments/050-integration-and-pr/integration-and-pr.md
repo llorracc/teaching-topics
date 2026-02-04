@@ -3,8 +3,8 @@
 **Due:** Before next class
 
 **Prerequisites:** 
-- [Prior Literature Summary](../030-prior-literature/assignment.md) — `prior-literature.md`
-- [Subsequent Literature](../040-subsequent-literature/assignment.md) — `subsequent-literature.bib` + `subsequent-literature-analysis.md`
+- [Prior Literature Summary](../030-prior-literature/prior-literature.md) — `prior-literature.md`
+- [Subsequent Literature](../040-subsequent-literature/subsequent-literature.md) — `subsequent-literature.bib` + `subsequent-literature-analysis.md`
 
 ---
 
