@@ -53,7 +53,7 @@ If the summary is too generic, ask follow-up questions:
 
 ### 4. Save your summary
 
-Save a file called `prior-literature.md` **in your ballpark paper's folder** (e.g., `models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/prior-literature.md`):
+Save a file called `prior-literature.md`. This is a **working document** you'll use in Assignment 050 to prepare your PR — it won't be committed to the repo itself.
 
 ```markdown
 # Prior Literature Summary: [Paper Title]
@@ -67,6 +67,8 @@ Save a file called `prior-literature.md` **in your ballpark paper's folder** (e.
 - [Paper 1]: [One sentence on why it matters]
 - [Paper 2]: [One sentence on why it matters]
 - [Paper 3]: [One sentence on why it matters]
+- [Paper 4]: [One sentence on why it matters]
+- [Paper 5]: [One sentence on why it matters]
 ```
 
 ---

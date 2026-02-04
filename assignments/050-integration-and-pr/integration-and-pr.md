@@ -20,13 +20,16 @@
 
 ## Part A: Review Current Ballpark Content
 
-### 1. Open the current ballpark item
+### 1. Open the current ballpark item in your local clone
 
-Go to: https://github.com/econ-ark/ballpark
+In your terminal:
 
-Navigate to `models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/`
+```bash
+cd ~/GitHub/econ-ark/ballpark
+ls models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/
+```
 
-Read through the existing notebook content.
+Open the notebook file and read through the existing content.
 
 ---
 
@@ -139,30 +142,38 @@ Save the notebook.
 
 ---
 
-### 9. Verify your changes before committing
+### 9. Stage your changes
 
-Ask Cursor to review your work:
-
-> "Can you review my staged changes and tell me if anything looks wrong?"
-
-Also verify manually:
 ```bash
-git diff
+git add models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/
 ```
 
 ---
 
-### 10. Commit and push
+### 10. Verify before committing
+
+Review what you're about to commit:
 
 ```bash
-git add models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/
+git diff --staged
+```
+
+Ask Cursor to review your staged changes:
+
+> "Can you review my staged changes and tell me if anything looks wrong?"
+
+---
+
+### 11. Commit and push
+
+```bash
 git commit -m "Add literature context and improvements to [Paper Name]"
 git push origin improve-[paper-name]-[yourname]
 ```
 
 ---
 
-### 11. Create the Pull Request
+### 12. Create the Pull Request
 
 1. Go to https://github.com/econ-ark/ballpark
 2. Click "Compare & pull request" (should appear after you push)
@@ -180,7 +191,7 @@ git push origin improve-[paper-name]-[yourname]
 
 ---
 
-### 12. Record your PR URL
+### 13. Record your PR URL
 
 Copy the PR URL (e.g., `https://github.com/econ-ark/ballpark/pull/42`)
 
@@ -190,12 +201,12 @@ Copy the PR URL (e.g., `https://github.com/econ-ark/ballpark/pull/42`)
 
 ## Deliverables (BEFORE CLASS)
 
-| File | Contents |
-|------|----------|
-| `proposed-revisions.md` | AI-suggested revisions and your decisions |
-| **PR URL** | Your Pull Request to econ-ark/ballpark |
+| Deliverable | Description |
+|-------------|-------------|
+| `proposed-revisions.md` | Working document with AI-suggested revisions (keep for your records) |
+| **PR URL** | Your Pull Request to econ-ark/ballpark — this is what gets reviewed |
 
-**Both are required before class.**
+**The PR is the main deliverable.** Bring your PR URL to class.
 
 ---
 

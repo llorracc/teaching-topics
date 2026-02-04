@@ -21,20 +21,23 @@ Complete these **in order** — each builds on the previous:
 ## Assignment Flow
 
 ```
-020: PaperPile Bibliography
+010: Paper Selection
          │
-         ▼
-030: Prior Literature
-     (AI summary of cited papers)
-         │
-         ▼
-040: Subsequent Literature
-     (LitMaps + AI analysis)
-         │
-         ▼
-050: Integration + PR
-     (synthesize + contribute)
+    ┌────┴────┐
+    ▼         ▼
+020: PaperPile    040: LitMaps
+    Bibliography      (citing papers)
+         │              │
+         ▼              │
+030: Prior Lit         │
+    (AI summary)       │
+         │              │
+         └──────┬───────┘
+                ▼
+        050: Integration + PR
 ```
+
+030 and 040 can be done in parallel — both feed into 050.
 
 ---
 
@@ -62,14 +65,15 @@ In class, we will:
 
 ## Before Class 04 Checklist
 
-Make sure you have ALL of the following before class:
+**Main deliverable:** Your Pull Request URL
 
-| File | Location | Assignment |
-|------|----------|------------|
-| `prior-literature.md` | Your paper folder | 030 |
-| `subsequent-literature.bib` | Your paper folder | 040 |
-| `subsequent-literature-analysis.md` | Your paper folder | 040 |
-| `proposed-revisions.md` | Your paper folder | 050 |
-| **PR URL** | GitHub | 050 |
+**Working documents** (keep for your records, used to prepare the PR):
 
-**Your paper folder** = `models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/`
+| File | Assignment |
+|------|------------|
+| `prior-literature.md` | 030 |
+| `subsequent-literature.bib` | 040 |
+| `subsequent-literature-analysis.md` | 040 |
+| `proposed-revisions.md` | 050 |
+
+**Bring your PR URL to class.**

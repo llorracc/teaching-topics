@@ -3,7 +3,7 @@
 **Due:** Before next class  
 **Time:** ~45-60 minutes
 
-**Prerequisite:** Complete [Assignment 030: Prior Literature](../030-prior-literature/prior-literature.md) first.
+**Prerequisite:** You must have selected your ballpark paper in [Assignment 010](../010-ballpark-paper-selection/ballpark-paper-selection.md).
 
 ---
 
@@ -54,7 +54,7 @@ Select 20-50 relevant citing papers. Prioritize:
 
 1. Click the **download/export icon**
 2. Select **BibTeX** format
-3. Save as `subsequent-literature.bib` **in your ballpark paper's folder**
+3. Save as `subsequent-literature.bib` (this is a working document for Assignment 050)
 
 ---
 
@@ -88,7 +88,7 @@ Don't accept the first answer. Push deeper:
 
 ### 8. Document your analysis
 
-Save `subsequent-literature-analysis.md` **in your ballpark paper's folder**:
+Save `subsequent-literature-analysis.md`. This is a **working document** you'll use in Assignment 050 — it won't be committed to the repo itself.
 
 ```markdown
 # Subsequent Literature Analysis: [Paper Title]
@@ -112,7 +112,7 @@ I found [X] papers in LitMaps that cite [paper title].
 
 ## Deliverables
 
-Both files go in your ballpark paper's folder:
+Both are **working documents** you'll use in Assignment 050:
 
 | File | Contents |
 |------|----------|
