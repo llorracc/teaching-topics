@@ -99,22 +99,23 @@ git commit -m "Add [your description of changes]"
 ### D. Push to your fork
 
 ```bash
-git push origin your-branch-name
+git push myfork your-branch-name
 ```
 
 **If this is your first push for this branch:**
 ```bash
-git push -u origin your-branch-name
+git push -u myfork your-branch-name
 ```
 
 ---
 
 ### E. Create a pull request
 
-1. Go to https://github.com/econ-ark/ballpark
+1. Go to your fork on GitHub: `https://github.com/YOUR-USERNAME/ballpark`
 2. You should see a banner: "Compare & pull request"
-3. Click it and fill in the PR description
-4. Click "Create pull request"
+3. Click it
+4. Ensure the PR target is `econ-ark/ballpark` (base) and your fork branch (compare)
+5. Click "Create pull request"
 
 Or use the GitHub CLI:
 ```bash

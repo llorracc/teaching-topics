@@ -64,7 +64,39 @@ Create `proposed-revisions.md`:
 
 ## Part B: Implement and Create PR
 
-### 4. Create a branch
+### 4. Fork ballpark (once) and set up remotes
+
+**You are not a collaborator on `econ-ark/ballpark`.** To make a PR, you will:
+1. Fork `econ-ark/ballpark` to your GitHub account
+2. Push your changes to your fork
+3. Open a PR from your fork back to `econ-ark/ballpark`
+
+If you haven't already forked ballpark:
+
+1. Go to https://github.com/econ-ark/ballpark
+2. Click **Fork**
+3. Select your GitHub account as the destination
+
+Now, in your terminal (from your local `ballpark` clone):
+
+```bash
+cd ~/GitHub/econ-ark/ballpark
+
+# Check your current remotes
+git remote -v
+
+# Add your fork as a remote named "myfork"
+git remote add myfork https://github.com/YOUR-USERNAME/ballpark.git
+
+# Verify
+git remote -v
+```
+
+**Expected:** You see both:
+- `origin` (the upstream `econ-ark/ballpark`)
+- `myfork` (your fork)
+
+### 5. Create a branch
 
 ```bash
 git checkout master
@@ -74,7 +106,7 @@ git checkout -b improve-[paper-name]-[yourname]
 
 **Stuck on git?** Ask Cursor AI — paste any error messages.
 
-### 5. Make your changes
+### 6. Make your changes
 
 ```bash
 source .venv/bin/activate
@@ -89,7 +121,7 @@ In Cursor, open the notebook and:
 
 Save the notebook.
 
-### 6. Stage and verify
+### 7. Stage and verify
 
 ```bash
 git add models/We_Would_Like_In_Econ-ARK/[YourPaperFolder]/
@@ -98,22 +130,27 @@ git diff --staged
 
 Ask Cursor: "Can you review my staged changes?"
 
-### 7. Commit and push
+### 8. Commit and push (to your fork)
 
 ```bash
 git commit -m "Add literature context to [Paper Name]"
-git push origin improve-[paper-name]-[yourname]
+git push myfork improve-[paper-name]-[yourname]
 ```
 
-### 8. Create Pull Request
+### 9. Create Pull Request (from your fork)
 
-1. Go to https://github.com/econ-ark/ballpark
-2. Click "Compare & pull request"
-3. Title: "Add literature context to [Paper Name]"
-4. Description: What you added + your name as coauthor
-5. Click **Create pull request**
+1. Go to your fork on GitHub: `https://github.com/YOUR-USERNAME/ballpark`
+2. You should see a banner offering to create a PR for your recently pushed branch. Click **Compare & pull request**.
+3. Make sure the PR target is:
+   - **base repository:** `econ-ark/ballpark`
+   - **base branch:** `master`
+   - **head repository:** `YOUR-USERNAME/ballpark`
+   - **compare branch:** `improve-[paper-name]-[yourname]`
+4. Title: "Add literature context to [Paper Name]"
+5. Description: What you added + your name as coauthor
+6. Click **Create pull request**
 
-### 9. Record your PR URL
+### 10. Record your PR URL
 
 Copy the URL (e.g., `https://github.com/econ-ark/ballpark/pull/42`)
 
