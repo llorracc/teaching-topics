@@ -1,5 +1,10 @@
 # Orchestrator: Ballpark editing, Jupyter, MyST, and bibliography
 
+> **OBSOLETE:** This monolithic 17-step orchestrator has been replaced by the
+> [modular orchestrators](index.md) (01 through 06). In particular, the MyST conversion
+> steps (10-16) are now handled by the **four-notebook MyST assembly** approach —
+> see [05-myst-conversion](https://llorracc.github.io/workspace-course-topics/orchestrators/05-myst-conversion.html). Retained for historical reference only.
+
 **Unit:** ballpark-jupyter-myst-bibliography
 
 ## Overview
