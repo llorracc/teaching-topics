@@ -1,6 +1,6 @@
-# Run Manifest: 2026
+# Run Manifest: Spring 2026
 
-**Single source of truth** for this year's course. Edit this file when changing the schedule or assignment lineup. Do not store run-specific data in workspace-course-topics.
+> **Note:** This file is the canonical schedule and assignment roster maintained by the instructor. Students should use [Assignments by class](assignments/index.md) for a friendlier view of what's due.
 
 ---
 

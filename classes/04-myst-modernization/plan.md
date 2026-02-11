@@ -1,7 +1,7 @@
 # Class 04: MyST Modernization — Plan
 
 **Unit:** [Research Skills](https://llorracc.github.io/workspace-course-topics/units/research-skills/unit.html) / [Contribution](https://llorracc.github.io/workspace-course-topics/units/contribution/unit.html)  
-**Date:** TBD
+**Date:** 2026-02-10 (Tue)
 
 ---
 
@@ -30,11 +30,10 @@ git remote rename origin upstream
 git remote add origin https://github.com/<your-username>/ballpark.git
 ```
 
-**You have already:**
+**Prerequisites** (completed in Classes 01–03):
 - Forked the ballpark repo and run `setup_env.sh`
-- Added yourself as coauthor
-- Added prior and subsequent literature sections
-- Created and submitted a Pull Request
+- Added yourself as coauthor in your notebook
+- Created prior-literature and subsequent-literature materials
 
 ---
 

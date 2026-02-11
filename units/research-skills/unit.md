@@ -26,7 +26,7 @@ This unit represents the **Skills** phase of the course:
 | Class | Topic | Status |
 |-------|-------|--------|
 | [03](../../classes/03-ballpark-jupyter-myst/) | PaperPile, LitMaps, Jupyter basics | Completed |
-| [04](../../classes/04-myst-modernization/) | AI literature analysis, PR workflow | Planned |
+| [04](../../classes/04-myst-modernization/) | MyST modernization | Completed |
 
 ---
 
@@ -35,8 +35,8 @@ This unit represents the **Skills** phase of the course:
 | # | Assignment | Deliverable |
 |---|------------|-------------|
 | 020 | [PaperPile Bibliography](https://llorracc.github.io/workspace-course-topics/assignments/paperpile-bibliography.html) | `.bib` file |
-| 030 | [Subsequent Literature](https://llorracc.github.io/workspace-course-topics/assignments/litmaps-subsequent-citations.html) | `subsequent-literature.bib` |
-| 040 | [AI Literature Analysis](https://llorracc.github.io/workspace-course-topics/assignments/ai-cutting-edge-analysis.html) | `subsequent-literature-analysis.md` |
+| 030 | [Prior Literature](https://llorracc.github.io/workspace-course-topics/assignments/prior-literature.html) | `prior-literature.md` |
+| 040 | [Subsequent Literature](https://llorracc.github.io/workspace-course-topics/assignments/subsequent-literature.html) | `subsequent-literature.bib` + analysis |
 
 ---
 
