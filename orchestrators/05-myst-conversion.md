@@ -7,8 +7,6 @@
 
 Convert your notebook to MyST format and configure bibliography integration.
 
-**Note:** This orchestrator may be postponed to a later class.
-
 ---
 
 ## Prerequisites
@@ -16,6 +14,7 @@ Convert your notebook to MyST format and configure bibliography integration.
 - Notebook edited (from [Notebook Editing](04-notebook-editing.md))
 - `.bib` files from PaperPile and LitMaps
 - Bibliography Capture completed
+- **Environment set up** via `bash scripts/setup_env.sh` (which installs MyST CLI, jupytext, myst-parser, and the Cursor extension)
 
 ---
 
@@ -27,53 +26,41 @@ Convert your notebook to MyST format and configure bibliography integration.
 
 ## Workflow sequence
 
-### 1. [Ask Cursor about a MyST extension](../workflows/ask-cursor-about-myst-extension.md)
+### 1. [Verify MyST tools](../workflows/verify-myst-tools.md)
 
-Ask Cursor whether there is an extension for MyST Markdown and how to install it.
+Quick check that all MyST tools are installed. If `setup_env.sh` ran successfully, this should take under a minute.
 
----
-
-### 2. [Install MyST-Markdown extension](../workflows/install-myst-extension.md)
-
-Install the MyST-Markdown VS Code extension for syntax highlighting and autocomplete.
+**Deliverable:** `myst --version`, `jupytext --version` both work; MyST-Markdown extension visible in Cursor
 
 ---
 
-### 3. [Install MyST (CLI)](../workflows/install-myst-cli.md)
+### 2. [Convert notebook to MyST](../workflows/convert-notebook-to-myst.md)
 
-Ask Cursor how to install MyST; follow the instructions.
-
-**Deliverable:** `myst --version` works
-
----
-
-### 4. [Convert notebook to MyST](../workflows/convert-notebook-to-myst.md)
-
-Ask Cursor how to convert the notebook to a MyST document.
+Use jupytext to convert your `.ipynb` to MyST Markdown.
 
 **Deliverable:** `.md` file created from notebook
 
 ---
 
-### 5. [Set up bibliography files for MyST](../workflows/bibliography-setup-myst.md)
+### 3. [Set up bibliography files for MyST](../workflows/bibliography-setup-myst.md)
 
 Copy PaperPile bib; create a bib for the paper itself; configure MyST to use both.
 
 ---
 
-### 6. [Add a citation to the paper](../workflows/add-citation-to-paper.md)
+### 4. [Add a citation to the paper](../workflows/add-citation-to-paper.md)
 
 Add a proper citation to the paper in your notebook/MyST document.
 
 ---
 
-### 7. [Add LitMap image and subsequent-literature bib](../workflows/add-litmap-image-and-bib.md)
+### 5. [Add LitMap image and subsequent-literature bib](../workflows/add-litmap-image-and-bib.md)
 
 Download the LitMap image; add it to the MyST document; add the subsequent-literature bib.
 
 ---
 
-### 8. [Add "Subsequent Literature" section (AI-assisted)](../workflows/ai-subsequent-literature-section.md)
+### 6. [Add "Subsequent Literature" section (AI-assisted)](../workflows/ai-subsequent-literature-section.md)
 
 Use AI to generate a summary of citing papers.
 

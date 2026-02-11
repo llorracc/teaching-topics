@@ -2,34 +2,45 @@
 
 **Purpose:** Install the MyST-Markdown VS Code extension for syntax highlighting, autocomplete, and preview.
 
-**Note:** Cursor's extension marketplace is separate from VS Code's and may not include this extension. If searching "MyST" in Cursor returns nothing, use the manual install method below.
+**Note:** If you ran `bash scripts/setup_env.sh` in the ballpark repo, the extension was installed automatically. Use this workflow only if you need to install it manually or troubleshoot.
 
 ---
 
-## Option A: Search in Cursor (may not work)
+## Verify first
 
-1. In Cursor, open the Extensions panel (View → Extensions, or `Cmd+Shift+X` / `Ctrl+Shift+X`).
+Check if the extension is already installed:
+
+1. In Cursor, open the Extensions panel (`Cmd+Shift+X` / `Ctrl+Shift+X`).
+2. Search for **MyST** in the installed extensions.
+3. If **MyST-Markdown** by ExecutableBookProject is listed, you're done.
+
+---
+
+## Option A: Manual VSIX install (recommended fallback)
+
+Cursor's marketplace is separate from VS Code's and may not include this extension. Download and install the `.vsix` file directly:
+
+1. Download the extension:
+   ```bash
+   curl -L "https://ExecutableBookProject.gallery.vsassets.io/_apis/public/gallery/publisher/ExecutableBookProject/extension/myst-highlight/latest/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage" -o /tmp/myst-highlight.vsix
+   ```
+2. Install in Cursor:
+   - Extensions panel → click the `...` menu (top right) → **"Install from VSIX..."**
+   - Select `/tmp/myst-highlight.vsix`
+3. Reload Cursor if prompted.
+
+Or from the command line (if Cursor CLI is on PATH):
+```bash
+cursor --install-extension /tmp/myst-highlight.vsix
+```
+
+---
+
+## Option B: Search in Cursor (may not work)
+
+1. Open the Extensions panel (`Cmd+Shift+X` / `Ctrl+Shift+X`).
 2. Search for **MyST-Markdown**.
 3. If found, install the extension by **ExecutableBookProject** (`ExecutableBookProject.myst-highlight`).
-
----
-
-## Option B: Manual VSIX install (if search fails)
-
-1. Go to the VS Code Marketplace page:  
-   https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight
-2. Click **"Download Extension"** (under Resources on the right side) to get the `.vsix` file.
-3. In Cursor: Extensions panel → click the `...` menu (top right) → **"Install from VSIX..."**
-4. Select the downloaded `.vsix` file.
-5. Reload Cursor if prompted.
-
----
-
-## Option C: Command line install (may work)
-
-```bash
-cursor --install-extension ExecutableBookProject.myst-highlight
-```
 
 ---
 

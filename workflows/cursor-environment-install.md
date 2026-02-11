@@ -1,92 +1,95 @@
 # Workflow: Install and activate the environment
 
-**Purpose:** Install and activate the Python environment for the ballpark repo.
+**Purpose:** Install all tools and Python dependencies for the ballpark repo using the automated setup script.
 
 ---
 
-## ⚠️ Working directory
+## Recommended: Run setup_env.sh
 
-**You must be in:** `~/GitHub/econ-ark/ballpark` (the repo root)
+The ballpark repo includes a comprehensive setup script that installs everything you need in one command.
 
-**NOT:** `~/GitHub/econ-ark/ballpark/models/...` (a subdirectory)
+### 1. Navigate to the ballpark repo root
 
-Run this now:
 ```bash
-cd ~/GitHub/econ-ark/ballpark && pwd
+cd ~/GitHub/<your-username>/ballpark && pwd
 ```
 
-**Expected output:** `/home/.../GitHub/econ-ark/ballpark` or `/Users/.../GitHub/econ-ark/ballpark`
+**Expected output:** `/home/.../GitHub/<your-username>/ballpark` or `/Users/.../GitHub/<your-username>/ballpark`
 
 **Do not proceed until you see this output.**
 
 ---
 
-## Verify first
+### 2. Run the setup script
 
-### 1. Verify the environment exists
-
-Run:
 ```bash
-ls -d .venv/VENV-*
+bash scripts/setup_env.sh
 ```
 
-**Expected:** One or more directories like `.venv/VENV-Darwin-arm64` or `.venv/VENV-Linux-x86_64`
+This installs:
+- **Homebrew** (macOS, if missing)
+- **node/npm** (if missing)
+- **uv** (if missing)
+- **Python 3.12** (via uv)
+- **Python venv** with all dependencies (econ-ark, jupyter, jupytext, myst-parser, ...)
+- **mystmd CLI** (globally, via npm)
+- **MyST-Markdown Cursor extension** (via .vsix download)
 
-**If "No such file or directory":** 
-- You may be in the wrong directory—check with `pwd`
-- If you're in `ballpark` but no `.venv`, ask Cursor:
-  > "How do I install the environment for this repo?"
+The script prints a summary with version numbers when finished.
 
 ---
 
-## Steps
+### 3. Activate the environment
 
-### 1. Identify your environment
+After the script completes, activate the virtual environment it created:
 
-Run:
 ```bash
-ls .venv/
+source .venv-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m)/bin/activate
 ```
 
-Note the folder name that matches your system:
-- **Mac Apple Silicon:** `VENV-Darwin-arm64`
-- **Mac Intel:** `VENV-Darwin-x86_64`
-- **Linux/WSL:** `VENV-Linux-x86_64`
+Or identify your environment manually:
+```bash
+ls .venv-*/
+```
+And activate the one matching your platform:
+- **Mac Apple Silicon:** `source .venv-darwin-arm64/bin/activate`
+- **Mac Intel:** `source .venv-darwin-x86_64/bin/activate`
+- **Linux/WSL:** `source .venv-linux-x86_64/bin/activate`
 
 ---
 
-### 2. Activate the environment
+### 4. Verify activation
 
-Run (replacing `VENV-Darwin-arm64` with your actual folder name):
-```bash
-source .venv/VENV-Darwin-arm64/bin/activate
-```
-
----
-
-### 3. Verify activation
-
-Run:
 ```bash
 echo $VIRTUAL_ENV
 ```
 
-**Expected:** Full path ending in `.venv/VENV-...`
+**Expected:** Full path ending in `.venv-...`
 
-**Additional check:** Your terminal prompt should now show `(VENV-...)` at the beginning.
+Your terminal prompt should now show `(.venv-...)` at the beginning.
 
 ---
 
-## ⚠️ IMPORTANT: Activation is required before notebooks
+## Fallback: Manual setup
+
+If `setup_env.sh` fails, you can set up manually:
+
+1. Install uv: `curl -LsSf https://astral.sh/uv/install.sh | sh`
+2. Create venv: `uv venv --python 3.12 .venv-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m)`
+3. Install deps: `UV_PROJECT_ENVIRONMENT=.venv-... uv sync --python 3.12`
+4. Install mystmd: `npm install -g mystmd`
+5. Install extension: See [Install MyST-Markdown extension](install-myst-extension.md)
+
+---
+
+## IMPORTANT: Activation is required before notebooks
 
 **You must activate the environment before:**
 - Opening Jupyter notebooks (so Cursor can find the kernel)
 - Running any Python code in the repo
 - Selecting a Python interpreter in Cursor
 
-If you skip activation, Cursor won't be able to find the correct kernel.
-
 **Correct order:**
-1. `cd ~/GitHub/econ-ark/ballpark`
-2. `source .venv/VENV-.../bin/activate`
+1. `cd ~/GitHub/<your-username>/ballpark`
+2. `source .venv-.../bin/activate`
 3. Then open notebooks in Cursor
