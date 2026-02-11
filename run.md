@@ -17,13 +17,15 @@
 
 ## Assignments
 
-| # | Source (workspace) | Slug |
-|---|-------------------|------|
-| 010 | ballpark-paper-selection-and-presentation | ballpark-paper-selection |
-| 020 | paperpile-bibliography | paperpile-bibliography |
-| 030 | prior-literature | prior-literature |
-| 040 | subsequent-literature | subsequent-literature |
-| 050 | integration-and-pr | integration-and-pr |
-| 070 | ai-revision-with-prompt-tracking | ai-revision-with-prompt-tracking |
+| # | Source (workspace) | Slug | Due before class |
+|---|-------------------|------|-----------------|
+| — | laptop-setup | laptop-setup | 01 |
+| — | install-wsl-ubuntu | install-wsl-ubuntu | 01 |
+| 010 | ballpark-paper-selection-and-presentation | ballpark-paper-selection | 02 |
+| 020 | paperpile-bibliography | paperpile-bibliography | 03 |
+| 030 | prior-literature | prior-literature | 04 |
+| 040 | subsequent-literature | subsequent-literature | 04 |
+| 050 | integration-and-pr | integration-and-pr | 04 |
+| 070 | ai-revision-with-prompt-tracking | ai-revision-with-prompt-tracking | 05 |
 
-**Due before Class 04:** 030, 040, 050. Main deliverable: PR URL.
+**Main deliverable for Class 04:** PR URL.

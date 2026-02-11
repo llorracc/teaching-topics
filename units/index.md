@@ -35,7 +35,7 @@ Building research skills: bibliography management, literature discovery, AI-assi
 
 **Classes:**
 - [Class 03: PaperPile, LitMaps, Jupyter](../classes/03-ballpark-jupyter-myst/)
-- [Class 04: AI literature analysis](../classes/04-ai-literature-analysis/) _(planned)_
+- [Class 04: AI literature analysis](../classes/04-myst-modernization/) _(planned)_
 
 **Status:** In progress
 
@@ -46,7 +46,7 @@ Building research skills: bibliography management, literature discovery, AI-assi
 Creating and submitting artifacts: coauthor additions, notebook improvements, pull requests.
 
 **Classes:**
-- [Class 04: First PR](../classes/04-ai-literature-analysis/) _(overlaps with Unit 2)_
+- [Class 04: First PR](../classes/04-myst-modernization/) _(overlaps with Unit 2)_
 - _(additional classes TBD)_
 
 **Status:** Starting

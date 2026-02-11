@@ -1,11 +1,17 @@
-# Class 04: MyST Modernization and PR Review — Plan
+# Class 04: MyST Modernization — Plan
 
 **Unit:** [Research Skills](https://llorracc.github.io/workspace-course-topics/units/research-skills/unit.html) / [Contribution](https://llorracc.github.io/workspace-course-topics/units/contribution/unit.html)  
 **Date:** TBD
 
 ---
 
-## Pre-class setup (completed BEFORE class)
+## Pre-class assignments
+
+Students arrive having completed: [Assignments for Class 04](../../assignments/for-class-04.md)
+
+---
+
+## Pre-class setup
 
 ### Fork and environment
 
@@ -24,29 +30,16 @@ git remote rename origin upstream
 git remote add origin https://github.com/<your-username>/ballpark.git
 ```
 
-### Assignments
-
-You should arrive with:
-
-| # | Assignment | Deliverable |
-|---|------------|-------------|
-| 025 | [Literature Context & Improvements](https://llorracc.github.io/workspace-course-topics/assignments/ai-paper-deep-dive.html) | `literature-and-improvements.md` + **PR URL** |
-| 030 | [Subsequent Literature](https://llorracc.github.io/workspace-course-topics/assignments/litmaps-subsequent-citations.html) | `subsequent-literature.bib` |
-| 040 | [AI Literature Analysis](https://llorracc.github.io/workspace-course-topics/assignments/ai-cutting-edge-analysis.html) | `subsequent-literature-analysis.md` |
-
 **You have already:**
 - Forked the ballpark repo and run `setup_env.sh`
 - Added yourself as coauthor
 - Added prior and subsequent literature sections
 - Created and submitted a Pull Request
-- Exported citing papers from LitMaps
-- Analyzed the literature with AI
 
 ---
 
 ## Learning objectives
 
-- **Review PRs:** Give and receive feedback on each other's Pull Requests
 - **MyST conversion:** Convert notebooks to MyST format for modern document building
 - **Bibliography integration:** Configure MyST to use .bib files for citations
 
@@ -63,18 +56,7 @@ Quick check that everyone's setup is working:
 
 ---
 
-### Part 1: PR Review (~30 min)
-
-1. **Share PR URLs** — Each student shares their PR from Assignment 025
-2. **Peer review** — Review 2-3 other students' PRs:
-   - Are the literature sections well-written?
-   - Are the improvement suggestions implemented?
-   - Any issues with the changes?
-3. **Discuss common patterns** — What worked well? What needs improvement?
-
----
-
-### Part 2: MyST Conversion and Bibliography (~50 min)
+### Part 1: MyST Conversion and Bibliography (~50 min)
 
 Now we modernize the ballpark items using MyST. Since tools are already installed, we jump straight to conversion:
 
@@ -90,7 +72,7 @@ See orchestrator: [05-myst-conversion](https://llorracc.github.io/workspace-cour
 
 ---
 
-### Part 3: Update PRs (~15 min)
+### Part 2: Update PRs (~15 min)
 
 After MyST conversion:
 1. Stage new changes: `git add .`
@@ -108,6 +90,6 @@ After MyST conversion:
 
 ---
 
-## Assignment after this class
+## Assignments for next class
 
-You will create your **own ballpark objects** for new papers (details TBD).
+Complete before the next class: [Assignments for Class 05](../../assignments/for-class-05.md)

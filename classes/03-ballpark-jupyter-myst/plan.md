@@ -5,6 +5,12 @@
 
 ---
 
+## Pre-class assignments
+
+Students arrive having completed: [Assignments for Class 03](../../assignments/for-class-03.md)
+
+---
+
 ## Overview
 
 This class introduces ballpark editing with Jupyter notebooks, MyST conversion, bibliography setup, and creating a PR.
@@ -55,6 +61,6 @@ Summary of steps:
 
 ---
 
-## Assignment after this class
+## Assignments for next class
 
-See: [AI revision with prompt tracking](https://llorracc.github.io/workspace-course-topics/assignments/ai-revision-with-prompt-tracking.html)
+Complete before the next class: [Assignments for Class 04](../../assignments/for-class-04.md)

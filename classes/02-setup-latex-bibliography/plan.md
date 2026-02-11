@@ -5,4 +5,16 @@
 
 ---
 
+## Pre-class assignments
+
+Students arrive having completed: [Assignments for Class 02](../../assignments/for-class-02.md)
+
+---
+
 _No formal plan document was created before this class._
+
+---
+
+## Assignments for next class
+
+Complete before the next class: [Assignments for Class 03](../../assignments/for-class-03.md)
