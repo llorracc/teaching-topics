@@ -1,6 +1,6 @@
 # Class 02: Setup, LaTeX, bibliography — Summary
 
-**Unit:** [Environment Setup](../../units/environment-setup/)  
+**Unit:** [Environment Setup](https://llorracc.github.io/workspace-course-topics/units/environment-setup/unit.html)  
 **Date:** 2026-01-27 (Tue), 3:15–5:00pm ET
 
 ---

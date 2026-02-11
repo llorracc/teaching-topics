@@ -1,6 +1,6 @@
 # Class 04: MyST Modernization and PR Review — Plan
 
-**Unit:** [Research Skills](../../units/research-skills/) / [Contribution](../../units/contribution/)  
+**Unit:** [Research Skills](https://llorracc.github.io/workspace-course-topics/units/research-skills/unit.html) / [Contribution](https://llorracc.github.io/workspace-course-topics/units/contribution/unit.html)  
 **Date:** TBD
 
 ---
@@ -30,9 +30,9 @@ You should arrive with:
 
 | # | Assignment | Deliverable |
 |---|------------|-------------|
-| 025 | [Literature Context & Improvements](../../assignments/025-ai-paper-deep-dive/assignment.md) | `literature-and-improvements.md` + **PR URL** |
-| 030 | [Subsequent Literature](../../assignments/030-subsequent-literature/assignment.md) | `subsequent-literature.bib` |
-| 040 | [AI Literature Analysis](../../assignments/040-ai-literature-analysis/assignment.md) | `subsequent-literature-analysis.md` |
+| 025 | [Literature Context & Improvements](https://llorracc.github.io/workspace-course-topics/assignments/ai-paper-deep-dive.html) | `literature-and-improvements.md` + **PR URL** |
+| 030 | [Subsequent Literature](https://llorracc.github.io/workspace-course-topics/assignments/litmaps-subsequent-citations.html) | `subsequent-literature.bib` |
+| 040 | [AI Literature Analysis](https://llorracc.github.io/workspace-course-topics/assignments/ai-cutting-edge-analysis.html) | `subsequent-literature-analysis.md` |
 
 **You have already:**
 - Forked the ballpark repo and run `setup_env.sh`
@@ -58,7 +58,7 @@ You should arrive with:
 
 Quick check that everyone's setup is working:
 
-1. [Verify MyST tools](../../workflows/verify-myst-tools.md) — confirm `myst --version`, `jupytext --version`, and the Cursor extension
+1. [Verify MyST tools](https://llorracc.github.io/workspace-course-topics/workflows/verify-myst-tools.html) — confirm `myst --version`, `jupytext --version`, and the Cursor extension
 2. If anything is missing, re-run `bash scripts/setup_env.sh` or follow the manual install workflows
 
 ---
@@ -80,13 +80,13 @@ Now we modernize the ballpark items using MyST. Since tools are already installe
 
 | # | Workflow | Description |
 |---|----------|-------------|
-| 1 | [Convert notebook to MyST](../../workflows/convert-notebook-to-myst.md) | Convert `.ipynb` to `.md` format using jupytext |
-| 2 | [Set up bibliography for MyST](../../workflows/bibliography-setup-myst.md) | Configure `myst.yml` to use .bib files |
-| 3 | [Add citations in MyST syntax](../../workflows/add-citation-to-paper.md) | Add proper `{cite}` references |
-| 4 | [Add LitMap image and bib](../../workflows/add-litmap-image-and-bib.md) | Add citation map visualization |
-| 5 | [AI "Subsequent Literature" section](../../workflows/ai-subsequent-literature-section.md) | AI-assisted summary of citing papers |
+| 1 | [Convert notebook to MyST](https://llorracc.github.io/workspace-course-topics/workflows/convert-notebook-to-myst.html) | Convert `.ipynb` to `.md` format using jupytext |
+| 2 | [Set up bibliography for MyST](https://llorracc.github.io/workspace-course-topics/workflows/bibliography-setup-myst.html) | Configure `myst.yml` to use .bib files |
+| 3 | [Add citations in MyST syntax](https://llorracc.github.io/workspace-course-topics/workflows/add-citation-to-paper.html) | Add proper `{cite}` references |
+| 4 | [Add LitMap image and bib](https://llorracc.github.io/workspace-course-topics/workflows/add-litmap-image-and-bib.html) | Add citation map visualization |
+| 5 | [AI "Subsequent Literature" section](https://llorracc.github.io/workspace-course-topics/workflows/ai-subsequent-literature-section.html) | AI-assisted summary of citing papers |
 
-See orchestrator: [05-myst-conversion](../../orchestrators/05-myst-conversion.md)
+See orchestrator: [05-myst-conversion](https://llorracc.github.io/workspace-course-topics/orchestrators/05-myst-conversion.html)
 
 ---
 
@@ -103,7 +103,7 @@ After MyST conversion:
 ## Key resources
 
 - **MyST documentation:** https://mystmd.org
-- **Orchestrator:** [05-myst-conversion](../../orchestrators/05-myst-conversion.md)
+- **Orchestrator:** [05-myst-conversion](https://llorracc.github.io/workspace-course-topics/orchestrators/05-myst-conversion.html)
 - **as.180.369 materials:** [The Submission](https://github.com/llorracc/as.180.369/blob/main/materials/submission/README.md)
 
 ---

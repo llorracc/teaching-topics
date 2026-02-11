@@ -1,6 +1,6 @@
 # Class 03: Ballpark, Jupyter, MyST — Summary
 
-**Unit:** [Ballpark Editing & Bibliography Workflow](../../units/ballpark-editing-bibliography/)  
+**Unit:** [Research Skills](https://llorracc.github.io/workspace-course-topics/units/research-skills/unit.html)  
 **Date:** 2026-02-03 (Tue)  
 **Sessions:** Part 1 (12:00–1:00pm) + Part 2 (3:15–5:00pm)
 
@@ -14,27 +14,27 @@ This class focused on setting up computational environments for economic researc
 
 ## Progress against plan
 
-The [planned orchestrator](../../orchestrators/ballpark-jupyter-myst-bibliography.md) has 17 steps. We completed steps 1–7 and partially step 13:
+The [planned orchestrator](https://llorracc.github.io/workspace-course-topics/orchestrators/ballpark-jupyter-myst-bibliography.html) has 17 steps. We completed steps 1–7 and partially step 13:
 
 | # | Workflow | Status | Notes |
 |---|----------|--------|-------|
-| 1 | [Git fetch/pull on ballpark](../../workflows/git-fetch-pull-ballpark.md) | ✓ Done | PR #39 (modernize-uv-env) was merged; everyone pulled updates |
-| 2 | [PaperPile setup and sharing](../../workflows/paperpile-setup-and-sharing.md) | ✓ Done | Connected to JHU libraries via proxy, ran Auto Update |
-| 3 | [Google Drive sync for PaperPile](../../workflows/google-drive-paperpile-sync.md) | ✓ Done | Installed Google Drive, configured PaperPile sync |
-| 4 | [LitMaps import and visualize](../../workflows/litmaps-import-and-visualize.md) | ✓ Done | Imported .bib, explored citation maps (hit free tier limits) |
-| 5 | [Launch Cursor in ballpark](../../workflows/launch-cursor-in-ballpark.md) | ✓ Done | Used `cursor .` from terminal |
-| 6 | [Install the environment](../../workflows/cursor-environment-install.md) | ✓ Done | Activated `.venv` with `source` command |
-| 7 | [Open Jupyter notebook in Cursor](../../workflows/jupyter-notebook-in-cursor.md) | ✓ Done | Selected Python environment kernel, ran cells |
-| 8 | [Add yourself as coauthor](../../workflows/add-coauthor-to-notebook.md) | Pending | |
-| 9 | [Ask Cursor about MyST extension](../../workflows/ask-cursor-about-myst-extension.md) | Pending | |
-| 10 | [Install MyST-Markdown extension](../../workflows/install-myst-extension.md) | Pending | |
-| 11 | [Install MyST (CLI)](../../workflows/install-myst-cli.md) | Pending | |
-| 12 | [Convert notebook to MyST](../../workflows/convert-notebook-to-myst.md) | Pending | |
-| 13 | [Set up bibliography files](../../workflows/bibliography-setup-myst.md) | Partial | Set up PaperPile export workflow; copied .bib to ballpark |
-| 14 | [Add citation to the paper](../../workflows/add-citation-to-paper.md) | Pending | |
-| 15 | [Add LitMap image and bib](../../workflows/add-litmap-image-and-bib.md) | Pending | |
-| 16 | [AI "Subsequent Literature" section](../../workflows/ai-subsequent-literature-section.md) | Pending | |
-| 17 | [Git add, commit, and PR](../../workflows/git-commit-and-pr.md) | Pending | |
+| 1 | [Git fetch/pull on ballpark](https://llorracc.github.io/workspace-course-topics/workflows/git-fetch-pull-ballpark.html) | ✓ Done | PR #39 (modernize-uv-env) was merged; everyone pulled updates |
+| 2 | [PaperPile setup and sharing](https://llorracc.github.io/workspace-course-topics/workflows/paperpile-setup-and-sharing.html) | ✓ Done | Connected to JHU libraries via proxy, ran Auto Update |
+| 3 | [Google Drive sync for PaperPile](https://llorracc.github.io/workspace-course-topics/workflows/google-drive-paperpile-sync.html) | ✓ Done | Installed Google Drive, configured PaperPile sync |
+| 4 | [LitMaps import and visualize](https://llorracc.github.io/workspace-course-topics/workflows/litmaps-import-and-visualize.html) | ✓ Done | Imported .bib, explored citation maps (hit free tier limits) |
+| 5 | [Launch Cursor in ballpark](https://llorracc.github.io/workspace-course-topics/workflows/launch-cursor-in-ballpark.html) | ✓ Done | Used `cursor .` from terminal |
+| 6 | [Install the environment](https://llorracc.github.io/workspace-course-topics/workflows/cursor-environment-install.html) | ✓ Done | Activated `.venv` with `source` command |
+| 7 | [Open Jupyter notebook in Cursor](https://llorracc.github.io/workspace-course-topics/workflows/jupyter-notebook-in-cursor.html) | ✓ Done | Selected Python environment kernel, ran cells |
+| 8 | [Add yourself as coauthor](https://llorracc.github.io/workspace-course-topics/workflows/add-coauthor-to-notebook.html) | Pending | |
+| 9 | [Ask Cursor about MyST extension](https://llorracc.github.io/workspace-course-topics/workflows/ask-cursor-about-myst-extension.html) | Pending | |
+| 10 | [Install MyST-Markdown extension](https://llorracc.github.io/workspace-course-topics/workflows/install-myst-extension.html) | Pending | |
+| 11 | [Install MyST (CLI)](https://llorracc.github.io/workspace-course-topics/workflows/install-myst-cli.html) | Pending | |
+| 12 | [Convert notebook to MyST](https://llorracc.github.io/workspace-course-topics/workflows/convert-notebook-to-myst.html) | Pending | |
+| 13 | [Set up bibliography files](https://llorracc.github.io/workspace-course-topics/workflows/bibliography-setup-myst.html) | Partial | Set up PaperPile export workflow; copied .bib to ballpark |
+| 14 | [Add citation to the paper](https://llorracc.github.io/workspace-course-topics/workflows/add-citation-to-paper.html) | Pending | |
+| 15 | [Add LitMap image and bib](https://llorracc.github.io/workspace-course-topics/workflows/add-litmap-image-and-bib.html) | Pending | |
+| 16 | [AI "Subsequent Literature" section](https://llorracc.github.io/workspace-course-topics/workflows/ai-subsequent-literature-section.html) | Pending | |
+| 17 | [Git add, commit, and PR](https://llorracc.github.io/workspace-course-topics/workflows/git-commit-and-pr.html) | Pending | |
 
 ---
 
@@ -206,7 +206,7 @@ To get a continuously-synced .bib file:
 
 ## Remaining for next class
 
-Steps 8–17 of the [orchestrator](../../orchestrators/ballpark-jupyter-myst-bibliography.md):
+Steps 8–17 of the [orchestrator](https://llorracc.github.io/workspace-course-topics/orchestrators/ballpark-jupyter-myst-bibliography.html):
 - Add yourself as coauthor to notebook
 - Install MyST extension and CLI
 - Convert notebook to MyST
@@ -221,7 +221,7 @@ Steps 8–17 of the [orchestrator](../../orchestrators/ballpark-jupyter-myst-bib
 
 Instructor will email revised assignment. Continue working with selected ballpark items.
 
-See: [AI revision with prompt tracking](../../assignments/030-ai-revision-with-prompt-tracking/assignment.md)
+See: [AI revision with prompt tracking](https://llorracc.github.io/workspace-course-topics/assignments/ai-revision-with-prompt-tracking.html)
 
 ---
 

@@ -39,7 +39,7 @@ echo $HOME
 
 **Expected:** `/home/...` (Linux/WSL) or `/Users/...` (Mac)
 
-**If you see `C:\...`:** You're in Windows context. See [_verify-terminal-context](_verify-terminal-context.md).
+**If you see `C:\...`:** You're in Windows context. See [verify terminal context](https://llorracc.github.io/workspace-course-topics/workflows/verify-terminal-context.html).
 
 ---
 

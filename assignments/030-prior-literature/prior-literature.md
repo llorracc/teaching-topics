@@ -3,7 +3,7 @@
 **Due:** Before next class  
 **Time:** ~20-30 minutes
 
-**Prerequisite:** [PaperPile Bibliography](../020-paperpile-bibliography/paperpile-bibliography.md) — you need your `.bib` file.
+**Prerequisite:** [PaperPile Bibliography](https://llorracc.github.io/workspace-course-topics/assignments/paperpile-bibliography.html) — you need your `.bib` file.
 
 ---
 
@@ -73,4 +73,4 @@ Save as `prior-literature.md` (a working document for Assignment 050):
 
 ## Next Step
 
-[Assignment 040: Subsequent Literature](../040-subsequent-literature/subsequent-literature.md)
+[Assignment 040: Subsequent Literature](https://llorracc.github.io/workspace-course-topics/assignments/subsequent-literature.html)

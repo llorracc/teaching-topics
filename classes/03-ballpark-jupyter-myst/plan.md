@@ -1,6 +1,6 @@
 # Class 03: Ballpark, Jupyter, MyST — Plan
 
-**Unit:** [Ballpark Editing & Bibliography Workflow](../../units/ballpark-editing-bibliography/)  
+**Unit:** [Research Skills](https://llorracc.github.io/workspace-course-topics/units/research-skills/unit.html)  
 **Date:** 2026-02-03 (Tue)
 
 ---
@@ -22,7 +22,7 @@ This class introduces ballpark editing with Jupyter notebooks, MyST conversion, 
 
 ## In-class workflow
 
-See the detailed orchestrator: **[ballpark-jupyter-myst-bibliography](../../orchestrators/ballpark-jupyter-myst-bibliography.md)**
+See the detailed orchestrator: **[ballpark-jupyter-myst-bibliography](https://llorracc.github.io/workspace-course-topics/orchestrators/ballpark-jupyter-myst-bibliography.html)**
 
 Summary of steps:
 1. Git fetch/pull on ballpark
@@ -57,4 +57,4 @@ Summary of steps:
 
 ## Assignment after this class
 
-See: [AI revision with prompt tracking](../../assignments/030-ai-revision-with-prompt-tracking/assignment.md)
+See: [AI revision with prompt tracking](https://llorracc.github.io/workspace-course-topics/assignments/ai-revision-with-prompt-tracking.html)

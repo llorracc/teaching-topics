@@ -4,8 +4,8 @@
 **Time:** ~60-90 minutes
 
 **Prerequisites:** 
-- [Assignment 030](../030-prior-literature/prior-literature.md) — `prior-literature.md`
-- [Assignment 040](../040-subsequent-literature/subsequent-literature.md) — `subsequent-literature.bib` + `subsequent-literature-analysis.md`
+- [Assignment 030](https://llorracc.github.io/workspace-course-topics/assignments/prior-literature.html) — `prior-literature.md`
+- [Assignment 040](https://llorracc.github.io/workspace-course-topics/assignments/subsequent-literature.html) — `subsequent-literature.bib` + `subsequent-literature-analysis.md`
 
 ---
 

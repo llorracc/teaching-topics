@@ -19,12 +19,12 @@ All citations relevant to that paper should be captured in your PaperPile librar
 
 **File naming:**
 ```
-<your_last_name>__ballpark__bibliography.bib
+<your-last-name>-ballpark-bibliography.bib
 ```
 
 **Example:**
 ```
-Zhang__ballpark__bibliography.bib
+Zhang-ballpark-bibliography.bib
 ```
 
 ---

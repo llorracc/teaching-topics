@@ -11,7 +11,7 @@ Make your first edit to the ballpark notebook: adding yourself as coauthor.
 
 ## Prerequisites
 
-- Environment working (from [Environment Setup](01-environment-setup.md))
+- Environment working (from [Environment Setup](https://llorracc.github.io/workspace-course-topics/orchestrators/01-environment-setup.html))
 - Your ballpark notebook opens in Cursor
 
 ---
@@ -25,7 +25,7 @@ For any Git questions:
 
 ## Workflow sequence
 
-### 1. [Add yourself as coauthor](../workflows/add-coauthor-to-notebook.md)
+### 1. [Add yourself as coauthor](https://llorracc.github.io/workspace-course-topics/workflows/add-coauthor-to-notebook.html)
 
 Add your name to the notebook; save.
 
@@ -50,13 +50,13 @@ Before proceeding, verify:
 ## Assignment
 
 This orchestrator prepares you for:
-- [Assignment 050: Add Coauthor + PR](../assignments/add-coauthor-and-pr.md)
+- [Assignment 050: Add Coauthor + PR](https://llorracc.github.io/workspace-course-topics/assignments/add-coauthor-and-pr.html)
 
 ---
 
 ## Next orchestrator
 
-[MyST Conversion](05-myst-conversion.md) (optional for now)
+[MyST Conversion](https://llorracc.github.io/workspace-course-topics/orchestrators/05-myst-conversion.html) (optional for now)
 
 Or skip to:
-[Contribution](06-contribution.md) (to create your PR)
+[Contribution](https://llorracc.github.io/workspace-course-topics/orchestrators/06-contribution.html) (to create your PR)

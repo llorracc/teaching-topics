@@ -17,7 +17,7 @@ Units are phases of the course, following the **Tools → Skills → Artifacts**
 
 ---
 
-## Unit 1: [Environment Setup](environment-setup/) — Tools
+## Unit 1: [Environment Setup](https://llorracc.github.io/workspace-course-topics/units/environment-setup/unit.html) — Tools
 
 Getting the development environment working: Git, WSL, LaTeX, Cursor, repo structure, `reproduce.sh`.
 
@@ -29,7 +29,7 @@ Getting the development environment working: Git, WSL, LaTeX, Cursor, repo struc
 
 ---
 
-## Unit 2: [Research Skills](research-skills/) — Skills
+## Unit 2: [Research Skills](https://llorracc.github.io/workspace-course-topics/units/research-skills/unit.html) — Skills
 
 Building research skills: bibliography management, literature discovery, AI-assisted analysis.
 
@@ -41,7 +41,7 @@ Building research skills: bibliography management, literature discovery, AI-assi
 
 ---
 
-## Unit 3: [Contribution](contribution/) — Artifacts
+## Unit 3: [Contribution](https://llorracc.github.io/workspace-course-topics/units/contribution/unit.html) — Artifacts
 
 Creating and submitting artifacts: coauthor additions, notebook improvements, pull requests.
 

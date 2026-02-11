@@ -21,10 +21,10 @@ cd ~/GitHub/econ-ark/ballpark && pwd
 
 These are not workflows, but reference material for common issues:
 
-- [Verify terminal context](_verify-terminal-context.md) — Ensures correct filesystem and directory
-- [Pre-class verification checklist](_verify-pre-class.md) — **Complete before each class**
-- [Paths with spaces](_paths-with-spaces.md) — How to handle paths containing spaces or special characters
-- [WSL Google Drive access](_wsl-google-drive-access.md) — Windows: accessing Google Drive files from WSL
+- [Verify terminal context](https://llorracc.github.io/workspace-course-topics/workflows/verify-terminal-context.html) — Ensures correct filesystem and directory
+- [Pre-class verification checklist](https://llorracc.github.io/workspace-course-topics/workflows/verify-pre-class.html) — **Complete before each class**
+- [Paths with spaces](https://llorracc.github.io/workspace-course-topics/workflows/paths-with-spaces.html) — How to handle paths containing spaces or special characters
+- [WSL Google Drive access](https://llorracc.github.io/workspace-course-topics/workflows/wsl-google-drive-access.html) — Windows: accessing Google Drive files from WSL
 
 ---
 

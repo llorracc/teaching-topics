@@ -40,7 +40,7 @@ This unit represents the **Tools** phase of the course:
 
 | # | Assignment | Deliverable |
 |---|------------|-------------|
-| 010 | [Ballpark Paper Selection](../../assignments/010-ballpark-paper-selection/assignment.md) | Paper choice + presentation |
+| 010 | [Ballpark Paper Selection](https://llorracc.github.io/workspace-course-topics/assignments/ballpark-paper-selection-and-presentation.html) | Paper choice + presentation |
 
 ---
 
@@ -52,7 +52,7 @@ cd ~/GitHub/<your-username>/ballpark
 bash scripts/setup_env.sh
 ```
 
-This installs Homebrew (macOS), node/npm, uv, Python 3.12, all Python dependencies, the mystmd CLI, and the MyST-Markdown Cursor extension. See [Install the environment](../../workflows/cursor-environment-install.md) for details.
+This installs Homebrew (macOS), node/npm, uv, Python 3.12, all Python dependencies, the mystmd CLI, and the MyST-Markdown Cursor extension. See [Install the environment](https://llorracc.github.io/workspace-course-topics/workflows/cursor-environment-install.html) for details.
 
 ---
 

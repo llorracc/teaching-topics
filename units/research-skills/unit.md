@@ -34,9 +34,9 @@ This unit represents the **Skills** phase of the course:
 
 | # | Assignment | Deliverable |
 |---|------------|-------------|
-| 020 | [PaperPile Bibliography](../../assignments/020-paperpile-bibliography/assignment.md) | `.bib` file |
-| 030 | [Subsequent Literature](../../assignments/030-subsequent-literature/assignment.md) | `subsequent-literature.bib` |
-| 040 | [AI Literature Analysis](../../assignments/040-ai-literature-analysis/assignment.md) | `subsequent-literature-analysis.md` |
+| 020 | [PaperPile Bibliography](https://llorracc.github.io/workspace-course-topics/assignments/paperpile-bibliography.html) | `.bib` file |
+| 030 | [Subsequent Literature](https://llorracc.github.io/workspace-course-topics/assignments/litmaps-subsequent-citations.html) | `subsequent-literature.bib` |
+| 040 | [AI Literature Analysis](https://llorracc.github.io/workspace-course-topics/assignments/ai-cutting-edge-analysis.html) | `subsequent-literature-analysis.md` |
 
 ---
 

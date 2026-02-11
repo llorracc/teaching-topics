@@ -16,11 +16,11 @@ Course materials for computational economics research methods.
 
 ## Current focus
 
-**Unit 2: [Ballpark Editing & Bibliography Workflow](units/ballpark-editing-bibliography/)**
+**Unit 2: [Research Skills](https://llorracc.github.io/workspace-course-topics/units/research-skills/unit.html)** — Ballpark editing & bibliography
 
 Working with [ballpark](https://github.com/econ-ark/ballpark) papers: forking the repo, editing Jupyter notebooks, using PaperPile and LitMaps for bibliography management, converting to MyST, adding citations, and creating pull requests.
 
-**In-class orchestrator:** [ballpark-jupyter-myst-bibliography](orchestrators/ballpark-jupyter-myst-bibliography.md)
+**In-class orchestrator:** [ballpark-jupyter-myst-bibliography](https://llorracc.github.io/workspace-course-topics/orchestrators/ballpark-jupyter-myst-bibliography.html)
 
 ---
 
@@ -53,4 +53,4 @@ pwd
 ```
 Should show `/home/...` not `C:\Users\...`
 
-See: [Verify terminal context](workflows/_verify-terminal-context.md)
+See: [Verify terminal context](https://llorracc.github.io/workspace-course-topics/workflows/verify-terminal-context.html)

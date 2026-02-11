@@ -45,7 +45,7 @@ git checkout -b add-coauthor-YOURNAME
 
 ---
 
-### 3. [Git add, commit, and PR](../workflows/git-commit-and-pr.md)
+### 3. [Git add, commit, and PR](https://llorracc.github.io/workspace-course-topics/workflows/git-commit-and-pr.html)
 
 Stage changes, commit, and create a pull request for your modifications.
 
@@ -71,7 +71,7 @@ Your PR is successful if:
 ## Assignment
 
 This orchestrator completes:
-- [Assignment 050: Add Coauthor + PR](../assignments/add-coauthor-and-pr.md)
+- [Assignment 050: Add Coauthor + PR](https://llorracc.github.io/workspace-course-topics/assignments/add-coauthor-and-pr.html)
 
 ---
 

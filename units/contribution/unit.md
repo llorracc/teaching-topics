@@ -34,8 +34,8 @@ This unit represents the **Artifacts** phase of the course:
 
 | # | Assignment | Deliverable |
 |---|------------|-------------|
-| 050 | [Add Coauthor + PR](../../assignments/050-add-coauthor-and-pr/assignment.md) | PR URL |
-| 070 | [AI Revision](../../assignments/070-ai-revision-with-prompt-tracking/assignment.md) | Improved notebook + prompt log |
+| 050 | [Add Coauthor + PR](https://llorracc.github.io/workspace-course-topics/assignments/add-coauthor-and-pr.html) | PR URL |
+| 070 | [AI Revision](https://llorracc.github.io/workspace-course-topics/assignments/ai-revision-with-prompt-tracking.html) | Improved notebook + prompt log |
 
 ---
 

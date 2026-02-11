@@ -3,7 +3,7 @@
 **Due:** Before next class  
 **Time:** ~45-60 minutes
 
-**Prerequisite:** You selected your ballpark paper in [Assignment 010](../010-ballpark-paper-selection/ballpark-paper-selection.md).
+**Prerequisite:** You selected your ballpark paper in [Assignment 010](https://llorracc.github.io/workspace-course-topics/assignments/ballpark-paper-selection-and-presentation.html).
 
 ---
 
@@ -97,4 +97,4 @@ I found [X] papers in LitMaps.
 
 ## Next Step
 
-[Assignment 050: Integration and PR](../050-integration-and-pr/integration-and-pr.md)
+[Assignment 050: Integration and PR](https://llorracc.github.io/workspace-course-topics/assignments/integration-and-pr.html)

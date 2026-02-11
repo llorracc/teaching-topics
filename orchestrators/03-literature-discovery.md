@@ -11,7 +11,7 @@ Use LitMaps to discover papers that cite your ballpark paper (the "subsequent li
 
 ## Prerequisites
 
-- `.bib` file from PaperPile (from [Bibliography Capture](02-bibliography-capture.md))
+- `.bib` file from PaperPile (from [Bibliography Capture](https://llorracc.github.io/workspace-course-topics/orchestrators/02-bibliography-capture.html))
 - LitMaps account (free tier is sufficient)
 
 ---
@@ -24,7 +24,7 @@ Use LitMaps to discover papers that cite your ballpark paper (the "subsequent li
 
 ## Workflow sequence
 
-### 1. [LitMaps import and visualize](../workflows/litmaps-import-and-visualize.md)
+### 1. [LitMaps import and visualize](https://llorracc.github.io/workspace-course-topics/workflows/litmaps-import-and-visualize.html)
 
 Import bib from PaperPile; create a map showing papers that cite your paper.
 
@@ -51,11 +51,11 @@ Before proceeding, verify:
 ## Assignment
 
 This orchestrator prepares you for:
-- [Assignment 030: Subsequent Literature](../assignments/litmaps-subsequent-citations.md)
-- [Assignment 040: AI Literature Analysis](../assignments/ai-cutting-edge-analysis.md)
+- [Assignment 030: Subsequent Literature](https://llorracc.github.io/workspace-course-topics/assignments/litmaps-subsequent-citations.html)
+- [Assignment 040: AI Literature Analysis](https://llorracc.github.io/workspace-course-topics/assignments/ai-cutting-edge-analysis.html)
 
 ---
 
 ## Next orchestrator
 
-[Notebook Editing](04-notebook-editing.md)
+[Notebook Editing](https://llorracc.github.io/workspace-course-topics/orchestrators/04-notebook-editing.html)

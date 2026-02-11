@@ -1,6 +1,6 @@
 # Class 04: MyST Modernization and PR Review — Summary
 
-**Unit:** [Research Skills](../../units/research-skills/) / [Contribution](../../units/contribution/)  
+**Unit:** [Research Skills](https://llorracc.github.io/workspace-course-topics/units/research-skills/unit.html) / [Contribution](https://llorracc.github.io/workspace-course-topics/units/contribution/unit.html)  
 **Date:** 2026-02-10 (Tue)  
 **Sessions:** Part 1 (12:00–1:00pm) + Part 2 (3:15–5:00pm)
 
@@ -175,8 +175,6 @@ Complete before next class:
 1. **Assignment 030:** Prior Literature (`prior-literature.md`)
 2. **Assignment 040:** Subsequent Literature (`subsequent-literature.bib` + analysis)
 3. **Assignment 050:** Integration + PR (**PR URL** — main deliverable)
-
-See: [Assignments for Class 04](../../assignments/index.md)
 
 ---
 

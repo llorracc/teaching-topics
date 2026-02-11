@@ -72,9 +72,9 @@ cd ~/GitHub/econ-ark/ballpark/models/We_Would_Like_In_Econ-ARK/YourPaperFolder/
 cp "/mnt/c/Users/YourUsername/Google Drive/My Library.bib" ./references.bib
 ```
 
-**If you can't find the file:** See [_wsl-google-drive-access](_wsl-google-drive-access.md) for detailed instructions.
+**If you can't find the file:** See [WSL Google Drive access](https://llorracc.github.io/workspace-course-topics/workflows/wsl-google-drive-access.html) for detailed instructions.
 
-**If your path has spaces:** See [_paths-with-spaces](_paths-with-spaces.md) — you must use quotes around the path.
+**If your path has spaces:** See [paths with spaces](https://llorracc.github.io/workspace-course-topics/workflows/paths-with-spaces.html) — you must use quotes around the path.
 
 ---
 
