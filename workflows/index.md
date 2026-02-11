@@ -54,7 +54,8 @@ These are not workflows, but reference material for common issues:
 - [Ask Cursor about a MyST extension](ask-cursor-about-myst-extension.md)
 - [Install MyST-Markdown extension](install-myst-extension.md)
 - [Install MyST (CLI)](install-myst-cli.md)
-- [Convert notebook to MyST](convert-notebook-to-myst.md)
+- [Verify MyST tools](https://llorracc.github.io/workspace-course-topics/workflows/verify-myst-tools.html)
+- ~~Convert notebook to MyST~~ — replaced by the [four-notebook MyST assembly](https://llorracc.github.io/workspace-course-topics/orchestrators/05-myst-conversion.html)
 
 ## Bibliography
 
