@@ -39,7 +39,6 @@ Working with [ballpark](https://github.com/econ-ark/ballpark) papers: forking th
 - **Econ-ARK ballpark:** https://github.com/econ-ark/ballpark
 - **PaperPile:** https://paperpile.com
 - **Litmaps:** https://www.litmaps.com
-- **as.180.369 materials:** https://github.com/llorracc/as.180.369
 
 ---
 

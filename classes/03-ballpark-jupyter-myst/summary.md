@@ -231,6 +231,3 @@ See: [AI revision with prompt tracking](https://llorracc.github.io/workspace-cou
 - **Teaching topics:** https://github.com/llorracc/teaching-topics
 - **PaperPile:** https://paperpile.com
 - **Litmaps:** https://www.litmaps.com
-- **as.180.369 materials:**
-  - [The Setup](https://github.com/llorracc/as.180.369/blob/main/materials/setup/README.md) — PaperPile & LitMaps intro
-  - [The Pitch](https://github.com/llorracc/as.180.369/blob/main/materials/pitch/README.md) — PaperPile sharing, LitMaps deeper dive

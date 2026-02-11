@@ -10,14 +10,6 @@ This session takes students from an updated ballpark fork through PaperPile/LitM
 
 ---
 
-## External resources (as.180.369)
-
-- **PaperPile & LitMaps intro:** [The Setup](https://github.com/llorracc/as.180.369/blob/main/materials/setup/README.md)
-- **PaperPile sharing, LitMaps deeper dive:** [The Pitch](https://github.com/llorracc/as.180.369/blob/main/materials/pitch/README.md)
-- **MyST & bibliography workflow:** [The Submission](https://github.com/llorracc/as.180.369/blob/main/materials/submission/README.md)
-
----
-
 ## Workflow sequence
 
 ### 1. [Git fetch/pull on ballpark](https://llorracc.github.io/workspace-course-topics/workflows/git-fetch-pull-ballpark.html)

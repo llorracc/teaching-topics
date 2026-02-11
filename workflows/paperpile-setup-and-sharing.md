@@ -2,10 +2,6 @@
 
 **Purpose:** Set up PaperPile, connect to JHU libraries, and populate your bibliography.
 
-**External resources:**
-- [The Setup (as.180.369)](https://github.com/llorracc/as.180.369/blob/main/materials/setup/README.md)
-- [The Pitch (as.180.369)](https://github.com/llorracc/as.180.369/blob/main/materials/pitch/README.md)
-
 ---
 
 ## Verify first

@@ -2,9 +2,6 @@
 
 **Purpose:** Add BibTeX files to your ballpark directory and configure MyST to use them.
 
-**External resources:**
-- [The Submission (as.180.369)](https://github.com/llorracc/as.180.369/blob/main/materials/submission/README.md)
-
 ---
 
 ## ⚠️ Working directory

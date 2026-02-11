@@ -54,10 +54,6 @@ Summary of steps:
 ## Key resources
 
 - **Econ-ARK ballpark:** https://github.com/econ-ark/ballpark
-- **as.180.369 materials:**
-  - [The Setup](https://github.com/llorracc/as.180.369/blob/main/materials/setup/README.md) — PaperPile & LitMaps intro
-  - [The Pitch](https://github.com/llorracc/as.180.369/blob/main/materials/pitch/README.md) — PaperPile sharing, LitMaps deeper dive
-  - [The Submission](https://github.com/llorracc/as.180.369/blob/main/materials/submission/README.md) — MyST & bibliography workflow
 
 ---
 

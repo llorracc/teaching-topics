@@ -18,12 +18,6 @@ Convert your notebook to MyST format and configure bibliography integration.
 
 ---
 
-## External resources
-
-- **MyST & bibliography workflow:** [The Submission (as.180.369)](https://github.com/llorracc/as.180.369/blob/main/materials/submission/README.md)
-
----
-
 ## Workflow sequence
 
 ### 1. [Verify MyST tools](https://llorracc.github.io/workspace-course-topics/workflows/verify-myst-tools.html)

@@ -86,7 +86,6 @@ After MyST conversion:
 
 - **MyST documentation:** https://mystmd.org
 - **Orchestrator:** [05-myst-conversion](https://llorracc.github.io/workspace-course-topics/orchestrators/05-myst-conversion.html)
-- **as.180.369 materials:** [The Submission](https://github.com/llorracc/as.180.369/blob/main/materials/submission/README.md)
 
 ---
 
