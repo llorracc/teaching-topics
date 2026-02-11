@@ -26,7 +26,7 @@ This unit represents the **Skills** phase of the course:
 | Class | Topic | Status |
 |-------|-------|--------|
 | [03](../../classes/03-ballpark-jupyter-myst/) | PaperPile, LitMaps, Jupyter basics | Completed |
-| [04](../../classes/04-ai-literature-analysis/) | AI literature analysis, PR workflow | Planned |
+| [04](../../classes/04-myst-modernization/) | AI literature analysis, PR workflow | Planned |
 
 ---
 

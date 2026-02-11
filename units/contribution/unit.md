@@ -25,7 +25,7 @@ This unit represents the **Artifacts** phase of the course:
 
 | Class | Topic | Status |
 |-------|-------|--------|
-| [04](../../classes/04-ai-literature-analysis/) | First PR (add coauthor) | Planned |
+| [04](../../classes/04-myst-modernization/) | First PR (add coauthor) | Planned |
 | _(additional classes TBD)_ | Content improvement, MyST conversion | |
 
 ---
