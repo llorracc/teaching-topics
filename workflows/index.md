@@ -6,13 +6,13 @@ Atomic, reusable in-class workflow steps. Each workflow is a standalone document
 
 ## ⚠️ Before you start any workflow
 
-1. **Check your working directory** — Most workflows require you to be in `~/GitHub/econ-ark/ballpark`
+1. **Check your working directory** — Most workflows require you to be in your ballpark fork (e.g. `~/GitHub/<your-username>/ballpark`)
 2. **Complete verification steps** — Each workflow has a "Verify first" section at the top
 3. **Windows users:** Ensure you're in WSL/Ubuntu, not Windows
 
 **Quick check:**
 ```bash
-cd ~/GitHub/econ-ark/ballpark && pwd
+cd ~/GitHub/<your-username>/ballpark && pwd
 ```
 
 ---
