@@ -51,7 +51,7 @@ Before proceeding, verify:
 ## Assignment
 
 This orchestrator prepares you for:
-- [Assignment 030: Subsequent Literature](https://llorracc.github.io/workspace-course-topics/assignments/litmaps-subsequent-citations.html)
+- [Assignment 030: Subsequent Literature](https://llorracc.github.io/workspace-course-topics/assignments/subsequent-literature.html)
 - [Assignment 040: AI Literature Analysis](https://llorracc.github.io/workspace-course-topics/assignments/ai-cutting-edge-analysis.html)
 
 ---
