@@ -40,8 +40,8 @@ git remote add origin https://github.com/<your-username>/ballpark.git
 
 ## Learning objectives
 
-- **MyST conversion:** Convert notebooks to MyST format for modern document building
-- **Bibliography integration:** Configure MyST to use .bib files for citations
+- **MyST assembly:** Create a multi-notebook MyST document with TOC and bibliography
+- **Bibliography integration:** Configure `myst.yml` to use .bib files for citations across multiple notebooks
 
 ---
 
@@ -56,17 +56,24 @@ Quick check that everyone's setup is working:
 
 ---
 
-### Part 1: MyST Conversion and Bibliography (~50 min)
+### Part 1: Four-Notebook MyST Assembly (~50 min)
 
-Now we modernize the ballpark items using MyST. Since tools are already installed, we jump straight to conversion:
+Instead of converting the notebook to a markdown file, we create three new notebooks and weave them together with the original via a MyST table of contents:
 
-| # | Workflow | Description |
-|---|----------|-------------|
-| 1 | [Convert notebook to MyST](https://llorracc.github.io/workspace-course-topics/workflows/convert-notebook-to-myst.html) | Convert `.ipynb` to `.md` format using jupytext |
-| 2 | [Set up bibliography for MyST](https://llorracc.github.io/workspace-course-topics/workflows/bibliography-setup-myst.html) | Configure `myst.yml` to use .bib files |
-| 3 | [Add citations in MyST syntax](https://llorracc.github.io/workspace-course-topics/workflows/add-citation-to-paper.html) | Add proper `{cite}` references |
-| 4 | [Add LitMap image and bib](https://llorracc.github.io/workspace-course-topics/workflows/add-litmap-image-and-bib.html) | Add citation map visualization |
-| 5 | [AI "Subsequent Literature" section](https://llorracc.github.io/workspace-course-topics/workflows/ai-subsequent-literature-section.html) | AI-assisted summary of citing papers |
+| # | Step | Description |
+|---|------|-------------|
+| 1 | [Create intro notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-intro-notebook.html) | Paper identity, original authors, student contributor |
+| 2 | [Create prior-literature notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-prior-literature-notebook.html) | Prior lit summary with `{cite}` references against `references.bib` |
+| 3 | [Create subsequent-literature notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-subsequent-literature-notebook.html) | Subsequent lit summary with `{cite}` references against `subsequent-literature.bib` |
+| 4 | [MyST assembly](https://llorracc.github.io/workspace-course-topics/assignments/myst-assembly-and-pr.html) | Add citations to original notebook; create `myst.yml` TOC + bibliography config |
+| 5 | Verify build | Run `myst build`; confirm citations resolve and bibliography renders |
+
+The four notebooks in TOC order:
+
+1. `[name]_intro.ipynb` — paper metadata
+2. `[name]_prior-literature.ipynb` — prior literature with citations
+3. `[name].ipynb` — original notebook (modified with citations, NOT converted)
+4. `[name]_subsequent-literature.ipynb` — subsequent literature with citations
 
 See orchestrator: [05-myst-conversion](https://llorracc.github.io/workspace-course-topics/orchestrators/05-myst-conversion.html)
 
@@ -74,17 +81,18 @@ See orchestrator: [05-myst-conversion](https://llorracc.github.io/workspace-cour
 
 ### Part 2: Update PRs (~15 min)
 
-After MyST conversion:
+After assembly:
 1. Stage new changes: `git add .`
-2. Commit: `git commit -m "Convert to MyST format"`
+2. Commit: `git commit -m "Add four-notebook MyST assembly"`
 3. Push to update PR: `git push origin <branch-name>`
-4. Verify PR shows MyST conversion
+4. Verify PR shows the four-notebook structure
 
 ---
 
 ## Key resources
 
 - **MyST documentation:** https://mystmd.org
+- **MyST Citations:** https://mystmd.org/guide/citations
 - **Orchestrator:** [05-myst-conversion](https://llorracc.github.io/workspace-course-topics/orchestrators/05-myst-conversion.html)
 
 ---

@@ -1,20 +1,33 @@
-# Orchestrator: MyST Conversion
+# Orchestrator: MyST Assembly
 
 **Phase:** Skills  
-**Time:** ~30 minutes
+**Time:** ~45 minutes
 
 ## Purpose
 
-Convert your notebook to MyST format and configure bibliography integration.
+Create a multi-notebook MyST document that weaves together an intro, prior literature, the original notebook, and subsequent literature — with proper citations and a unified table of contents.
 
 ---
 
 ## Prerequisites
 
-- Notebook edited (from [Notebook Editing](https://llorracc.github.io/workspace-course-topics/orchestrators/04-notebook-editing.html))
-- `.bib` files from PaperPile and LitMaps
-- Bibliography Capture completed
+- `.bib` files from PaperPile (`references.bib`) and LitMaps (`subsequent-literature.bib`)
+- `prior-literature.md` working document (from Assignment 030)
+- `subsequent-literature-analysis.md` working document (from Assignment 040)
 - **Environment set up** via `bash scripts/setup_env.sh` (which installs MyST CLI, jupytext, myst-parser, and the Cursor extension)
+
+---
+
+## Target structure
+
+Four notebooks in TOC order, plus two .bib files:
+
+| Order | Notebook | Content | .bib source |
+|-------|----------|---------|-------------|
+| 1 | `[name]_intro.ipynb` | Paper identity, original authors, student contributor | — |
+| 2 | `[name]_prior-literature.ipynb` | Prior lit summary with MyST citations | `references.bib` |
+| 3 | `[name].ipynb` | Original notebook (modified with citations, NOT converted) | `references.bib` |
+| 4 | `[name]_subsequent-literature.ipynb` | Subsequent lit summary with MyST citations | `subsequent-literature.bib` |
 
 ---
 
@@ -24,49 +37,59 @@ Convert your notebook to MyST format and configure bibliography integration.
 
 Quick check that all MyST tools are installed. If `setup_env.sh` ran successfully, this should take under a minute.
 
-**Deliverable:** `myst --version`, `jupytext --version` both work; MyST-Markdown extension visible in Cursor
+**Deliverable:** `myst --version` works; MyST-Markdown extension visible in Cursor
 
 ---
 
-### 2. [Convert notebook to MyST](https://llorracc.github.io/workspace-course-topics/workflows/convert-notebook-to-myst.html)
+### 2. [Create intro notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-intro-notebook.html)
 
-Use jupytext to convert your `.ipynb` to MyST Markdown.
+Create `[name]_intro.ipynb` with paper metadata: title, authors, year, original ballpark authors, and student contributor name.
 
-**Deliverable:** `.md` file created from notebook
-
----
-
-### 3. [Set up bibliography files for MyST](https://llorracc.github.io/workspace-course-topics/workflows/bibliography-setup-myst.html)
-
-Copy PaperPile bib; create a bib for the paper itself; configure MyST to use both.
+**Deliverable:** `[name]_intro.ipynb` created
 
 ---
 
-### 4. [Add a citation to the paper](https://llorracc.github.io/workspace-course-topics/workflows/add-citation-to-paper.html)
+### 3. [Create prior-literature notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-prior-literature-notebook.html)
 
-Add a proper citation to the paper in your notebook/MyST document.
+Create `[name]_prior-literature.ipynb` from your `prior-literature.md` working document. Insert MyST citations (`{cite:t}` / `{cite:p}`) that resolve against `references.bib`.
 
----
-
-### 5. [Add LitMap image and subsequent-literature bib](https://llorracc.github.io/workspace-course-topics/workflows/add-litmap-image-and-bib.html)
-
-Download the LitMap image; add it to the MyST document; add the subsequent-literature bib.
+**Deliverable:** `[name]_prior-literature.ipynb` with citations
 
 ---
 
-### 6. [Add "Subsequent Literature" section (AI-assisted)](https://llorracc.github.io/workspace-course-topics/workflows/ai-subsequent-literature-section.html)
+### 4. [Create subsequent-literature notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-subsequent-literature-notebook.html)
 
-Use AI to generate a summary of citing papers.
+Create `[name]_subsequent-literature.ipynb` from your analysis. Insert MyST citations that resolve against `subsequent-literature.bib`.
+
+**Deliverable:** `[name]_subsequent-literature.ipynb` with citations
+
+---
+
+### 5. [MyST assembly and configuration](https://llorracc.github.io/workspace-course-topics/assignments/myst-assembly-and-pr.html)
+
+Add MyST citations to the original notebook. Create `myst.yml` with TOC (four notebooks) and bibliography (two .bib files).
+
+**Deliverable:** `myst.yml` configured; original notebook has MyST citations
+
+---
+
+### 6. Verify build
+
+Run `myst build` from the paper folder and confirm:
+- Build completes without errors
+- Citations resolve (no "undefined citation" warnings)
+- HTML output shows rendered bibliography
 
 ---
 
 ## Checkpoint
 
 Before proceeding, verify:
-- [ ] MyST CLI is installed
-- [ ] Notebook is converted to `.md`
-- [ ] Bibliography is configured in `myst.yml`
-- [ ] Citations render correctly
+- [ ] Four notebooks exist in the paper folder
+- [ ] `myst.yml` lists all four notebooks in the TOC
+- [ ] `references.bib` and `subsequent-literature.bib` are in the paper folder
+- [ ] `myst build` completes without errors
+- [ ] Citations render correctly in the build output
 
 ---
 
