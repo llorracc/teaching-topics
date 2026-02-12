@@ -21,7 +21,11 @@ You do not need to do the steps by hand — the AI handles the mechanics. Your j
 2. Verify that the output looks correct
 3. Fix anything that looks wrong before moving on
 
-**How to give the prompt to the AI:** You can paste a link to the prompt (e.g. the URLs in this document) or copy and paste the prompt’s full contents into the chat. **My strong preference is that you copy and paste the contents and read them carefully before you (or the AI) execute them** — that way you know exactly what the step is doing. If you ask an AI to follow the instructions and the AI has access to the prompt repo or can open the link, the AI may use the link instead.
+### How to give the prompt to the AI
+
+For each step, open the linked prompt page, **copy the full prompt text**, and **read it carefully** before pasting it into Cursor. Understanding what each step does is part of the assignment.
+
+You *can* paste just the link instead, but my strong preference is that you copy and paste the contents so you see exactly what the AI is being asked to do.
 
 ### Which AI model to use
 
@@ -36,7 +40,9 @@ Try running the literature steps with the free model first, then re-run them wit
 
 ## Step 0: Get on your branch
 
-You already have a fork and a PR branch from your earlier ballpark work. **Do not** create a new fork or branch — use the one you already have.
+Use your existing fork and PR branch from your earlier ballpark work.
+
+> **If you no longer have your fork** (e.g. you deleted it), see the setup instructions in [Create Intro Notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-intro-notebook.html), Part A.
 
 ```bash
 cd ~/github/<your-username>/ballpark
@@ -103,13 +109,15 @@ You should already have bibliography files from your earlier assignments (PaperP
 | `references.bib` | Papers cited by or foundational to your paper | PaperPile export |
 | `subsequent-literature.bib` | Papers that cite your paper | LitMaps export |
 
-If your files have different names (e.g. `bibliography.bib`, `litmaps-export.bib`), **rename them now**:
+If your files have different names (e.g. `bibliography.bib`, `litmaps-export.bib`), **rename them now**. For example, if your folder is `OptimumDebt`:
 
 ```bash
-cd models/We-Would-Like-In-Econ-ARK/{BALLPARK}/
-mv <your-references-file>.bib references.bib
-mv <your-litmaps-file>.bib subsequent-literature.bib
+cd models/We-Would-Like-In-Econ-ARK/OptimumDebt/
+mv bibliography.bib references.bib
+mv litmaps-export.bib subsequent-literature.bib
 ```
+
+(Replace `OptimumDebt` and the source filenames with your actual values.)
 
 If you don't have these files at all, the AI can create them in the next steps — but the results will be better with a premium model (Opus 4.6 or ChatGPT 5.3).
 
@@ -142,7 +150,7 @@ This will create `self.bib` (a BibTeX entry for the subject paper itself) and `{
 
 **What to check:** Open the notebook and verify:
 - It discusses at least 3-5 papers from the reference list
-- Citations use `{cite:t}` or `{cite:p}` syntax with keys that match entries in `references.bib` or `self.bib`
+- Citations use [MyST citation syntax](https://mystmd.org/guide/citations) — you should see tags like `` {cite:t}`benhabib2019` `` (which renders as "Benhabib et al. (2019)") or `` {cite:p}`benhabib2019` `` (which renders as "(Benhabib et al., 2019)"). The keys must match entries in `references.bib` or `self.bib`.
 - `self.bib` contains exactly one entry — for the paper your ballpark is about
 - The subject paper does **not** also appear in `references.bib`
 
@@ -160,7 +168,7 @@ This will create `{BALLPARK}_subsequent-literature.ipynb`, using the `subsequent
 
 **What to check:** Open the notebook and verify:
 - It discusses papers that **cite** your ballpark paper (not the other way around)
-- Citations use `{cite:t}` or `{cite:p}` syntax with keys matching `subsequent-literature.bib` or `self.bib`
+- Citations use [MyST citation syntax](https://mystmd.org/guide/citations) — tags like `` {cite:t}`key` `` or `` {cite:p}`key` `` with keys matching entries in `subsequent-literature.bib` or `self.bib`
 
 ---
 
@@ -172,9 +180,8 @@ Ask your AI:
 
 **What to check:** Open `{BALLPARK}_summary.ipynb` and verify:
 - Typos and grammar errors have been fixed (without rewriting the original prose)
-- There is exactly one `#` heading (the document title); sections use `##`, subsections `###`
+- The notebook does **not** start with a `#` title heading (the title comes from `index.md`). Sections use `##`, subsections `###`
 - Papers mentioned inline have MyST citation tags
-- There are clickable Markdown links to the companion notebooks (e.g. `[Prior Literature]({BALLPARK}_prior-literature.ipynb)`)
 - Any HTML `<img>` tags have been replaced with Markdown image syntax
 
 ---
@@ -186,8 +193,9 @@ Ask your AI:
 > Apply the [myst-build-and-review](https://llorracc.github.io/workspace-course-topics/assignments/prompts/myst-build-and-review.html) prompt to the ballpark `{BALLPARK}`.
 
 **What to check:**
-- `myst.yml` exists in your paper folder and lists all four notebooks and all three `.bib` files
-- `myst build` completes without errors
+- `index.md` exists and contains `{include}` directives for all four notebooks
+- `myst.yml` exists and lists `index.md` as the only TOC entry, plus all three `.bib` files
+- `myst build` completes without errors and builds **1 page** (not 4 separate pages)
 - No "undefined citation" warnings
 
 ---
@@ -229,10 +237,11 @@ OptimumDebt/
 ├── OptimumDebt_intro.ipynb                    ← new
 ├── OptimumDebt_prior-literature.ipynb         ← new
 ├── OptimumDebt_subsequent-literature.ipynb    ← new
+├── index.md                                   ← new (assembles all notebooks into one page)
 ├── self.bib                                   ← new (the subject paper)
 ├── references.bib                             ← prior literature
 ├── subsequent-literature.bib                  ← subsequent literature
-└── myst.yml                                   ← new (TOC + bibliography config)
+└── myst.yml                                   ← new (build config)
 ```
 
 ---
@@ -242,6 +251,28 @@ OptimumDebt/
 ### `self.bib`
 
 A file containing a single BibTeX entry for the subject paper itself (the paper your ballpark entry is about). This is separate from `references.bib`, which holds the prior literature.
+
+### `index.md`
+
+The root document that assembles all four notebooks into a single page. It has YAML frontmatter with the paper title, followed by four MyST `{include}` directives — one for each notebook:
+
+````markdown
+---
+title: "[Paper Title] — Ballpark Entry"
+---
+
+```{include} {BALLPARK}_intro.ipynb
+```
+
+```{include} {BALLPARK}_prior-literature.ipynb
+```
+
+```{include} {BALLPARK}_summary.ipynb
+```
+
+```{include} {BALLPARK}_subsequent-literature.ipynb
+```
+````
 
 ### `myst.yml`
 
@@ -255,10 +286,7 @@ project:
     - references.bib
     - subsequent-literature.bib
   toc:
-    - file: {BALLPARK}_intro.ipynb
-    - file: {BALLPARK}_prior-literature.ipynb
-    - file: {BALLPARK}_summary.ipynb
-    - file: {BALLPARK}_subsequent-literature.ipynb
+    - file: index.md
 
 site:
   title: "[Paper Title] — Ballpark Entry"
@@ -267,8 +295,7 @@ site:
 ### Quality standards for the summary notebook
 
 - Fix any obvious typos or grammar errors in the existing text
-- Heading hierarchy: single `#` for the title, `##` for sections, `###` for subsections
-- Cross-references to companion notebooks must be clickable Markdown links, e.g. `[Prior Literature]({BALLPARK}_prior-literature.ipynb)` — not just bold text
+- The summary notebook must **not** start with a `#` title heading (the title comes from `index.md`). Sections use `##`, subsections `###`
 - Replace HTML `<img>` tags with Markdown image syntax using descriptive alt text
 
 ### Attribution
@@ -318,4 +345,4 @@ https://github.com/econ-ark/ballpark/tree/master/models/We-Would-Like-In-Econ-AR
 
 ## Final Deliverable
 
-**Your PR URL.** Push all changes to your existing PR branch — no new PR needed. Bring the URL to class.
+**Your PR URL.** Push all changes to your PR branch. If you already had an open PR, pushing updates it automatically. If not, create a new PR after pushing (see Step 9). Bring the URL to class.
