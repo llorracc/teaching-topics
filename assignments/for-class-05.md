@@ -76,6 +76,8 @@ You now have:
 - `WangT-AHLifeCycleExpenditure.ipynb` (original — leave this unchanged)
 - `AHLifeCycleExpenditure_summary.ipynb` (your copy — all your work goes here)
 
+> **From this point on, every step refers to `{BALLPARK}_summary.ipynb` — the copy you just made — not the original notebook.** The original stays untouched. Do not edit, rename, or delete it.
+
 ---
 
 ## Step 2: Convert slideshows (if needed)
