@@ -34,13 +34,11 @@ cp [original-notebook].ipynb [directory-name]_summary.ipynb
 
 ### 3. Convert slideshows to a regular notebook (if needed)
 
-If the original notebook is a **Jupyter slideshow** (e.g. it was built with RISE or has slide metadata), use an AI to run the [convert-slideshow-to-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/convert-slideshow-to-notebook.html) prompt on your **copy** (`[directory-name]_summary.ipynb`), not on the original. For example:
+The original notebook might take the form of a Jupyter slideshow. So, before doing anything else, ask an AI to follow the prompt [convert-slideshow-to-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/convert-slideshow-to-notebook.html) on your **copy** (`[directory-name]_summary.ipynb`), not on the original (which will do nothing if the notebook is not a slideshow). For example:
 
 > Apply the convert-slideshow-to-notebook.md prompt to the ballpark `AHLifeCycleExpenditure`.
 
-If the notebook was not a slideshow, the AI will report that no conversion was needed.
-
-Once you have `[directory-name]_summary.ipynb` (and, if applicable, converted from slideshow format), the rest of the instructions below apply.
+Once you have `[directory-name]_summary.ipynb`, the rest of the instructions below apply.
 
 ---
 
