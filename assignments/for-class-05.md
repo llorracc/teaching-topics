@@ -21,6 +21,8 @@ You do not need to do the steps by hand — the AI handles the mechanics. Your j
 2. Verify that the output looks correct
 3. Fix anything that looks wrong before moving on
 
+**How to give the prompt to the AI:** You can paste a link to the prompt (e.g. the URLs in this document) or copy and paste the prompt’s full contents into the chat. **My strong preference is that you copy and paste the contents and read them carefully before you (or the AI) execute them** — that way you know exactly what the step is doing. If you ask an AI to follow the instructions and the AI has access to the prompt repo or can open the link, the AI may use the link instead.
+
 ### Which AI model to use
 
 - For **mechanical steps** (copying files, fixing typos, creating `myst.yml`, committing): the free "auto" model in Cursor works fine.
@@ -202,7 +204,7 @@ git commit -m "Add four-notebook MyST assembly with citations and TOC"
 git push origin <your-PR-branch>
 ```
 
-Since you already have an open PR from this branch, **pushing updates it automatically** — no new PR is needed.
+If you already have an open PR from this branch, **pushing updates it automatically** — no new PR is needed. If you do **not** have an open PR yet (e.g. you created this branch for the first time for this assignment), after pushing go to https://github.com/econ-ark/ballpark, click **Compare & pull request** for your branch, and create a PR from your branch to `econ-ark/ballpark` master. Then record the PR URL in Step 10.
 
 **What to check:** Go to your PR on GitHub (e.g. `https://github.com/econ-ark/ballpark/pull/XX`) and verify that the PR now shows all your new files.
 
@@ -210,7 +212,7 @@ Since you already have an open PR from this branch, **pushing updates it automat
 
 ## Step 10: Record your PR URL
 
-Copy your PR URL (e.g. `https://github.com/econ-ark/ballpark/pull/42`).
+Copy your PR URL (e.g. `https://github.com/econ-ark/ballpark/pull/42`). If you didn’t have an open PR before Step 9, you will have created one when you pushed; use that PR’s URL.
 
 **Bring this URL to class** — you'll need to share it.
 
