@@ -8,8 +8,8 @@ Complete before arriving at Class 05.
 
 ### Pull the latest changes
 
-The main notebook in your ballpark folder has been renamed to use a `_itself`
-suffix (e.g. `OpenHA_itself.ipynb`). This rename is already on your PR branch.
+The main notebook in your ballpark folder has been renamed to use a `_summary`
+suffix (e.g. `OpenHA_summary.ipynb`). This rename is already on your PR branch.
 Pull it before doing anything else:
 
 ```bash
@@ -30,7 +30,7 @@ is `OptimumDebt`, you will produce:
 |------|---------|
 | `OptimumDebt_intro.ipynb` | Paper metadata and attribution |
 | `OptimumDebt_prior-literature.ipynb` | Prior literature with citations |
-| `OptimumDebt_itself.ipynb` | Main summary notebook |
+| `OptimumDebt_summary.ipynb` | Main summary notebook |
 | `OptimumDebt_subsequent-literature.ipynb` | Subsequent literature with citations |
 
 Plus three `.bib` files (`self.bib`, `references.bib`, `subsequent-literature.bib`) and a `myst.yml`.
@@ -59,14 +59,14 @@ project:
   toc:
     - file: [name]_intro.ipynb
     - file: [name]_prior-literature.ipynb
-    - file: [name]_itself.ipynb
+    - file: [name]_summary.ipynb
     - file: [name]_subsequent-literature.ipynb
 
 site:
   title: "[Paper Title] — Ballpark Entry"
 ```
 
-### Quality Standards for the Digest Notebook
+### Quality Standards for the Summary Notebook
 
 - Fix any obvious typos or grammar errors in the existing text
 - Heading hierarchy: single `#` for the title, `##` for sections, `###` for subsections
@@ -102,7 +102,7 @@ https://llorracc.github.io/workspace-course-topics/assignments/myst-assembly-and
 | [MyST Assembly + PR](https://llorracc.github.io/workspace-course-topics/assignments/myst-assembly-and-pr.html) | Four notebooks + `self.bib` + `myst.yml` + **PR URL** |
 
 The first three create the companion notebooks. The MyST Assembly step weaves
-everything together, applies quality fixes to the digest, and produces the PR.
+everything together, applies quality fixes to the summary notebook, and produces the PR.
 
 ---
 
