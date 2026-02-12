@@ -8,8 +8,8 @@ Complete before arriving at Class 05.
 
 ### Pull the latest changes
 
-The main notebook in your ballpark folder has been renamed to use a `_digest`
-suffix (e.g. `OpenHA_digest.ipynb`). This rename is already on your PR branch.
+The main notebook in your ballpark folder has been renamed to use a `_itself`
+suffix (e.g. `OpenHA_itself.ipynb`). This rename is already on your PR branch.
 Pull it before doing anything else:
 
 ```bash
@@ -30,7 +30,7 @@ is `OptimumDebt`, you will produce:
 |------|---------|
 | `OptimumDebt_intro.ipynb` | Paper metadata and attribution |
 | `OptimumDebt_prior-literature.ipynb` | Prior literature with citations |
-| `OptimumDebt_digest.ipynb` | Main summary notebook |
+| `OptimumDebt_itself.ipynb` | Main summary notebook |
 | `OptimumDebt_subsequent-literature.ipynb` | Subsequent literature with citations |
 
 Plus three `.bib` files (`self.bib`, `references.bib`, `subsequent-literature.bib`) and a `myst.yml`.
@@ -59,7 +59,7 @@ project:
   toc:
     - file: [name]_intro.ipynb
     - file: [name]_prior-literature.ipynb
-    - file: [name]_digest.ipynb
+    - file: [name]_itself.ipynb
     - file: [name]_subsequent-literature.ipynb
 
 site:
