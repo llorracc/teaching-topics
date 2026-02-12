@@ -6,7 +6,9 @@ Complete before arriving at Class 05.
 
 ## Terminology
 
-Throughout this document, **BALLPARK** refers to your paper's folder name inside the ballpark repository (e.g. `OptimumDebt`, `HKMOHousingChannelMP`, `OpenHA`). All notebook filenames use this as a prefix.
+Throughout this document, **{BALLPARK}** stands for your paper's folder name inside the ballpark repository (e.g. `OptimumDebt`, `HKMOHousingChannelMP`, `OpenHA`). All notebook filenames use this folder name as a prefix.
+
+> **Important:** Do not literally type `{BALLPARK}`. Always replace it with your actual folder name. For example, if your folder is `OptimumDebt`, then `{BALLPARK}_summary.ipynb` means `OptimumDebt_summary.ipynb`.
 
 ---
 
@@ -35,7 +37,7 @@ Try running the literature steps with the free model first, then re-run them wit
 You already have a fork and a PR branch from your earlier ballpark work. **Do not** create a new fork or branch — use the one you already have.
 
 ```bash
-cd ~/GitHub/<your-username>/ballpark
+cd ~/github/<your-username>/ballpark
 ```
 
 If you don't remember your branch name, list your branches:
@@ -59,7 +61,7 @@ git pull origin <your-PR-branch>
 
 ## Step 1: Create the summary notebook by copying
 
-Make a **copy** of the Jupyter notebook that summarizes the paper and name the copy `BALLPARK_summary.ipynb`.
+Make a **copy** of the Jupyter notebook that summarizes the paper and name the copy `{BALLPARK}_summary.ipynb`.
 
 **Example:** If your folder is `AHLifeCycleExpenditure` and the original notebook is `WangT-AHLifeCycleExpenditure.ipynb`:
 
@@ -80,11 +82,11 @@ The original notebook might be a Jupyter slideshow. Run the conversion prompt on
 
 Ask your AI:
 
-> Apply the [convert-slideshow-to-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/convert-slideshow-to-notebook.html) prompt to the ballpark `BALLPARK`.
+> Apply the [convert-slideshow-to-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/convert-slideshow-to-notebook.html) prompt to the ballpark `{BALLPARK}`.
 
-(Replace `BALLPARK` with your actual folder name, e.g. `AHLifeCycleExpenditure`.)
+(Replace `{BALLPARK}` with your actual folder name, e.g. `AHLifeCycleExpenditure`.)
 
-**What to check:** Open `BALLPARK_summary.ipynb`. It should read as a normal document, not a slide deck. If you see slide metadata, ask the AI to try again.
+**What to check:** Open `{BALLPARK}_summary.ipynb`. It should read as a normal document, not a slide deck. If you see slide metadata, ask the AI to try again.
 
 ---
 
@@ -92,9 +94,9 @@ Ask your AI:
 
 Ask your AI:
 
-> Apply the [coauthor-and-intro-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/coauthor-and-intro-notebook.html) prompt to the ballpark `BALLPARK`.
+> Apply the [coauthor-and-intro-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/coauthor-and-intro-notebook.html) prompt to the ballpark `{BALLPARK}`.
 
-**What to check:** Open `BALLPARK_intro.ipynb`. Verify it contains:
+**What to check:** Open `{BALLPARK}_intro.ipynb`. Verify it contains:
 - The paper's full title, authors, year, and venue
 - The name of the original ballpark contributor (the student who made the earlier PR)
 - Your name and today's date as "Updated by"
@@ -109,9 +111,9 @@ Ask your AI:
 
 Ask your AI:
 
-> Apply the [prior-literature-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/prior-literature-notebook.html) prompt to the ballpark `BALLPARK`.
+> Apply the [prior-literature-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/prior-literature-notebook.html) prompt to the ballpark `{BALLPARK}`.
 
-This will create `self.bib` (a BibTeX entry for the subject paper itself), `references.bib` (prior literature), and `BALLPARK_prior-literature.ipynb`.
+This will create `self.bib` (a BibTeX entry for the subject paper itself), `references.bib` (prior literature), and `{BALLPARK}_prior-literature.ipynb`.
 
 **What to check:** Open the notebook and verify:
 - It discusses at least 3-5 papers from the reference list
@@ -129,9 +131,9 @@ This will create `self.bib` (a BibTeX entry for the subject paper itself), `refe
 
 Ask your AI:
 
-> Apply the [subsequent-literature-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/subsequent-literature-notebook.html) prompt to the ballpark `BALLPARK`.
+> Apply the [subsequent-literature-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/subsequent-literature-notebook.html) prompt to the ballpark `{BALLPARK}`.
 
-This will create `subsequent-literature.bib` and `BALLPARK_subsequent-literature.ipynb`.
+This will create `subsequent-literature.bib` and `{BALLPARK}_subsequent-literature.ipynb`.
 
 **What to check:** Open the notebook and verify:
 - It discusses papers that **cite** your ballpark paper (not the other way around)
@@ -145,13 +147,13 @@ This will create `subsequent-literature.bib` and `BALLPARK_subsequent-literature
 
 Ask your AI:
 
-> Apply the [myst-citations-in-original](https://llorracc.github.io/workspace-course-topics/assignments/prompts/myst-citations-in-original.html) prompt to the ballpark `BALLPARK`.
+> Apply the [myst-citations-in-original](https://llorracc.github.io/workspace-course-topics/assignments/prompts/myst-citations-in-original.html) prompt to the ballpark `{BALLPARK}`.
 
-**What to check:** Open `BALLPARK_summary.ipynb` and verify:
+**What to check:** Open `{BALLPARK}_summary.ipynb` and verify:
 - Typos and grammar errors have been fixed (without rewriting the original prose)
 - There is exactly one `#` heading (the document title); sections use `##`, subsections `###`
 - Papers mentioned inline have MyST citation tags
-- There are clickable Markdown links to the companion notebooks (e.g. `[Prior Literature](BALLPARK_prior-literature.ipynb)`)
+- There are clickable Markdown links to the companion notebooks (e.g. `[Prior Literature]({BALLPARK}_prior-literature.ipynb)`)
 - Any HTML `<img>` tags have been replaced with Markdown image syntax
 
 ---
@@ -160,7 +162,7 @@ Ask your AI:
 
 Ask your AI:
 
-> Apply the [myst-build-and-review](https://llorracc.github.io/workspace-course-topics/assignments/prompts/myst-build-and-review.html) prompt to the ballpark `BALLPARK`.
+> Apply the [myst-build-and-review](https://llorracc.github.io/workspace-course-topics/assignments/prompts/myst-build-and-review.html) prompt to the ballpark `{BALLPARK}`.
 
 **What to check:**
 - `myst.yml` exists in your paper folder and lists all four notebooks and all three `.bib` files
@@ -173,7 +175,7 @@ Ask your AI:
 
 Ask your AI:
 
-> Apply the [commit-and-push](https://llorracc.github.io/workspace-course-topics/assignments/prompts/commit-and-push.html) prompt to the ballpark `BALLPARK`.
+> Apply the [commit-and-push](https://llorracc.github.io/workspace-course-topics/assignments/prompts/commit-and-push.html) prompt to the ballpark `{BALLPARK}`.
 
 Or do it yourself:
 
@@ -232,10 +234,10 @@ project:
     - references.bib
     - subsequent-literature.bib
   toc:
-    - file: BALLPARK_intro.ipynb
-    - file: BALLPARK_prior-literature.ipynb
-    - file: BALLPARK_summary.ipynb
-    - file: BALLPARK_subsequent-literature.ipynb
+    - file: {BALLPARK}_intro.ipynb
+    - file: {BALLPARK}_prior-literature.ipynb
+    - file: {BALLPARK}_summary.ipynb
+    - file: {BALLPARK}_subsequent-literature.ipynb
 
 site:
   title: "[Paper Title] — Ballpark Entry"
@@ -245,7 +247,7 @@ site:
 
 - Fix any obvious typos or grammar errors in the existing text
 - Heading hierarchy: single `#` for the title, `##` for sections, `###` for subsections
-- Cross-references to companion notebooks must be clickable Markdown links, e.g. `[Prior Literature](BALLPARK_prior-literature.ipynb)` — not just bold text
+- Cross-references to companion notebooks must be clickable Markdown links, e.g. `[Prior Literature]({BALLPARK}_prior-literature.ipynb)` — not just bold text
 - Replace HTML `<img>` tags with Markdown image syntax using descriptive alt text
 
 ### Attribution
