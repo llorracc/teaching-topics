@@ -90,7 +90,28 @@ Ask your AI:
 
 ---
 
-## Step 3: Create the intro notebook
+## Step 3: Verify your `.bib` files
+
+You should already have bibliography files from your earlier assignments (PaperPile export for references, LitMaps export for subsequent literature). Before proceeding, make sure they are in your paper folder with the expected names:
+
+| Expected filename | Contents | Source |
+|-------------------|----------|--------|
+| `references.bib` | Papers cited by or foundational to your paper | PaperPile export |
+| `subsequent-literature.bib` | Papers that cite your paper | LitMaps export |
+
+If your files have different names (e.g. `bibliography.bib`, `litmaps-export.bib`), **rename them now**:
+
+```bash
+cd models/We-Would-Like-In-Econ-ARK/{BALLPARK}/
+mv <your-references-file>.bib references.bib
+mv <your-litmaps-file>.bib subsequent-literature.bib
+```
+
+If you don't have these files at all, the AI can create them in the next steps — but the results will be better with a premium model (Opus 4.6 or ChatGPT 5.3).
+
+---
+
+## Step 4: Create the intro notebook
 
 Ask your AI:
 
@@ -105,7 +126,7 @@ Ask your AI:
 
 ---
 
-## Step 4: Create the prior-literature notebook
+## Step 5: Create the prior-literature notebook
 
 **This step benefits from a premium AI model** (Opus 4.6 or ChatGPT 5.3).
 
@@ -113,7 +134,7 @@ Ask your AI:
 
 > Apply the [prior-literature-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/prior-literature-notebook.html) prompt to the ballpark `{BALLPARK}`.
 
-This will create `self.bib` (a BibTeX entry for the subject paper itself), `references.bib` (prior literature), and `{BALLPARK}_prior-literature.ipynb`.
+This will create `self.bib` (a BibTeX entry for the subject paper itself) and `{BALLPARK}_prior-literature.ipynb`, using the `references.bib` you verified in Step 3.
 
 **What to check:** Open the notebook and verify:
 - It discusses at least 3-5 papers from the reference list
@@ -121,11 +142,9 @@ This will create `self.bib` (a BibTeX entry for the subject paper itself), `refe
 - `self.bib` contains exactly one entry — for the paper your ballpark is about
 - The subject paper does **not** also appear in `references.bib`
 
-> **If you already have `references.bib`** from earlier PaperPile work, the AI should use it. If you don't have one yet, the AI will create it — but the result will be better with a premium model.
-
 ---
 
-## Step 5: Create the subsequent-literature notebook
+## Step 6: Create the subsequent-literature notebook
 
 **This step also benefits from a premium AI model.**
 
@@ -133,17 +152,15 @@ Ask your AI:
 
 > Apply the [subsequent-literature-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/subsequent-literature-notebook.html) prompt to the ballpark `{BALLPARK}`.
 
-This will create `subsequent-literature.bib` and `{BALLPARK}_subsequent-literature.ipynb`.
+This will create `{BALLPARK}_subsequent-literature.ipynb`, using the `subsequent-literature.bib` you verified in Step 3.
 
 **What to check:** Open the notebook and verify:
 - It discusses papers that **cite** your ballpark paper (not the other way around)
 - Citations use `{cite:t}` or `{cite:p}` syntax with keys matching `subsequent-literature.bib` or `self.bib`
 
-> **If you already have `subsequent-literature.bib`** from earlier LitMaps work, the AI should use it. If you don't, the AI will create it — again, a premium model will do a better job.
-
 ---
 
-## Step 6: Enhance the summary notebook with MyST citations and cross-references
+## Step 7: Enhance the summary notebook with MyST citations and cross-references
 
 Ask your AI:
 
@@ -158,7 +175,7 @@ Ask your AI:
 
 ---
 
-## Step 7: Create `myst.yml` and verify the build
+## Step 8: Create `myst.yml` and verify the build
 
 Ask your AI:
 
@@ -171,7 +188,7 @@ Ask your AI:
 
 ---
 
-## Step 8: Review, commit, and push
+## Step 9: Review, commit, and push
 
 Ask your AI:
 
@@ -191,7 +208,7 @@ Since you already have an open PR from this branch, **pushing updates it automat
 
 ---
 
-## Step 9: Record your PR URL
+## Step 10: Record your PR URL
 
 Copy your PR URL (e.g. `https://github.com/econ-ark/ballpark/pull/42`).
 
