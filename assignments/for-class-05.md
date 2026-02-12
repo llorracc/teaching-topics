@@ -123,7 +123,17 @@ If you don't have these files at all, the AI can create them in the next steps �
 
 ---
 
-## Step 4: Create the intro notebook
+## Step 4: Tell the AI your name
+
+Ask your AI:
+
+> Apply the [ask-student-name](https://llorracc.github.io/workspace-course-topics/assignments/prompts/ask-student-name.html) prompt.
+
+The AI will ask for your full name. This is used in the "Updated by" attribution in the intro notebook (next step). You only need to provide it once.
+
+---
+
+## Step 5: Create the intro notebook
 
 Ask your AI:
 
@@ -132,13 +142,13 @@ Ask your AI:
 **What to check:** Open `{BALLPARK}_intro.ipynb`. Verify it contains:
 - The paper's full title, authors, year, and venue
 - The name of the original ballpark contributor (the student who made the earlier PR)
-- Your name and today's date as "Updated by"
+- Your name (from Step 4) and today's date as "Updated by"
 
 > **Note:** The sub-assignment page [Create Intro Notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-intro-notebook.html) has additional background. You can skip its "Part A: Fork and set up" section — you already did that for your original PR.
 
 ---
 
-## Step 5: Create the prior-literature notebook
+## Step 6: Create the prior-literature notebook
 
 **This step benefits from a premium AI model** (Opus 4.6 or ChatGPT 5.3).
 
@@ -156,7 +166,7 @@ This will create `self.bib` (a BibTeX entry for the subject paper itself) and `{
 
 ---
 
-## Step 6: Create the subsequent-literature notebook
+## Step 7: Create the subsequent-literature notebook
 
 **This step also benefits from a premium AI model.**
 
@@ -172,7 +182,7 @@ This will create `{BALLPARK}_subsequent-literature.ipynb`, using the `subsequent
 
 ---
 
-## Step 7: Enhance the summary notebook with MyST citations and cross-references
+## Step 8: Enhance the summary notebook with MyST citations
 
 Ask your AI:
 
@@ -186,7 +196,7 @@ Ask your AI:
 
 ---
 
-## Step 8: Create `myst.yml` and verify the build
+## Step 9: Create `index.md`, `myst.yml`, and verify the build
 
 Ask your AI:
 
@@ -200,7 +210,7 @@ Ask your AI:
 
 ---
 
-## Step 9: Review, commit, and push
+## Step 10: Review, commit, and push
 
 Ask your AI:
 
@@ -220,9 +230,9 @@ If you already have an open PR from this branch, **pushing updates it automatica
 
 ---
 
-## Step 10: Record your PR URL
+## Step 11: Record your PR URL
 
-Copy your PR URL (e.g. `https://github.com/econ-ark/ballpark/pull/42`). If you didn’t have an open PR before Step 9, you will have created one when you pushed; use that PR’s URL.
+Copy your PR URL (e.g. `https://github.com/econ-ark/ballpark/pull/42`). If you didn’t have an open PR before Step 10, you will have created one when you pushed; use that PR’s URL.
 
 **Bring this URL to class** — you'll need to share it.
 
@@ -345,4 +355,4 @@ https://github.com/econ-ark/ballpark/tree/master/models/We-Would-Like-In-Econ-AR
 
 ## Final Deliverable
 
-**Your PR URL.** Push all changes to your PR branch. If you already had an open PR, pushing updates it automatically. If not, create a new PR after pushing (see Step 9). Bring the URL to class.
+**Your PR URL.** Push all changes to your PR branch. If you already had an open PR, pushing updates it automatically. If not, create a new PR after pushing (see Step 10). Bring the URL to class.
