@@ -4,19 +4,43 @@ Complete before arriving at Class 05.
 
 ---
 
-## Before You Start
+## Before You Start: Initial Steps
 
-### Pull the latest changes
+Do these **first**, on the same branch you used to open your original PR.
 
-The main notebook in your ballpark folder has been renamed to use a `_summary`
-suffix (e.g. `OpenHA_summary.ipynb`). This rename is already on your PR branch.
-Pull it before doing anything else:
+### 1. Start on your PR branch
+
+Work in **your fork** on the branch you used to make your original ballpark PR. Do not create a new branch.
 
 ```bash
 cd ~/GitHub/<your-username>/ballpark
-git checkout <your-branch>
-git pull origin <your-branch>
+git checkout <your-PR-branch>
+git pull origin <your-PR-branch>
 ```
+
+### 2. Create the summary notebook by copying
+
+Before doing any other assignment work, make a **copy** of the Jupyter notebook that summarizes the paper and name the copy using the pattern `[directory-name]_summary.ipynb`.
+
+**Example:** If your ballpark folder is `AHLifeCycleExpenditure` and the original notebook is `WangT-AHLifeCycleExpenditure.ipynb`, create a copy named `AHLifeCycleExpenditure_summary.ipynb` in the same folder. So you have:
+- `AHLifeCycleExpenditure/WangT-AHLifeCycleExpenditure.ipynb` (original, unchanged)
+- `AHLifeCycleExpenditure/AHLifeCycleExpenditure_summary.ipynb` (your copy — this is the one you will edit in the assignments)
+
+You can copy the file in your file manager or in the terminal, e.g.:
+```bash
+cd models/We-Would-Like-In-Econ-ARK/[YourPaperFolder]/
+cp [original-notebook].ipynb [directory-name]_summary.ipynb
+```
+
+### 3. Convert slideshows to a regular notebook (if needed)
+
+If the original notebook is a **Jupyter slideshow** (e.g. it was built with RISE or has slide metadata), use an AI to run the [convert-slideshow-to-notebook](https://llorracc.github.io/workspace-course-topics/assignments/prompts/convert-slideshow-to-notebook.html) prompt on your **copy** (`[directory-name]_summary.ipynb`), not on the original. For example:
+
+> Apply the convert-slideshow-to-notebook.md prompt to the ballpark `AHLifeCycleExpenditure`.
+
+If the notebook was not a slideshow, the AI will report that no conversion was needed.
+
+Once you have `[directory-name]_summary.ipynb` (and, if applicable, converted from slideshow format), the rest of the instructions below apply.
 
 ---
 
