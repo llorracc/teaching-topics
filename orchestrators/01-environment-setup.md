@@ -21,7 +21,7 @@ Get everyone's local environment ready before starting substantive work. The bal
 
 ## Workflow sequence
 
-### 1. [Git fetch/pull on ballpark](https://llorracc.github.io/workspace-course-topics/workflows/git-fetch-pull-ballpark.html)
+### 1. [Git fetch/pull on ballpark](../workflows/git-fetch-pull-ballpark.md)
 
 Make sure everyone has the latest code before we begin.
 
@@ -50,7 +50,7 @@ This single command:
 
 ---
 
-### 3. [Launch Cursor in ballpark](https://llorracc.github.io/workspace-course-topics/workflows/launch-cursor-in-ballpark.html)
+### 3. [Launch Cursor in ballpark](../workflows/launch-cursor-in-ballpark.md)
 
 Open Cursor with the ballpark repo as your workspace.
 
@@ -65,7 +65,7 @@ Activate the environment created by the setup script:
 source .venv-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m)/bin/activate
 ```
 
-Then open your notebook in Cursor. See [Open Jupyter notebook in Cursor](https://llorracc.github.io/workspace-course-topics/workflows/jupyter-notebook-in-cursor.html) for details.
+Then open your notebook in Cursor. See [Open Jupyter notebook in Cursor](../workflows/jupyter-notebook-in-cursor.md) for details.
 
 **Deliverable:** Notebook opens and kernel is selected from "Python Environments"
 
@@ -75,8 +75,8 @@ Then open your notebook in Cursor. See [Open Jupyter notebook in Cursor](https:/
 
 Before proceeding, verify:
 - [ ] ballpark repo is up to date
-- [ ] `setup_env.sh` completed successfully (all tools show version numbers)
 - [ ] Cursor is open at the ballpark root
+- [ ] `setup_env.sh` completed successfully (all tools show version numbers)
 - [ ] Environment is activated
 - [ ] Your notebook opens and runs cells
 - [ ] `myst --version` and `jupytext --version` both work
@@ -85,4 +85,4 @@ Before proceeding, verify:
 
 ## Next orchestrator
 
-[Bibliography Capture](https://llorracc.github.io/workspace-course-topics/orchestrators/02-bibliography-capture.html)
+[Bibliography Capture](02-bibliography-capture.md)

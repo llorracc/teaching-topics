@@ -48,9 +48,11 @@ source .venv-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m)/bin/activate
 ```
 
 Or identify your environment manually:
+
 ```bash
 ls .venv-*/
 ```
+
 And activate the one matching your platform:
 - **Mac Apple Silicon:** `source .venv-darwin-arm64/bin/activate`
 - **Mac Intel:** `source .venv-darwin-x86_64/bin/activate`
@@ -80,9 +82,7 @@ If `setup_env.sh` fails, you can set up manually:
 4. Install mystmd: `npm install -g mystmd`
 5. Install extension: See [Install MyST-Markdown extension](install-myst-extension.md)
 
----
-
-## IMPORTANT: Activation is required before notebooks
+## ⚠️ IMPORTANT: Activation is required before notebooks
 
 **You must activate the environment before:**
 - Opening Jupyter notebooks (so Cursor can find the kernel)

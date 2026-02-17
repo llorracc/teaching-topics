@@ -20,12 +20,12 @@ Orchestrators follow the **Tools → Skills → Artifacts** progression:
 
 | # | Orchestrator | Phase | Time | Description |
 |---|--------------|-------|------|-------------|
-| 01 | [Environment Setup](https://llorracc.github.io/workspace-course-topics/orchestrators/01-environment-setup.html) | Tools | ~15 min | Git, Cursor, environment, open notebook |
-| 02 | [Bibliography Capture](https://llorracc.github.io/workspace-course-topics/orchestrators/02-bibliography-capture.html) | Tools/Skills | ~20 min | PaperPile setup, BibTeX export |
-| 03 | [Literature Discovery](https://llorracc.github.io/workspace-course-topics/orchestrators/03-literature-discovery.html) | Skills | ~15 min | LitMaps, find citing papers |
-| 04 | [Notebook Editing](https://llorracc.github.io/workspace-course-topics/orchestrators/04-notebook-editing.html) | Skills | ~10 min | Add coauthor to notebook |
-| 05 | [MyST Assembly](https://llorracc.github.io/workspace-course-topics/orchestrators/05-myst-conversion.html) | Skills | ~45 min | Four-notebook assembly with TOC and bibliography |
-| 06 | [Contribution](https://llorracc.github.io/workspace-course-topics/orchestrators/06-contribution.html) | Artifacts | ~15 min | Fork, commit, create PR |
+| 01 | [Environment Setup](01-environment-setup.md) | Tools | ~15 min | Git, Cursor, environment, open notebook |
+| 02 | [Bibliography Capture](02-bibliography-capture.md) | Tools/Skills | ~20 min | PaperPile setup, BibTeX export |
+| 03 | [Literature Discovery](03-literature-discovery.md) | Skills | ~15 min | LitMaps, find citing papers |
+| 04 | [Notebook Editing](04-notebook-editing.md) | Skills | ~10 min | Add coauthor to notebook |
+| 05 | [MyST Assembly](05-myst-conversion.md) | Skills | ~45 min | Four-notebook assembly with TOC and bibliography |
+| 06 | [Contribution](06-contribution.md) | Artifacts | ~15 min | Fork, commit, create PR |
 
 ---
 
@@ -41,6 +41,6 @@ A class might cover 2-3 orchestrators:
 ## Legacy: Full Session Orchestrator
 
 The original monolithic orchestrator is preserved for reference:
-- [Ballpark editing, Jupyter, MyST, and bibliography](https://llorracc.github.io/workspace-course-topics/orchestrators/ballpark-jupyter-myst-bibliography.html) — 17 steps in sequence
+- [Ballpark editing, Jupyter, MyST, and bibliography](ballpark-jupyter-myst-bibliography.md) — 17 steps in sequence
 
 This has been split into the modular orchestrators above for better pacing.

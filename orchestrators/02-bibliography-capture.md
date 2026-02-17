@@ -13,7 +13,7 @@ Set up PaperPile to capture and export bibliographies for your ballpark paper.
 
 - JHU credentials (for library access)
 - Google account
-- Completed [Environment Setup](https://llorracc.github.io/workspace-course-topics/orchestrators/01-environment-setup.html)
+- Completed [Environment Setup](01-environment-setup.md)
 
 ---
 
@@ -25,7 +25,7 @@ Set up PaperPile to capture and export bibliographies for your ballpark paper.
 
 ## Workflow sequence
 
-### 1. [PaperPile setup and sharing](https://llorracc.github.io/workspace-course-topics/workflows/paperpile-setup-and-sharing.html)
+### 1. [PaperPile setup and sharing](../workflows/paperpile-setup-and-sharing.md)
 
 Connect to JHU libraries; create and share folders; verify shared content.
 
@@ -33,7 +33,7 @@ Connect to JHU libraries; create and share folders; verify shared content.
 
 ---
 
-### 2. [Google Drive sync for PaperPile](https://llorracc.github.io/workspace-course-topics/workflows/google-drive-paperpile-sync.html)
+### 2. [Google Drive sync for PaperPile](../workflows/google-drive-paperpile-sync.md)
 
 Get PaperPile files available locally via Google Drive.
 
@@ -56,4 +56,4 @@ Before proceeding, verify:
 
 ## Next orchestrator
 
-[Literature Discovery](https://llorracc.github.io/workspace-course-topics/orchestrators/03-literature-discovery.html)
+[Literature Discovery](03-literature-discovery.md)

@@ -33,7 +33,7 @@ Four notebooks in TOC order, plus two .bib files:
 
 ## Workflow sequence
 
-### 1. [Verify MyST tools](https://llorracc.github.io/workspace-course-topics/workflows/verify-myst-tools.html)
+### 1. [Verify MyST tools](../workflows/verify-myst-tools.md)
 
 Quick check that all MyST tools are installed. If `setup_env.sh` ran successfully, this should take under a minute.
 
@@ -95,4 +95,4 @@ Before proceeding, verify:
 
 ## Next orchestrator
 
-[Contribution](https://llorracc.github.io/workspace-course-topics/orchestrators/06-contribution.html)
+[Contribution](06-contribution.md)

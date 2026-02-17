@@ -4,11 +4,11 @@
 
 This unit focuses on creating artifacts and contributing to open-source repositories: assembling a multi-notebook MyST document, creating pull requests, and improving content with AI assistance.
 
-By the end of this unit, you should have:
+By the end of this unit, students should have:
 - Created four notebooks (intro, prior-literature, original with citations, subsequent-literature)
 - Assembled them into a MyST document with `myst.yml` TOC and bibliography
 - Created a pull request to the econ-ark/ballpark repository
-- Improved your notebook content using AI assistance
+- Improved their notebook content using AI assistance
 
 ---
 
@@ -21,23 +21,25 @@ This unit represents the **Artifacts** phase of the course:
 
 ---
 
-## Classes in this unit
+## Workflows in this unit
 
-| Class | Topic | Status |
-|-------|-------|--------|
-| [04](../../classes/04-myst-modernization/) | MyST modernization, four-notebook assembly introduced | Completed |
+- Add coauthor to notebook
+- Verify MyST tools
+- Bibliography setup for MyST
+- Add citation to paper
+- Git commit and PR
 
 ---
 
 ## Assignments in this unit
 
-| # | Assignment | Deliverable |
-|---|------------|-------------|
-| — | [Create Intro Notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-intro-notebook.html) | `[name]_intro.ipynb` |
-| — | [Create Prior-Literature Notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-prior-literature-notebook.html) | `[name]_prior-literature.ipynb` + citations |
-| — | [Create Subsequent-Literature Notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-subsequent-literature-notebook.html) | `[name]_subsequent-literature.ipynb` + citations |
-| — | [MyST Assembly + PR](https://llorracc.github.io/workspace-course-topics/assignments/myst-assembly-and-pr.html) | Four notebooks + `myst.yml` + **PR URL** |
-| 070 | [AI Revision with Prompt Tracking](https://llorracc.github.io/workspace-course-topics/assignments/ai-revision-with-prompt-tracking.html) | Improved notebook + prompt log |
+| Assignment | Deliverable |
+|------------|-------------|
+| [Create Intro Notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-intro-notebook.html) | `[name]_intro.ipynb` |
+| [Create Prior-Lit Notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-prior-literature-notebook.html) | `[name]_prior-literature.ipynb` + citations |
+| [Create Subsequent-Lit Notebook](https://llorracc.github.io/workspace-course-topics/assignments/create-subsequent-literature-notebook.html) | `[name]_subsequent-literature.ipynb` + citations |
+| [MyST Assembly + PR](https://llorracc.github.io/workspace-course-topics/assignments/myst-assembly-and-pr.html) | Four notebooks + `myst.yml` + **PR URL** |
+| [AI Revision with Prompt Tracking](https://llorracc.github.io/workspace-course-topics/assignments/ai-revision-with-prompt-tracking.html) | Improved notebook + prompt log |
 
 ---
 

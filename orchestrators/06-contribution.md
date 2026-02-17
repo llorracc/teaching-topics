@@ -45,7 +45,7 @@ git checkout -b add-coauthor-YOURNAME
 
 ---
 
-### 3. [Git add, commit, and PR](https://llorracc.github.io/workspace-course-topics/workflows/git-commit-and-pr.html)
+### 3. [Git add, commit, and PR](../workflows/git-commit-and-pr.md)
 
 Stage changes, commit, and create a pull request for your modifications.
 

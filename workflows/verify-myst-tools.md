@@ -46,7 +46,7 @@ jupytext --version
 
 ## All good?
 
-If all three checks pass, you're ready to proceed with the [MyST Assembly orchestrator](https://llorracc.github.io/workspace-course-topics/orchestrators/05-myst-conversion.html).
+If all three checks pass, you're ready to proceed with the [MyST Assembly orchestrator](../orchestrators/05-myst-conversion.md).
 
 If any tool is missing, the fastest fix is to re-run the setup script from the ballpark repo root:
 ```bash

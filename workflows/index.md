@@ -6,13 +6,13 @@ Atomic, reusable in-class workflow steps. Each workflow is a standalone document
 
 ## ⚠️ Before you start any workflow
 
-1. **Check your working directory** — Most workflows require you to be in your ballpark fork (e.g. `~/GitHub/<your-username>/ballpark`)
+1. **Check your working directory** — Most workflows require you to be in `~/GitHub/econ-ark/ballpark`
 2. **Complete verification steps** — Each workflow has a "Verify first" section at the top
 3. **Windows users:** Ensure you're in WSL/Ubuntu, not Windows
 
 **Quick check:**
 ```bash
-cd ~/GitHub/<your-username>/ballpark && pwd
+cd ~/GitHub/econ-ark/ballpark && pwd
 ```
 
 ---
@@ -21,10 +21,10 @@ cd ~/GitHub/<your-username>/ballpark && pwd
 
 These are not workflows, but reference material for common issues:
 
-- [Verify terminal context](https://llorracc.github.io/workspace-course-topics/workflows/verify-terminal-context.html) — Ensures correct filesystem and directory
-- [Pre-class verification checklist](https://llorracc.github.io/workspace-course-topics/workflows/verify-pre-class.html) — **Complete before each class**
-- [Paths with spaces](https://llorracc.github.io/workspace-course-topics/workflows/paths-with-spaces.html) — How to handle paths containing spaces or special characters
-- [WSL Google Drive access](https://llorracc.github.io/workspace-course-topics/workflows/wsl-google-drive-access.html) — Windows: accessing Google Drive files from WSL
+- [Verify terminal context](_verify-terminal-context.md) — Ensures correct filesystem and directory
+- [Pre-class verification checklist](_verify-pre-class.md) — **Complete before each class**
+- [Paths with spaces](_paths-with-spaces.md) — How to handle paths containing spaces or special characters
+- [WSL Google Drive access](_wsl-google-drive-access.md) — Windows: accessing Google Drive files from WSL
 
 ---
 
@@ -54,8 +54,8 @@ These are not workflows, but reference material for common issues:
 - [Ask Cursor about a MyST extension](ask-cursor-about-myst-extension.md)
 - [Install MyST-Markdown extension](install-myst-extension.md)
 - [Install MyST (CLI)](install-myst-cli.md)
-- [Verify MyST tools](https://llorracc.github.io/workspace-course-topics/workflows/verify-myst-tools.html)
-- ~~Convert notebook to MyST~~ — replaced by the [four-notebook MyST assembly](https://llorracc.github.io/workspace-course-topics/orchestrators/05-myst-conversion.html)
+- [Verify MyST tools](verify-myst-tools.md)
+- ~~Convert notebook to MyST~~ — replaced by the [four-notebook MyST assembly](../orchestrators/05-myst-conversion.md)
 
 ## Bibliography
 

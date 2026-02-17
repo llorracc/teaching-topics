@@ -13,47 +13,42 @@ Students arrive having completed: [Assignments for Class 03](../../assignments/f
 
 ## Overview
 
-This class introduces ballpark editing with Jupyter notebooks, MyST conversion, bibliography setup, and creating a PR.
+This class introduces ballpark editing with Jupyter notebooks, bibliography tools (PaperPile, LitMaps), and the MyST toolchain.
 
 ---
 
 ## Learning objectives
 
 - **Git/GitHub:** Clone and fork repos; each student creates a fork of the ballpark repo.
-- **Jupyter & MyST:** Use Jupyter notebooks and MyST Markdown for documents; understand how they fit into JupyterBook builds.
-- **BibTeX in JupyterBooks/MyST:** Create and use `.bib` files; cite references in MyST/JupyterBook content.
-- **MathPix:** Use MathPix to capture equations from PDFs/images into LaTeX or markdown.
+- **Jupyter & MyST:** Use Jupyter notebooks and understand how they fit into MyST builds.
+- **Bibliography tools:** Set up PaperPile, sync to Google Drive, discover literature with LitMaps.
 
 ---
 
 ## In-class workflow
 
-See the detailed orchestrator: **[ballpark-jupyter-myst-bibliography](https://llorracc.github.io/workspace-course-topics/orchestrators/ballpark-jupyter-myst-bibliography.html)**
+Uses modular orchestrators:
 
-Summary of steps:
+**Orchestrator 01 — [Environment Setup](https://llorracc.github.io/workspace-course-topics/orchestrators/01-environment-setup.html)** (~15 min)
 1. Git fetch/pull on ballpark
-2. PaperPile setup and sharing
-3. Google Drive sync for PaperPile
-4. LitMaps import and visualize
-5. Launch Cursor in ballpark
-6. Install the environment
-7. Open Jupyter notebook in Cursor
-8. Add yourself as coauthor
-9. Ask Cursor about MyST extension
-10. Install MyST-Markdown extension
-11. Install MyST (CLI)
-12. Convert notebook to MyST
-13. Set up bibliography files
-14. Add citation to the paper
-15. Add LitMap image and subsequent-literature bib
-16. AI-assisted "Subsequent Literature" section
-17. Git add, commit, and PR
+2. Launch Cursor in ballpark
+3. Install the environment
+4. Open Jupyter notebook in Cursor
+
+**Orchestrator 02 — [Bibliography Capture](https://llorracc.github.io/workspace-course-topics/orchestrators/02-bibliography-capture.html)** (~20 min)
+5. PaperPile setup and sharing
+6. Google Drive sync for PaperPile
+
+**Orchestrator 03 — [Literature Discovery](https://llorracc.github.io/workspace-course-topics/orchestrators/03-literature-discovery.html)** (~15 min)
+7. LitMaps import and visualize
 
 ---
 
 ## Key resources
 
 - **Econ-ARK ballpark:** https://github.com/econ-ark/ballpark
+- **PaperPile:** https://paperpile.com (use JHU credentials)
+- **LitMaps:** https://www.litmaps.com (free account)
 
 ---
 

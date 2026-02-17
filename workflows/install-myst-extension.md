@@ -2,7 +2,7 @@
 
 **Purpose:** Install the MyST-Markdown VS Code extension for syntax highlighting, autocomplete, and preview.
 
-**Note:** If you ran `bash scripts/setup_env.sh` in the ballpark repo, the extension was installed automatically. Use this workflow only if you need to install it manually or troubleshoot.
+**Note:** If you ran `bash scripts/setup_env.sh` in the ballpark repo, the extension may already be installed automatically. Use this workflow only if you need to install it manually or troubleshoot.
 
 ---
 
@@ -30,6 +30,7 @@ Cursor's marketplace is separate from VS Code's and may not include this extensi
 3. Reload Cursor if prompted.
 
 Or from the command line (if Cursor CLI is on PATH):
+
 ```bash
 cursor --install-extension /tmp/myst-highlight.vsix
 ```

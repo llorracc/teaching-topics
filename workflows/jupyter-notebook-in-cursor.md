@@ -6,7 +6,7 @@
 
 ## ⚠️ Working directory (Cursor workspace root)
 
-**Cursor must have been opened from:** `~/GitHub/econ-ark/ballpark`
+**Cursor must have been opened from:** `~/GitHub/<your-username>/ballpark`
 
 **How to check:** Look at the Explorer panel (left side of Cursor). The root folder should be `ballpark`, not `models` or a paper name.
 
@@ -36,7 +36,7 @@ In Cursor's terminal, run:
 echo $VIRTUAL_ENV
 ```
 
-**Expected:** A path containing `.venv/VENV-...`
+**Expected:** A path containing `.venv-...`
 
 **If empty or no output:** You haven't activated the environment. Complete [cursor-environment-install](cursor-environment-install.md) first.
 
@@ -50,7 +50,7 @@ Look at your terminal prompt in Cursor.
 
 **If not visible:** Run the activation command:
 ```bash
-source .venv/VENV-*/bin/activate
+source .venv-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m)/bin/activate
 ```
 
 ---
@@ -87,7 +87,7 @@ Click on the `.ipynb` file to open it.
 
 When prompted "Select Kernel":
 1. **Click "Python Environments"** — this is the correct option
-2. Look for your `.venv/VENV-...` environment (usually at the TOP of the list)
+2. Look for your `.venv-...` environment (usually at the TOP of the list)
 3. Select it
 
 **Common mistake:** Clicking "Jupyter Kernel" or "Select Another Kernel" instead. These options usually don't find your environment. Always start with **"Python Environments"**.
@@ -95,7 +95,7 @@ When prompted "Select Kernel":
 **If the environment doesn't appear:**
 - You likely didn't activate before opening Cursor
 - Close Cursor
-- In terminal: `cd ~/GitHub/econ-ark/ballpark && source .venv/VENV-*/bin/activate && cursor .`
+- In terminal: `cd ~/GitHub/<your-username>/ballpark && source .venv-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m)/bin/activate && cursor .`
 - Try opening the notebook again
 
 ---

@@ -2,6 +2,9 @@
 
 **Purpose:** Import your bibliography into LitMaps and visualize citing papers.
 
+**External resources:**
+- [The Pitch (as.180.369)](https://github.com/llorracc/as.180.369/blob/main/materials/pitch/README.md)
+
 **Note:** Free LitMaps accounts are limited to **2 maps**, **100 articles per map**, and **20 search inputs**. Work strategically within these limits.
 
 ---
