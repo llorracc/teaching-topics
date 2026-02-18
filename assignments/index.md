@@ -13,6 +13,7 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | [Class 03](for-class-03.md) | PaperPile Bibliography |
 | [Class 04](for-class-04.md) | Prior Literature, Subsequent Literature |
 | [Class 05](for-class-05.md) | Four-Notebook MyST Assembly + PR, AI Revision |
+| [Class 06](for-class-06.md) | LaTeX version of ballpark paper; Paper topic choice and REMARK repo setup |
 
 ---
 
