@@ -14,6 +14,7 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | [Class 04](for-class-04.md) | Prior Literature, Subsequent Literature |
 | [Class 05](for-class-05.md) | Four-Notebook MyST Assembly + PR, AI Revision |
 | [Class 06](for-class-06.md) | LaTeX version of ballpark paper; Paper topic choice and REMARK repo setup |
+| [Class 07](for-class-07.md) | Bellman Stage Decomposition |
 
 ---
 
@@ -63,3 +64,4 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | 06.0 | [LaTeX version of ballpark paper](https://llorracc.github.io/workspace-course-topics/assignments/latex-version-of-ballpark-paper.html) | PDF + LaTeX in `source/` (local) | Artifacts | Class 06 |
 | 06.1 | [Paper topic choice and REMARK repo setup](https://llorracc.github.io/workspace-course-topics/assignments/paper-topic-choice-and-remark-setup.html) | Ballparks and/or hollowed HAFiscal draft | Artifacts | Class 06 |
 | 06.2 | [Export Ballpark to PDF or MMD](https://llorracc.github.io/workspace-course-topics/assignments/ballpark-export-pdf-mmd.html) | PDF and/or MyST Markdown (.md) of ballpark | Artifacts | Class 06 |
+| 07.0 | [Bellman Stage Decomposition](https://llorracc.github.io/workspace-course-topics/assignments/bellman-stage-decomposition.html) | `{PAPER}_bellman-stages.ipynb` | Skills | Class 07 |
