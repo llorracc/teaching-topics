@@ -14,4 +14,4 @@ Individual class meetings, each with a plan (before) and summary (after).
 | 06 | [SMD & Matsya demo](06-smd-matsya-demo/) | [Research Skills](../units/research-skills/) / [Contribution](../units/contribution/) | ✓ | ✓ |
 | 07 | [Bellman decomposition](07-bellman-decomposition/) | [Research Skills](../units/research-skills/) | ✓ | ✓ |
 | 08 | [REMARK, branching & Krusell–Smith](08-remark-branching-krusell-smith/) | [Research Skills](../units/research-skills/) / [Contribution](../units/contribution/) | ✓ | ✓ |
-| 09 | [Student REMARKs review](09-student-remarks-review/) | [Research Skills](../units/research-skills/) / [Contribution](../units/contribution/) | ✓ | — |
+| 09 | [HARK and SSJ](09-hark-and-ssj/) | [Research Skills](../units/research-skills/) / [Contribution](../units/contribution/) | ✓ | — |
