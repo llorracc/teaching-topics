@@ -16,6 +16,8 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | [Class 06](for-class-06.md) | LaTeX version of ballpark paper; Paper topic choice and REMARK repo setup |
 | [Class 07](for-class-07.md) | Bellman Stage Decomposition |
 | [Class 08](for-class-08.md) | Bellman revision and next steps |
+| [Class 09](for-class-09.md) | PR to REMARK for your project |
+| [Class 10](for-class-10.md) | Ask AI to assess REMARK compliance |
 
 ---
 
@@ -67,3 +69,5 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | 06.2 | [Export Ballpark to PDF or MMD](https://llorracc.github.io/workspace-course-topics/assignments/ballpark-export-pdf-mmd.html) | PDF and/or MyST Markdown (.md) of ballpark | Artifacts | Class 06 |
 | 07.0 | [Bellman Stage Decomposition](https://llorracc.github.io/workspace-course-topics/assignments/bellman-stage-decomposition.html) | `{PAPER}_bellman-stages.ipynb` | Skills | Class 07 |
 | 08.0 | [Bellman revision and next steps](https://llorracc.github.io/workspace-course-topics/assignments/bellman-revision-and-remark-next.html) | Revised notebook + PR; REMARK progress | Skills / Artifacts | Class 08 |
+| 09.0 | [PR to REMARK for your project](https://llorracc.github.io/workspace-course-topics/assignments/make-pr-to-remark-for-your-project.html) | PR URL to `econ-ark/REMARK` adding `REMARKs/*.yml` | Artifacts | Class 09 |
+| 10.0 | [Ask AI to assess REMARK compliance](https://llorracc.github.io/workspace-course-topics/assignments/ask-ai-to-assess-remark-compliance.html) | Prompt transcript + tier summary + judgment + edited action list | Artifacts | Class 10 |
