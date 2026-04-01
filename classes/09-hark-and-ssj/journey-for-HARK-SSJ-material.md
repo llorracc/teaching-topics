@@ -1,10 +1,11 @@
 # Sequence Space Jacobians in HARK — Journey
 
-A guided tour through HARK's SSJ documentation, tutorials, and examples,
-ordered from conceptual foundations to full general-equilibrium applications.
-Each tier builds on the previous; links point to rendered
-[docs.econ-ark.org](https://docs.econ-ark.org) pages where available, with
-GitHub source links for notebooks.
+A guided path through HARK's SSJ documentation, tutorials, and examples.
+Each tier builds on the previous, progressing from conceptual understanding
+to hands-on Jacobian computation to full general-equilibrium applications.
+
+All notebooks in Tiers 1–5 live under `examples/SequenceSpaceJacobians/`
+from the HARK repo root unless otherwise noted.
 
 > **Source branch:** Notebook source links below point to the
 > [PR #1750](https://github.com/econ-ark/HARK/pull/1750) branch
@@ -17,165 +18,144 @@ GitHub source links for notebooks.
 > Heterogeneous-Agent Models." *Econometrica*, 89(5), 2375–2408.
 > [doi:10.3982/ECTA17434](https://doi.org/10.3982/ECTA17434)
 
-All notebooks in Tiers 1–5 live under `examples/SequenceSpaceJacobians/`
-from the HARK repo root.
-
 ---
 
-## Tier 1 — Conceptual Introduction: What Is SSJ and Why?
+## Tier 1 — What Is SSJ and Why Should I Care?
 
 *~15 min reading. No code to run; pure exposition.*
 
-### `SSJ_explanation.ipynb` — The Sequence Space Jacobian (SSJ) Method
+### `SSJ_explanation.ipynb` — The Sequence Space Jacobian Method
 
 [Rendered notebook](https://docs.econ-ark.org/examples/SequenceSpaceJacobians/SSJ_explanation.html) |
 [Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/SequenceSpaceJacobians/SSJ_explanation.ipynb)
 
-Starts with the key contrast: Krusell-Smith (1997) uses a **state-space**
-approach that approximates the model solution for every conceivable
-combination of aggregate states — computationally expensive. The SSJ method
-instead works in **sequence space**: it computes how aggregate outcomes
+The essential contrast: Krusell-Smith (1998) uses a **state-space**
+approach — approximate the model solution for every conceivable
+combination of aggregate states, which is computationally expensive.
+The SSJ method works in **sequence space**: compute how aggregate outcomes
 respond to an expected *path* of shocks, and Jacobian matrices become a
 "sufficient statistic" for the macro dynamics.
 
 Covers:
 
-- Advantages of SSJ (3-second HANK models vs 15+ minutes; adding shocks is
-  nearly free)
-- MIT shocks and when the linearization is valid (aggregate shocks small
-  relative to micro heterogeneity)
+- Advantages of SSJ (3-second HANK models vs 15+ minutes)
+- MIT shocks and when linearization is valid
 - A simplified Krusell-Smith model written as equilibrium conditions on
-  sequences, linearized via the implicit function theorem
-- The heterogeneous-agent Jacobian **F_r** and why the "Fake News"
-  algorithm makes it fast
+  sequences, solved by linearization via the implicit function theorem
+- The heterogeneous-agent Jacobian **F_r** and the Fake News algorithm
+- Directed acyclic graphs (DAGs) for model structure
+- Points to `KS-HARK-presentation.ipynb` (Tier 3) for the implementation
 
 ---
 
-## Tier 2 — Prerequisite Machinery: Transition Matrices
+## Tier 2 — Compute Your First Jacobian
 
-*~20 min reading + optional hands-on. Transition-matrix methods are the
-computational backbone that SSJ builds on.*
-
-### `Transition_Matrix_Example.ipynb` — Transition Matrix vs Monte Carlo Methods
-
-[Rendered notebook](https://docs.econ-ark.org/examples/SequenceSpaceJacobians/Transition_Matrix_Example.html) |
-[Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/SequenceSpaceJacobians/Transition_Matrix_Example.ipynb)
-
-Head-to-head comparison of Monte Carlo simulation and transition-matrix
-(TM) propagation for heterogeneous-agent models, using
-`NewKeynesianConsumerType`. Proceeds in three parts:
-
-1. **Steady state** — solve, compute ergodic distribution by MC and TM,
-   compare accuracy and precision
-2. **Harmenberg neutral measure** — the reweighting trick that collapses a
-   2D (m, p) grid to 1D, dramatically improving efficiency
-3. **Perfect-foresight transition path** — compute the economy's nonlinear
-   response to an anticipated interest-rate deviation, the building block
-   for SSJ Jacobians
-
-Prerequisite: familiarity with HARK's `AgentType` interface (solving,
-simulating).
-
-### `docs/guides/transition_matrix_methods.md` — Transition Matrix Methods Guide (reference)
-
-[Guide on GitHub](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/docs/guides/transition_matrix_methods.md)
-
-Comprehensive markdown reference covering single-state models, Markov
-models, and Krusell-Smith GE. Includes a dedicated **"Sequence-Space
-Jacobians (SSJ)"** section with `calc_jacobian` API, the Fake News
-decomposition formula, diagnostic checklists, and common pitfalls.
-Best used as a desk reference alongside the notebooks.
-
----
-
-## Tier 3 — Hands-On SSJ Construction
-
-*~30 min hands-on. Run code, plot Jacobian columns, compare methods.*
+*~30 min hands-on. The "Hello World" of SSJ in HARK.*
 
 ### `SSJ-tutorial.ipynb` — Making HA-SSJ Matrices with HARK
 
 [Rendered notebook](https://docs.econ-ark.org/examples/SequenceSpaceJacobians/SSJ-tutorial.html) |
 [Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/SequenceSpaceJacobians/SSJ-tutorial.ipynb)
 
-The main tutorial. Walks through constructing HA-SSJ matrices using
-`IndShockConsumerType.make_basic_SSJ()`:
+**This is the recommended starting point for hands-on work.** Uses the
+general-purpose `make_basic_SSJ()` method on `IndShockConsumerType` — the
+API that works with *any* `AgentType` subclass.
 
-- Set up an infinite-horizon agent
-- Define grid specifications for assets and consumption
-- Call `make_basic_SSJ()` and inspect the resulting T x T Jacobian
-- Plot columns of the Jacobian (how aggregate capital at time t responds
-  to an interest-rate change at time s)
-- Verify results against manual impulse-response calculations
+What you will learn:
 
-Prerequisite: Tier 1 (what an SSJ *is*) and basic familiarity with TM
-concepts from Tier 2.
+- Set up an infinite-horizon agent and call `make_basic_SSJ()`
+- Discover what model variables exist (via model files and
+  `describe_constructors()`)
+- Learn which parameters can be shock variables and why
+- Inspect the resulting T x T Jacobian matrix
+- Plot Jacobian columns (how aggregate capital at time t responds to an
+  interest-rate change at time s)
+- Understand permanent income normalization in the SSJ context
+- Look under the hood: `initialize_sym()`, `make_transition_matrices()`,
+  the `_simulator` attribute
+- **Verify correctness**: `calc_impulse_response_manually()` computes
+  impulse responses by brute force for a single horizon s, matching the
+  corresponding column of the SSJ matrix
 
-### `Jacobian_Example.ipynb` — Computing HA Sequence-Space Jacobians in HARK
-
-[Rendered notebook](https://docs.econ-ark.org/examples/SequenceSpaceJacobians/Jacobian_Example.html) |
-[Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/SequenceSpaceJacobians/Jacobian_Example.ipynb)
-
-By William Du. Compares two approaches to producing the same Jacobian:
-
-1. **`NewKeynesianConsumerType.calc_jacobian()`** — the Fake News algorithm
-   from Auclert et al., implemented specifically for the NK consumer
-2. **`IndShockConsumerType.make_basic_SSJ()`** — HARK's general-purpose
-   constructor that works with *any* `AgentType` subclass
-
-The figures overlay both methods; the differences are negligible, validating
-the general constructor against the specialized one.
+After this notebook you can compute a Jacobian for any HARK model and
+have tools to verify the result.
 
 ---
 
-## Tier 4 — Advanced SSJ
+## Tier 3 — From Partial Equilibrium to General Equilibrium
 
-*~20 min hands-on. Extends SSJ to richer models.*
+*~30 min hands-on. Full GE model combining HARK micro with the SSJ toolkit.*
 
-### `SSJ-advanced-examples.ipynb` — Advanced Examples of HA-SSJ's
-
-[Rendered notebook](https://docs.econ-ark.org/examples/SequenceSpaceJacobians/SSJ-advanced-examples.html) |
-[Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/SequenceSpaceJacobians/SSJ-advanced-examples.ipynb)
-
-Demonstrates SSJ with models beyond the vanilla `IndShockConsumerType`:
-
-- **Alternative constructors** — swap in a HANK-style income process with
-  wage rates, taxes, and unemployment
-- **New shock parameters** — compute Jacobians with respect to wages, tax
-  rates, or labor supply (not just `Rfree`)
-- **`MarkovConsumerType`** — SSJ for agents facing discrete Markov state
-  switches (e.g., employment/unemployment)
-
-Prerequisite: Tier 3 (comfortable with `make_basic_SSJ` workflow).
-
----
-
-## Tier 5 — General Equilibrium Applications
-
-*~30 min hands-on. Full GE models combining HARK micro with SSJ macro.*
+Now that you know what a Jacobian *is* and how to compute one, this tier
+shows the complete pipeline: calibrate a production economy, find the
+steady state, extract Jacobians, plug into the
+[`sequence_jacobian`](https://github.com/shade-econ/sequence-jacobian)
+toolkit's DAG, and compute GE impulse responses and simulations.
 
 ### `KS-HARK-presentation.ipynb` — Solving Krusell-Smith with HARK and SSJ
 
 [Rendered notebook](https://docs.econ-ark.org/examples/SequenceSpaceJacobians/KS-HARK-presentation.html) |
 [Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/SequenceSpaceJacobians/KS-HARK-presentation.ipynb)
 
-By William Du. Solves the full Krusell-Smith (1998) model by combining:
+By William Du. Implements the model derived in `SSJ_explanation.ipynb`:
 
-- HARK's `NewKeynesianConsumerType` for the micro steady state and HA
-  Jacobians
-- The [`sequence_jacobian`](https://github.com/shade-econ/sequence-jacobian)
-  toolkit's `simple` blocks for the firm side and market clearing
-- `create_model()` to assemble the DAG and compute GE impulse responses
+- **Calibration**: Cobb-Douglas production economy with steady-state
+  targets for output, interest rate, and labor
+- **HARK agent setup**: `NewKeynesianConsumerType` parameterized from
+  `init_newkeynesian` defaults, overriding only the KS-specific values
+- **Steady state**: calibrate the discount factor so desired asset
+  holdings clear the capital market
+- **Jacobians**: `calc_jacobian()` computes consumption and asset
+  Jacobians with respect to wages and interest rates
+- **GE impulse responses**: `sequence_jacobian`'s `simple` blocks for the
+  firm side + `create_model()` to assemble the DAG
+- **Simulation**: draw aggregate shocks, combine with Jacobians to
+  produce simulated paths of output, capital, interest rates
 
-Shows calibration, steady-state computation, Jacobian extraction, and
-impulse-response plots — the complete pipeline from micro to macro.
+Note: this notebook uses the older `calc_jacobian()` method specific to
+`NewKeynesianConsumerType`. The general-purpose `make_basic_SSJ()` from
+Tier 2 produces equivalent results (see Tier 6 for cross-validation).
+
+---
+
+## Tier 4 — Richer Partial-Equilibrium Models
+
+*~20 min hands-on. Extends SSJ to models beyond vanilla IndShockConsumerType.*
+
+### `SSJ-advanced-examples.ipynb` — Advanced Examples of HA-SSJ's
+
+[Rendered notebook](https://docs.econ-ark.org/examples/SequenceSpaceJacobians/SSJ-advanced-examples.html) |
+[Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/SequenceSpaceJacobians/SSJ-advanced-examples.ipynb)
+
+Demonstrates the generality of `make_basic_SSJ()` with progressively
+richer models:
+
+- **Alternative constructors** — swap in a HANK-style income process
+  (wages, taxes, unemployment) while keeping the same SSJ API
+- **Labor on the intensive margin** — `LaborIntMargConsumerType`: agents
+  choose hours, adding a labor-supply Jacobian
+- **Markov unemployment dynamics** — `MarkovConsumerType` with persistent
+  employment/unemployment transitions and state-dependent consumption
+  functions
+- **Portfolio choice** — risky vs safe assets; SSJ with respect to the
+  equity premium
+
+Each example follows the same pattern: set up the model, call
+`make_basic_SSJ()`, plot and interpret.
+
+---
+
+## Tier 5 — Full HANK Application
+
+*~30 min hands-on. The capstone: fiscal HANK with estimation.*
 
 ### `HANKFiscal_example.ipynb` — HARK + SSJ Toolkit: Fiscal HANK
 
 [Rendered notebook](https://docs.econ-ark.org/examples/SequenceSpaceJacobians/HANKFiscal_example.html) |
 [Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/SequenceSpaceJacobians/HANKFiscal_example.ipynb)
 
-By William Du. Extends the KS presentation to a HANK model with fiscal
-policy (government spending, taxes, transfers), building on the
+By William Du. Extends the KS model to a HANK economy with fiscal policy
+(government spending, taxes, transfers), building on the
 [NBER SSJ Workshop (2022)](https://github.com/shade-econ/nber-workshop-2022)
 fiscal-policy tutorial. Demonstrates the full
 **HARK solves micro -> SSJ toolkit computes macro** workflow with a richer
@@ -186,63 +166,69 @@ Includes an `estimation/` subfolder with `model.py`, `routines.py`, and
 
 ---
 
-## Tier 6 — Monte Carlo vs Transition Matrix: End-to-End Comparisons
+## Tier 6 — Cross-Validation and MC-vs-TM Deep Dives
 
-*~30 min hands-on. Three notebooks in `examples/MonteCarlovsTransitionMatrix/`
-that systematically compare MC simulation with TM methods at increasing
-levels of complexity — partial equilibrium, general equilibrium, and SSJ
-validation. These are PR-branch-only notebooks (no rendered docs page yet).*
+*Optional. For students who want to verify results or understand the
+transition-matrix machinery underneath SSJ.*
 
-### `PE_MarkovConsumerType.ipynb` — Partial-Equilibrium MC vs TM for MarkovConsumerType
+### `Jacobian_Example.ipynb` — Cross-Validating Old and New SSJ Methods
 
-[Notebook source on GitHub](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/MonteCarlovsTransitionMatrix/PE_MarkovConsumerType.ipynb)
+[Rendered notebook](https://docs.econ-ark.org/examples/SequenceSpaceJacobians/Jacobian_Example.html) |
+[Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/SequenceSpaceJacobians/Jacobian_Example.ipynb)
 
-Head-to-head comparison of Monte Carlo (`symulate()` / `hystory`) and
-transition-matrix methods for `MarkovConsumerType` in partial equilibrium.
-Two parts of increasing difficulty:
+By William Du. Compares two approaches to the same Jacobian:
 
-1. **Serial unemployment (4-state Markov, 1D grid)** — builds the joint
-   (m, j) transition matrix, computes the ergodic distribution, and
-   compares MC vs TM time-series and cross-sectional distributions.
-   Demonstrates sparsity, grid convergence, and degenerate-income
-   edge cases.
-2. **Varying PermGroFac on a 2D grid (5-state Markov)** — tackles the
-   harder case where permanent-income growth differs across Markov states,
-   requiring a 2D (m, p) distribution grid.
+1. `NewKeynesianConsumerType.calc_jacobian()` — the Fake News algorithm
+   implemented specifically for the NK consumer (used in Tier 3)
+2. `IndShockConsumerType.make_basic_SSJ()` — the general constructor
+   (used in Tier 2)
 
-### `GE_KrusellSmith.ipynb` — General-Equilibrium MC vs TM: Krusell-Smith Economy
+The figures overlay both; differences are negligible, confirming that the
+general constructor matches the specialized one.
 
-[Notebook source on GitHub](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/MonteCarlovsTransitionMatrix/GE_KrusellSmith.ipynb)
+### `Transition_Matrix_Example.ipynb` — Transition Matrix vs Monte Carlo Methods
 
-Extends the MC-vs-TM comparison to **general equilibrium** using HARK's
-`CobbDouglasMarkovEconomy` (Krusell-Smith 1998). Two parts:
+[Rendered notebook](https://docs.econ-ark.org/examples/SequenceSpaceJacobians/Transition_Matrix_Example.html) |
+[Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/SequenceSpaceJacobians/Transition_Matrix_Example.ipynb)
 
-1. **TM with aggregate shocks** — solves the KS economy with standard MC,
-   then builds per-state transition matrices at the steady state. Compares
-   ergodic distributions and forward-propagates the TM through the same
-   Markov shock sequence as MC, tracking aggregate capital trajectories.
-2. **TM inside the KS loop** — uses `make_history_tm()` as a deterministic
-   drop-in replacement for Monte Carlo within the KS solution algorithm
-   itself: zero sampling noise, identical aggregate shock sequence.
+Head-to-head comparison of Monte Carlo simulation and transition-matrix
+(TM) propagation for `NewKeynesianConsumerType`. TM methods are the
+computational backbone that SSJ builds on internally. Three parts:
 
-Documents a known ~22% level mismatch between MC and TM aggregate
-trajectories (high correlation but systematic offset), with discussion of
-potential sources.
+1. **Steady state** — solve, compute ergodic distribution by MC and TM
+2. **Harmenberg neutral measure** — the reweighting trick that collapses
+   a 2D (m, p) grid to 1D
+3. **Perfect-foresight transition path** — the building block for SSJ
+   Jacobians
 
-### `Validation_and_SSJ.ipynb` — TM Validation and Sequence-Space Jacobians
+### `docs/guides/transition_matrix_methods.md` — TM Methods Guide (reference)
 
-[Notebook source on GitHub](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/MonteCarlovsTransitionMatrix/Validation_and_SSJ.ipynb)
+[Guide on GitHub](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/docs/guides/transition_matrix_methods.md)
 
-Two-part notebook using `MarkovConsumerType` with a symmetric 2-state
-Markov chain:
+Comprehensive markdown reference covering single-state models, Markov
+models, and Krusell-Smith GE. Includes a **"Sequence-Space Jacobians"**
+section with `calc_jacobian` API, the Fake News decomposition formula,
+diagnostic checklists, and common pitfalls.
 
-1. **Part 1** — validates TM methods (`define_distribution_grid`,
-   `calc_transition_matrix`, `calc_ergodic_dist`) against hand-built code
-2. **Part 2** — computes SSJ Jacobians via the Fake News Algorithm, with
-   finite-difference cross-checks
+### Three `examples/MonteCarlovsTransitionMatrix/` notebooks
 
-Useful as a self-contained validation exercise for anyone implementing SSJ
-with Markov consumers.
+These systematically compare MC simulation with TM methods at increasing
+complexity. All are PR-branch-only (no rendered docs page yet).
+
+**`PE_MarkovConsumerType.ipynb`** — Partial-equilibrium MC vs TM for
+`MarkovConsumerType`: 4-state Markov with 1D grid, then 5-state with
+varying PermGroFac on a 2D grid.
+[Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/MonteCarlovsTransitionMatrix/PE_MarkovConsumerType.ipynb)
+
+**`GE_KrusellSmith.ipynb`** — General-equilibrium MC vs TM in the
+Krusell-Smith economy. Uses `make_history_tm()` as a deterministic
+drop-in for MC inside the KS solution loop.
+[Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/MonteCarlovsTransitionMatrix/GE_KrusellSmith.ipynb)
+
+**`Validation_and_SSJ.ipynb`** — TM validation against hand-built code,
+then SSJ Jacobians via the Fake News Algorithm with finite-difference
+cross-checks.
+[Notebook source](https://github.com/econ-ark/HARK/blob/main_improve-tm-vs-mc-sim-infra-and-examples/examples/MonteCarlovsTransitionMatrix/Validation_and_SSJ.ipynb)
 
 ---
 
