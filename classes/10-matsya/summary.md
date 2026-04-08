@@ -65,6 +65,12 @@ Students added the Claude Code extension in Cursor and configured **both** the A
 
 Chris-JHU: You need to really bear in mind that Matsya is a completely external tool which does not have access to anything in the file system that you do not feed to it directly. Cursor's Composer remembers what you've done before, but every time you make a query to Matsya, you have to make sure that it has the context that it needs to answer your question.
 
+### Supplement: Matsya server-side sessions (post-class clarification)
+
+Topic 3 is about **repo** access: Matsya still does **not** read your disk. Separately, the **Matsya CLI/API** supports **named sessions** (`--session` / `session=` in Python). When you reuse the **same session name** across calls, the **server** stores prior Q&A so **follow-up Matsya queries** can build on earlier turns. That is **not** the same as Cursor’s thread memory—it is **Matsya’s** logged conversation. Session traffic is **persisted** for continuity and for **research / improving the tool**; see [Data logging and consent](https://github.com/econ-ark/Matsya/blob/main/README.md#data-logging-and-consent). If a session grows very long, queries may **slow down** or **time out**; you can drop `--session` for a one-off or **start a new session name**.
+
+**Student-facing detail (from Matsya team guidance, Apr 2026):** Please use your own **`MATSYA_ANTHROPIC_KEY`** when you can so routine calls do not rely only on the shared Econ-ARK key; starting balances on the order of **\$5–\$10** are enough to begin. Expect **roughly tens of seconds to a few minutes** per Matsya response—it is meant as a **careful DP specialist**, not a fast generic chatbot. A useful modeling pattern: ask for **dolo-plus YAML** first, then ask for the **math writeup** from that YAML, to pin down states, controls, and timing before prose.
+
 ### Topic 4: What Matsya is for
 
 Matsya is positioned as a **helper** for modular DP / Bellman structure and **Dolo Plus** syntax, drawing on a **fixed** knowledge base rather than general web search. **Dolo Plus** builds on Dolo; Dynare remains the reference ecosystem for many RA models. Anything Matsya writes should be treated as a **draft** to review against the paper and your own judgment.
@@ -85,7 +91,7 @@ Chris-JHU: You will find that you can ask Matsya all sorts of questions, and it 
 
 ### Follow-up assignment
 
-Due before Class 11: see **[Assignments for Class 11](https://github.com/llorracc/teaching-topics/blob/main/assignments/for-class-11.md)** (links to the single canonical write-up on GitHub Pages). Run roster: [`teaching-topics/run.md`](https://github.com/llorracc/teaching-topics/blob/main/run.md) (#130).
+Due before Class 11: see **[Assignments for Class 11](https://github.com/llorracc/teaching-topics/blob/main/assignments/for-class-11.md)** — Anthropic key setup (#131), **named Matsya session** workflow (#132), and ballpark / Dolo Plus draft (#130). Run roster: [`teaching-topics/run.md`](https://github.com/llorracc/teaching-topics/blob/main/run.md).
 
 ### Supplemental resources
 

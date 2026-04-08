@@ -49,6 +49,7 @@ Workspace path is always `assignments/<Source>.md`. **Slug** is the basename (us
 | 121 | explore-ssj-tutorial | explore-ssj-tutorial | 10 |
 | 130 | matsya-ballpark-dolo-plus-draft | matsya-ballpark-dolo-plus-draft | 11 |
 | 131 | matsya-configure-anthropic-key | matsya-configure-anthropic-key | 11 |
+| 132 | create-a-matsya-session | create-a-matsya-session | 11 |
 
 **Main deliverable for Class 05:** Four notebooks + `myst.yml` + PR URL.
 

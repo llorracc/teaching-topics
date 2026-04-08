@@ -20,7 +20,7 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | [Class 08](for-class-08.md) | Bellman revision and next steps |
 | [Class 09](for-class-09.md) | PR to REMARK for your project |
 | [Class 10](for-class-10.md) | Ask AI to assess REMARK compliance; Explore SSJ Tutorial |
-| [Class 11](for-class-11.md) | Matsya, ballpark, and Dolo Plus draft; Configure Matsya with your Anthropic key |
+| [Class 11](for-class-11.md) | Configure Matsya Anthropic key; Create a Matsya session; Matsya ballpark + Dolo Plus draft |
 
 ---
 
@@ -77,3 +77,4 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | 10.1 | [Explore the SSJ Tutorial Notebook](https://llorracc.github.io/workspace-course-topics/assignments/explore-ssj-tutorial.html) | Executed notebook + interpretive paragraph + verification plot | Skills | Class 10 |
 | 11.0 | [Matsya, ballpark, and Dolo Plus draft](https://llorracc.github.io/workspace-course-topics/assignments/matsya-ballpark-dolo-plus-draft.html) | Session name + redacted prompts/answers + YAML draft + verification paragraph | Artifacts | Class 11 |
 | 11.1 | [Configure Matsya with your Anthropic key](https://llorracc.github.io/workspace-course-topics/assignments/matsya-configure-anthropic-key.html) | Redacted env confirmation + Matsya terminal output (or error + next steps) + fallback note | Artifacts | Class 11 |
+| 11.2 | [Create a Matsya session for your ballpark work](https://llorracc.github.io/workspace-course-topics/assignments/create-a-matsya-session.html) | Session name + workflow note + `matsya sessions` evidence + two-turn redacted sample | Artifacts | Class 11 |
