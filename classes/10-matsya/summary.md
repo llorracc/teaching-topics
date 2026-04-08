@@ -12,7 +12,7 @@
 
 ### Overview
 
-Class time focused on **setup and use** of **Matsya** (Econ-ARK CLI/API) together with **Anthropic API keys**, **Claude Code**, and **Cursor**, applied to students’ **ballpark** repositories. Matsya was presented as a **narrow** assistant for modular dynamic programming and **Dolo Plus**-related notation—not as a full substitute for established heterogeneous-agent solution stacks, but as something to consult for structure and syntax alongside your normal editor and LLM workflow.
+Class time focused on **setup and use** of **Matsya** (Econ-ARK CLI/API) together with **Anthropic API keys**, **Claude Code**, and **Cursor**, applied to students’ **ballpark** repositories. Matsya was presented as an AI assistant for modular dynamic programming and **Dolo Plus**-related notation.
 
 ### Key concepts
 
@@ -40,12 +40,6 @@ Class time focused on **setup and use** of **Matsya** (Econ-ARK CLI/API) togethe
 ### Topic 1: API keys and shell config
 
 Students used Anthropic’s console/dashboard to create an account, add a small credit balance, and create an API key. Emphasis: keys are **shown once**, should be stored safely, and billing is **prepaid** (calls stop when credits run out). Keys were added to shell startup files so they persist across sessions; changing those files requires **reloading** the shell or opening a new terminal.
-
-#### Relevant Q&A
-
-Josh: Is it set up to automatically reload, or do you have to reload it manually?
-
-Chris-JHU: Yes, you have to reload it manually. It will tell you when you run out of money, and it won't work until you put some more money in.
 
 ### Topic 2: Install and environment
 
@@ -83,12 +77,23 @@ Students pointed Matsya at **ballpark** projects: describe the economic setup, p
 
 Chris-JHU: You will find that you can ask Matsya all sorts of questions, and it has a deep understanding of the math. So if there's anything about the paper when you read it that you had trouble understanding, ask Matsya to explain that concept or to help you understand what's going on.
 
-### Next steps (from session)
+### Follow-up assignment (germ — formalize in `assignments/` later)
 
-- Use Matsya on your ballpark where it helps; **check** its suggestions against the source paper.
-- Improve unclear mathematical descriptions in the ballpark; optionally attach a **Dolo Plus** draft where the paper has a clear dynamic program.
-- If the ballpark has **no** Bellman/dynamic core, pick a paper that does for this exercise.
-- Keep an eye on **API credit** while experimenting.
+**Timing:** *TBD* (e.g. due before Class 11); not yet on the course assignment index.
+
+**Goal:** Use **Matsya** on your **ballpark** paper in a disciplined way: improve your own understanding of the dynamic program, and produce a **Dolo Plus-style draft** you can defend—not copy-paste truth.
+
+**Do this:**
+
+1. **Choose material** that actually has a Bellman / sequential problem. If your current ballpark is purely reduced-form or empirical, switch to a ballpark (or section of a paper) with an explicit dynamic optimization core for this exercise only.
+
+2. **Configure access** (Anthropic API + Matsya token + `matsya configure`) so you can run queries from the terminal; use a **`--session`** tag tied to your project name so turns stay in context.
+
+3. **Work in short, scoped prompts.** Paste or attach only the excerpt Matsya needs (e.g. timing paragraph + budget + Bellman statement). Ask it to clarify states, controls, shocks, information, and—when ready—to draft or revise **Dolo Plus** YAML. Avoid dumping whole PDFs or whole repos.
+
+4. **Verify.** For at least one substantive Matsya answer, compare against the **source paper** and note what you changed or rejected and why (one short paragraph is enough).
+
+**Turn in (sketch):** (a) the **session name** you used; (b) a **redacted** export or paste of **2–3 representative prompts** and the **corresponding answers** (remove tokens/secrets); (c) your latest **Dolo Plus draft** (or fragment) as a file in the ballpark repo or appendix; (d) the **verification** paragraph. *Exact format to be set when the assignment is published.*
 
 ### Supplemental resources
 
