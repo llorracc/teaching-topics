@@ -12,7 +12,7 @@
 
 ### Overview
 
-Class time focused on **setup and use** of **Matsya** (Econ-ARK CLI/API) together with **Anthropic API keys**, **Claude Code**, and **Cursor**, applied to students’ **ballpark** repositories. Matsya was presented as an AI assistant for modular dynamic programming and **Dolo Plus**-related notation.
+Class time focused on **setup and use** of **Matsya** (Econ-ARK CLI/API) together with **Anthropic API keys**, **Claude Code**, and **Cursor**, applied to students’ **ballpark** repositories. Matsya was presented as a **narrow** assistant for modular dynamic programming and **Dolo Plus**-related notation—not as a full substitute for established heterogeneous-agent solution stacks, but as something to consult for structure and syntax alongside your normal editor and LLM workflow.
 
 ### Key concepts
 
@@ -40,6 +40,12 @@ Class time focused on **setup and use** of **Matsya** (Econ-ARK CLI/API) togethe
 ### Topic 1: API keys and shell config
 
 Students used Anthropic’s console/dashboard to create an account, add a small credit balance, and create an API key. Emphasis: keys are **shown once**, should be stored safely, and billing is **prepaid** (calls stop when credits run out). Keys were added to shell startup files so they persist across sessions; changing those files requires **reloading** the shell or opening a new terminal.
+
+#### Relevant Q&A
+
+Josh: Is it set up to automatically reload, or do you have to reload it manually?
+
+Chris-JHU: Yes, you have to reload it manually. It will tell you when you run out of money, and it won't work until you put some more money in.
 
 ### Topic 2: Install and environment
 
