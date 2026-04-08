@@ -2,6 +2,8 @@
 
 Course assignments organized by the Tools → Skills → Artifacts progression.
 
+**Canonical roster for this run** (workspace source path + due-before class): [`run.md`](../run.md). Assignment **text** lives only in [workspace-course-topics `assignments/`](https://github.com/llorracc/workspace-course-topics/tree/main/assignments); this repo **links** to the published pages.
+
 ---
 
 ## Assignments by class
@@ -18,7 +20,7 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | [Class 08](for-class-08.md) | Bellman revision and next steps |
 | [Class 09](for-class-09.md) | PR to REMARK for your project |
 | [Class 10](for-class-10.md) | Ask AI to assess REMARK compliance; Explore SSJ Tutorial |
-| [Class 11](for-class-11.md) | Matsya ballpark + Dolo Plus draft *(draft assignment)* |
+| [Class 11](for-class-11.md) | Matsya, ballpark, and Dolo Plus draft |
 
 ---
 
@@ -73,4 +75,4 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | 09.0 | [PR to REMARK for your project](https://llorracc.github.io/workspace-course-topics/assignments/make-pr-to-remark-for-your-project.html) | PR URL to `econ-ark/REMARK` adding `REMARKs/*.yml` | Artifacts | Class 09 |
 | 10.0 | [Ask AI to assess REMARK compliance](https://llorracc.github.io/workspace-course-topics/assignments/ask-ai-to-assess-remark-compliance.html) | Prompt transcript + tier summary + judgment + edited action list | Artifacts | Class 10 |
 | 10.1 | [Explore the SSJ Tutorial Notebook](https://llorracc.github.io/workspace-course-topics/assignments/explore-ssj-tutorial.html) | Executed notebook + interpretive paragraph + verification plot | Skills | Class 10 |
-| 11.0 | [Matsya ballpark + Dolo Plus draft](https://llorracc.github.io/workspace-course-topics/assignments/matsya-ballpark-dolo-plus-draft.html) *(draft)* | Session name + redacted prompts/answers + YAML draft + verification paragraph | Artifacts | Class 11 |
+| 11.0 | [Matsya, ballpark, and Dolo Plus draft](https://llorracc.github.io/workspace-course-topics/assignments/matsya-ballpark-dolo-plus-draft.html) | Session name + redacted prompts/answers + YAML draft + verification paragraph | Artifacts | Class 11 |

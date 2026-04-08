@@ -85,7 +85,7 @@ Chris-JHU: You will find that you can ask Matsya all sorts of questions, and it 
 
 ### Follow-up assignment
 
-Draft write-up (timing TBD, due before Class 11): **[Matsya, ballpark, and Dolo Plus draft](https://llorracc.github.io/workspace-course-topics/assignments/matsya-ballpark-dolo-plus-draft.html)** — also listed on [Assignments for Class 11](https://github.com/llorracc/teaching-topics/blob/main/assignments/for-class-11.md). Source in repo: [`assignments/matsya-ballpark-dolo-plus-draft.md`](https://github.com/llorracc/workspace-course-topics/blob/main/assignments/matsya-ballpark-dolo-plus-draft.md).
+Due before Class 11: see **[Assignments for Class 11](https://github.com/llorracc/teaching-topics/blob/main/assignments/for-class-11.md)** (links to the single canonical write-up on GitHub Pages). Run roster: [`teaching-topics/run.md`](https://github.com/llorracc/teaching-topics/blob/main/run.md) (#130).
 
 ### Supplemental resources
 

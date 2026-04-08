@@ -16,3 +16,4 @@ Individual class meetings, each with a plan (before) and summary (after).
 | 08 | [REMARK, branching & Krusell–Smith](08-remark-branching-krusell-smith/) | [Research Skills](../units/research-skills/) / [Contribution](../units/contribution/) | ✓ | ✓ |
 | 09 | [HARK and SSJ](09-hark-and-ssj/) | [Research Skills](../units/research-skills/) / [Contribution](../units/contribution/) | ✓ | ✓ |
 | 10 | [Job market guest & Matsya](10-matsya/) | [Research Skills](../units/research-skills/) / [Contribution](../units/contribution/) | ✓ | ✓ |
+| 11 | *TBD* | [Research Skills](../units/research-skills/) / [Contribution](../units/contribution/) | — | — |
