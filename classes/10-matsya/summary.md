@@ -91,7 +91,7 @@ Chris-JHU: You will find that you can ask Matsya all sorts of questions, and it 
 
 ### Follow-up assignment
 
-Due before Class 11: see **[Assignments for Class 11](https://github.com/llorracc/teaching-topics/blob/main/assignments/for-class-11.md)** — Anthropic key setup (#131), **named Matsya session** workflow (#132), and ballpark / Dolo Plus draft (#130). Run roster: [`teaching-topics/run.md`](https://github.com/llorracc/teaching-topics/blob/main/run.md).
+Due before Class 11: see **[Assignments for Class 11](https://github.com/llorracc/teaching-topics/blob/main/assignments/for-class-11.md)** — **Matsya environment and session** (#131: billing + `--session`), then **ballpark / Dolo Plus draft** (#130). Run roster: [`teaching-topics/run.md`](https://github.com/llorracc/teaching-topics/blob/main/run.md).
 
 ### Supplemental resources
 
