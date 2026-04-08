@@ -1,10 +1,10 @@
-# Class 10 — Job market guest lecture and Matsya workshop
+# Class 10 — Matsya — API keys, install, and Dolo Plus workflow
 
 **Date:** April 7, 2026
 
 **Recording:** Zoom cloud recording for **180.606 Topics — Part 2** (~1h 53m); link in the meeting-assets email from Zoom (Apr 7, 2026).
 
-> **Note:** The following is the **Zoom AI meeting summary** as delivered by email, converted to Markdown only (headings and list markup). Zoom’s original text used the misspelling “Matzia”; below it is corrected to **Matsya**, and **Econ-ARK** replaces “EconArc” for consistency with [econ-ark/Matsya](https://github.com/econ-ark/Matsya).
+> **Note:** Based on Zoom’s AI meeting summary (with **Matzia** → **Matsya**, **EconArc** → **Econ-ARK**). Wording below is **edited for a neutral class record**; instructor **Q&A** lines are left as spoken. See [econ-ark/Matsya](https://github.com/econ-ark/Matsya).
 
 ---
 
@@ -12,40 +12,34 @@
 
 ### Overview
 
-This lecture introduced students to Matsya, a specialized AI tool developed by the Econ-ARK team for economics research analysis, particularly for Bellman equation-based models. The session focused on practical setup and configuration, guiding students through obtaining API keys, installing necessary software components, and integrating the tool with their existing research projects. Matsya represents a significant advancement in computational economics, serving as a heterogeneous agent model equivalent to Dynare for representative agent models.
+Class time focused on **setup and use** of **Matsya** (Econ-ARK CLI/API) together with **Anthropic API keys**, **Claude Code**, and **Cursor**, applied to students’ **ballpark** repositories. Matsya was presented as a **narrow** assistant for modular dynamic programming and **Dolo Plus**-related notation—not as a full substitute for established heterogeneous-agent solution stacks, but as something to consult for structure and syntax alongside your normal editor and LLM workflow.
 
-### Key Concepts or Theories:
+### Key concepts
 
-- API Keys: Authentication tokens that enable programmatic access to AI services, allowing integration into custom code and workflows
-- Matsya: A bespoke AI tool designed specifically for economics research, named after the Indian deity equivalent to Prometheus who brought knowledge to humanity
-- Dolo Plus: An enhanced language syntax for describing heterogeneous agent models, extending the capabilities of the original Dolo framework
-- Claude Code: A command-line interface for interacting with Claude AI that provides deeper integration capabilities than standard chat interfaces
-- Windows Subsystem for Linux (WSL): A compatibility layer for running Linux environments directly on Windows
+- **API keys:** Credentials for calling Claude (and similar) from the terminal or tools; distinct from browser chat.
+- **Matsya:** Econ-ARK tool backed by a curated knowledge base; needs a **team-issued token** in addition to any Anthropic billing setup.
+- **Dolo Plus:** Extension of Dolo-style YAML for describing models; Matsya can suggest or discuss specifications, which should still be **checked** like any generated draft.
+- **Claude Code:** Anthropic’s CLI-oriented integration with Claude, used in parallel with Cursor.
+- **WSL:** On Windows, installs and repos should live in the **Linux** filesystem if that is where the terminal and Cursor point.
 
-### Important Questions Raised:
+### Questions the discussion raised
 
-- How do API keys differ from standard chat-based AI interactions, and what advantages do they provide for research workflows?
-- What is the relationship between Matsya, Dolo Plus, and existing tools like Dynare in the computational economics ecosystem?
-- How can AI tools like Matsya assist in understanding and formalizing complex mathematical models in economic research?
-- What are the cost implications and billing structures for using API-based AI services?
+- How API access differs from chat-only use, and what that implies for cost and workflow.
+- How Matsya and Dolo Plus relate to other macro computational tools (e.g. Dynare for representative-agent setups).
+- How much to trust model summaries and YAML emitted by an LLM-backed tool.
+- Prepaid billing and credit limits for API use.
 
-### Key Takeaways and Summary of Learning Objectives
+### What students did (high level)
 
-- Students learned to obtain and configure Claude API keys for programmatic AI access
-- The class successfully installed and configured Matsya, a specialized economics research AI tool
-- Students gained experience with command-line tools and environment configuration across different operating systems
-- The session demonstrated workflows for integrating multiple AI tools (Cursor, Claude Code, Matsya) in research projects
-- Students learned about Dolo Plus as an emerging language for describing heterogeneous agent economic models
-- The importance of proper file organization and directory structure for GitHub repositories was reinforced
-- Students practiced troubleshooting technical issues with AI tools and development environments
+- Obtained Anthropic API access and exported keys in `.bashrc` / `.zshrc` (with awareness of reload and credit exhaustion).
+- Installed **Claude Code** (including **Node.js** where needed) and **Matsya** via `pip` from GitHub; worked through **Python version** and path issues, including **WSL vs Windows** trees.
+- Installed the **Claude Code** extension in **Cursor** and separated **Matsya token** vs **Anthropic** credentials.
+- Practiced giving Matsya **explicit context** (e.g. notebook excerpts), since it does not see the repo unless provided.
+- Tried Matsya on **ballpark** material toward **Dolo Plus**-style descriptions; reminder to **verify** outputs.
 
-### Topic 1: API Key Setup and Configuration
+### Topic 1: API keys and shell config
 
-The session began with students obtaining API keys from Anthropic's Claude platform, a crucial step for accessing AI services programmatically. Students navigated to console.anthropic.com or platform.claude.com/dashboard to create accounts and purchase $5 in API credits. The process involved email verification, account creation (recommended via email rather than Google integration for easier future management), and payment setup. API keys differ fundamentally from chat-based AI interactions by enabling integration into custom code and applications, representing a "power user" approach to AI utilization.
-
-A critical aspect emphasized was the one-time visibility of API keys—once generated, they cannot be viewed again, necessitating immediate secure storage in password managers or similar tools. Students learned that API billing operates on a prepaid model where services stop when credits are exhausted, requiring manual top-ups. This prevents unexpected charges but requires monitoring usage.
-
-The configuration process involved adding API keys to Unix login files (.bashrc and .zshrc) to make them persistently available across terminal sessions. Students used one-liner commands to export environment variables, learning the distinction between temporary session-based configuration and permanent system-wide setup.
+Students used Anthropic’s console/dashboard to create an account, add a small credit balance, and create an API key. Emphasis: keys are **shown once**, should be stored safely, and billing is **prepaid** (calls stop when credits run out). Keys were added to shell startup files so they persist across sessions; changing those files requires **reloading** the shell or opening a new terminal.
 
 #### Relevant Q&A
 
@@ -53,13 +47,9 @@ Josh: Is it set up to automatically reload, or do you have to reload it manually
 
 Chris-JHU: Yes, you have to reload it manually. It will tell you when you run out of money, and it won't work until you put some more money in.
 
-### Topic 2: Software Installation and Environment Setup
+### Topic 2: Install and environment
 
-Students installed multiple software components including Claude Code, Node.js, and Python 3.11, learning about dependencies and package management. The installation process varied by operating system, with Mac users utilizing Homebrew and Windows users working within Windows Subsystem for Linux (WSL). This highlighted the importance of understanding one's development environment and the differences between operating systems.
-
-The pip install command was used to install Matsya from the GitHub repository, demonstrating how Python packages can be installed directly from version control systems. Students encountered and resolved various installation issues, including missing dependencies like Node.js, which Claude Code requires to function. The troubleshooting process taught valuable lessons about reading error messages and consulting AI assistants for solutions.
-
-For Windows users, a particular challenge involved ensuring all operations occurred within WSL rather than the native Windows environment, as the tools were designed for Unix-like systems. This required careful attention to file system locations and understanding the separation between Windows and WSL file systems.
+Install paths differed by OS (**Homebrew** on Mac, **WSL** on Windows). **Matsya** was installed with `pip` from the GitHub repo; missing **Node.js** and similar dependencies were resolved as they appeared. Windows users were reminded to **clone inside WSL** if that is the environment they use for development.
 
 #### Relevant Q&A
 
@@ -67,59 +57,46 @@ Student: I cannot see the folders locally. Could it be because I am using WSL al
 
 Chris-JHU: Yes, actually. So you'll need to clone the thing inside the WSL file system.
 
-### Topic 3: Cursor Integration and Claude Code Setup
+### Topic 3: Cursor, Claude Code, credentials
 
-Students installed the Claude Code extension within Cursor, their integrated development environment, creating a powerful workflow combining multiple AI tools. The process involved navigating to the extensions manager (puzzle piece icon), searching for Claude Code, and installing it from the trusted publisher. This integration allows Claude AI to be accessed directly from the command line while working on projects.
-
-Configuration required setting up environment variables for both the Anthropic API key and the Matsya-specific token. Students learned to distinguish between different types of credentials and their purposes—the API key for general Claude access and the Matsya token for accessing the specialized economics tool. The export commands added to shell configuration files ensured these credentials were available in every terminal session.
-
-The session demonstrated the concept of context management in AI interactions, explaining that Matsya operates as an external tool without persistent memory of previous interactions. Each query must include necessary context, unlike Cursor's Composer which maintains conversation history. This architectural distinction is crucial for effective use of the tool.
+Students added the Claude Code extension in Cursor and configured **both** the Anthropic API key and the **Matsya** token. The distinction was stressed: Matsya does **not** retain full project context between calls the way a long Composer thread might.
 
 #### Relevant Q&A
 
 Chris-JHU: You need to really bear in mind that Matsya is a completely external tool which does not have access to anything in the file system that you do not feed to it directly. Cursor's Composer remembers what you've done before, but every time you make a query to Matsya, you have to make sure that it has the context that it needs to answer your question.
 
-### Topic 4: Matsya Introduction and Capabilities
+### Topic 4: What Matsya is for
 
-Matsya represents a significant advancement in computational economics tools, designed specifically for analyzing and working with heterogeneous agent models. Named after the Indian deity equivalent to Prometheus, Matsya brings advanced AI capabilities to economics research, particularly for models involving Bellman equations. The tool can read, analyze, and provide detailed descriptions of mathematical models in economic papers.
+Matsya is positioned as a **helper** for modular DP / Bellman structure and **Dolo Plus** syntax, drawing on a **fixed** knowledge base rather than general web search. **Dolo Plus** builds on Dolo; Dynare remains the reference ecosystem for many RA models. Anything Matsya writes should be treated as a **draft** to review against the paper and your own judgment.
 
-The development of Dolo Plus, an enhanced language for describing heterogeneous agent models, addresses a gap in the field. While Dynare provides an intuitive syntax for representative agent models, no comparable tool existed for heterogeneous agent models until now. Dolo Plus extends the original Dolo framework with capabilities necessary for modern macroeconomic research, allowing researchers to describe complex models in a standardized, machine-readable format.
-
-Students learned to use Matsya through Cursor's Composer interface, feeding it Jupyter notebooks and asking it to analyze the mathematical content. The tool can validate Bellman problems, check for completeness, and generate Dolo Plus model specifications. This capability promises to streamline the process of formalizing economic models and ensuring mathematical rigor.
+Students used **Composer** to paste or attach **notebook** material so Matsya had enough context to comment or suggest YAML-shaped output.
 
 #### Relevant Q&A
 
 Chris-JHU: What we're developing here is the new version of something like Dynare, but for heterogeneous agent models. One language that started doing that was a thing called Dolo, and we have added on to Dolo some important capabilities that it was missing, and that's why we have Dolo Plus now.
 
-### Topic 5: Practical Application and Workflow
+### Topic 5: Ballpark exercise
 
-The session concluded with students applying Matsya to their previously created ballpark projects, demonstrating the complete workflow from setup to analysis. Students navigated to their ballpark directories, opened them in Cursor, and added relevant files to the AI chat context. The process involved asking Matsya to read and describe papers, validate mathematical formulations, and generate Dolo Plus model specifications.
-
-Students learned to formulate effective queries for Matsya, understanding the importance of providing complete context in each request. For example, when asking Matsya to create a Dolo Plus model, students needed to explicitly reference "the notebook" to ensure Matsya had access to the necessary information. This differs from conversational AI where context is maintained automatically.
-
-The practical exercise revealed Matsya's deep understanding of economic mathematics and its ability to explain complex concepts. Students were encouraged to use Matsya to clarify any aspects of their papers they found difficult to understand, leveraging the tool's analytical capabilities to enhance their own comprehension and improve their ballpark descriptions.
+Students pointed Matsya at **ballpark** projects: describe the economic setup, probe unclear math, and experiment with **Dolo Plus**-style specifications. Prompts work best when **short and scoped**; large pastes slow things down and still need human editing.
 
 #### Relevant Q&A
 
 Chris-JHU: You will find that you can ask Matsya all sorts of questions, and it has a deep understanding of the math. So if there's anything about the paper when you read it that you had trouble understanding, ask Matsya to explain that concept or to help you understand what's going on.
 
-### Actionable Next Steps / Assignments
+### Next steps (from session)
 
-- Use Matsya to analyze and improve your ballpark project from earlier in the semester
-- Ask Matsya for advice on how to improve any incomplete or unclear mathematical descriptions in your ballpark
-- Request Matsya to construct a Dolo Plus model specification of the Bellman problem in your chosen paper
-- If your original ballpark paper was purely empirical with no Bellman equation, select a different ballpark project that includes dynamic optimization
-- Use Matsya to explain any concepts from your paper that you found difficult to understand during your initial reading
-- Submit an improved version of your ballpark that incorporates Matsya's feedback and includes a Dolo Plus model specification by next week's class
-- Ensure your API credits are sufficient for the assignment work (the initial $5 should be adequate)
+- Use Matsya on your ballpark where it helps; **check** its suggestions against the source paper.
+- Improve unclear mathematical descriptions in the ballpark; optionally attach a **Dolo Plus** draft where the paper has a clear dynamic program.
+- If the ballpark has **no** Bellman/dynamic core, pick a paper that does for this exercise.
+- Keep an eye on **API credit** while experimenting.
 
-### Supplemental Resources
+### Supplemental resources
 
-- Anthropic Claude API documentation at console.anthropic.com and platform.claude.com/dashboard
-- Matsya repository on GitHub: [github.com/econ-ark/Matsya](https://github.com/econ-ark/Matsya) (README and usage instructions)
-- Cursor IDE with Claude Code extension for integrated AI-assisted development
-- Windows Subsystem for Linux (WSL) documentation for Windows users requiring Unix-like environment
-- Dolo and Dolo Plus documentation for understanding the model specification language syntax
+- Anthropic: console / dashboard for API keys and billing.
+- Matsya: [github.com/econ-ark/Matsya](https://github.com/econ-ark/Matsya).
+- Cursor + Claude Code extension docs.
+- WSL docs (file paths, distros).
+- Dolo / Dolo Plus documentation.
 
 [View in Zoom](https://zoom.us/launch/hub?type=summary&mid=u3UJE0M%2BQoK%2BXAYuKSp6kw%3D%3D&origin=https%3A%2F%2Fzoom.us%2Fuser%2Fmeeting%2Fsummary%3FmeetingId%3Du3UJE0M%252BQoK%252BXAYuKSp6kw%253D%253D)
 
