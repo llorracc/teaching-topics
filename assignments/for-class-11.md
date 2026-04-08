@@ -2,8 +2,10 @@
 
 Complete before arriving at Class 11.
 
-**These items are assigned in Class 10.** Do the **setup** assignment first; reuse the same **`--session`** name for the modeling assignment.
+**These items are assigned in Class 10.** Suggested order: **billing** (#131) → **named sessions** (#132) → **ballpark / Dolo Plus** (#130). The first two assignments are **split by topic** so they do not repeat each other’s instructions.
 
-1. **[Matsya environment and session setup](https://llorracc.github.io/workspace-course-topics/assignments/matsya-environment-and-session.html)** (#131) — `MATSYA_ANTHROPIC_KEY`, Matsya token, smoke test, **named `--session`**, and evidence from `matsya sessions`.
+1. **[Configure Matsya with your Anthropic key](https://llorracc.github.io/workspace-course-topics/assignments/matsya-configure-anthropic-key.html)** (#131) — Token, **`MATSYA_ANTHROPIC_KEY`**, shell config, and `matsya "What is Dolo Plus?"` smoke test only.
 
-2. **[Matsya, ballpark, and Dolo Plus draft](https://llorracc.github.io/workspace-course-topics/assignments/matsya-ballpark-dolo-plus-draft.html)** (#130) — Cursor / Opus / Matsya workflow on your ballpark; deliverables on that page. Optional context: [Class 10 summary (Matsya workshop)](https://github.com/llorracc/teaching-topics/blob/main/classes/10-matsya/summary.md).
+2. **[Create a Matsya session for your ballpark work](https://llorracc.github.io/workspace-course-topics/assignments/create-a-matsya-session.html)** (#132) — **`--session`** only (after #131); workflow + `matsya sessions` evidence. Does **not** re-teach billing.
+
+3. **[Matsya, ballpark, and Dolo Plus draft](https://llorracc.github.io/workspace-course-topics/assignments/matsya-ballpark-dolo-plus-draft.html)** (#130) — Full instructions on that page. Optional: [Class 10 summary](https://github.com/llorracc/teaching-topics/blob/main/classes/10-matsya/summary.md).

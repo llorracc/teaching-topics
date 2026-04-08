@@ -20,7 +20,7 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | [Class 08](for-class-08.md) | Bellman revision and next steps |
 | [Class 09](for-class-09.md) | PR to REMARK for your project |
 | [Class 10](for-class-10.md) | Ask AI to assess REMARK compliance; Explore SSJ Tutorial |
-| [Class 11](for-class-11.md) | Matsya environment + session setup; Matsya ballpark + Dolo Plus draft |
+| [Class 11](for-class-11.md) | Matsya Anthropic key; Matsya session; ballpark + Dolo Plus draft |
 
 ---
 
@@ -76,4 +76,5 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | 10.0 | [Ask AI to assess REMARK compliance](https://llorracc.github.io/workspace-course-topics/assignments/ask-ai-to-assess-remark-compliance.html) | Prompt transcript + tier summary + judgment + edited action list | Artifacts | Class 10 |
 | 10.1 | [Explore the SSJ Tutorial Notebook](https://llorracc.github.io/workspace-course-topics/assignments/explore-ssj-tutorial.html) | Executed notebook + interpretive paragraph + verification plot | Skills | Class 10 |
 | 11.0 | [Matsya, ballpark, and Dolo Plus draft](https://llorracc.github.io/workspace-course-topics/assignments/matsya-ballpark-dolo-plus-draft.html) | Session name + excerpt MD + improved MD + Dolo Plus YAML + verification paragraph (no prompt log) | Artifacts | Class 11 |
-| 11.1 | [Matsya environment and session setup](https://llorracc.github.io/workspace-course-topics/assignments/matsya-environment-and-session.html) | Billing evidence + session name + workflow note + redacted `matsya sessions` output | Artifacts | Class 11 |
+| 11.1 | [Configure Matsya with your Anthropic key](https://llorracc.github.io/workspace-course-topics/assignments/matsya-configure-anthropic-key.html) | Key set (no value) + smoke-test output + fallback sentence | Artifacts | Class 11 |
+| 11.2 | [Create a Matsya session for your ballpark work](https://llorracc.github.io/workspace-course-topics/assignments/create-a-matsya-session.html) | Session name + workflow note + redacted `matsya sessions` output | Artifacts | Class 11 |
