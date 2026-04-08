@@ -83,23 +83,9 @@ Students pointed Matsya at **ballpark** projects: describe the economic setup, p
 
 Chris-JHU: You will find that you can ask Matsya all sorts of questions, and it has a deep understanding of the math. So if there's anything about the paper when you read it that you had trouble understanding, ask Matsya to explain that concept or to help you understand what's going on.
 
-### Follow-up assignment (germ — formalize in `assignments/` later)
+### Follow-up assignment
 
-**Timing:** *TBD* (e.g. due before Class 11); not yet on the course assignment index.
-
-**Goal:** Use **Matsya** on your **ballpark** paper in a disciplined way: improve your own understanding of the dynamic program, and produce a **Dolo Plus-style draft** you can defend—not copy-paste truth.
-
-**Do this:**
-
-1. **Choose material** that actually has a Bellman / sequential problem. If your current ballpark is purely reduced-form or empirical, switch to a ballpark (or section of a paper) with an explicit dynamic optimization core for this exercise only.
-
-2. **Configure access** (Anthropic API + Matsya token + `matsya configure`) so you can run queries from the terminal; use a **`--session`** tag tied to your project name so turns stay in context.
-
-3. **Work in short, scoped prompts.** Paste or attach only the excerpt Matsya needs (e.g. timing paragraph + budget + Bellman statement). Ask it to clarify states, controls, shocks, information, and—when ready—to draft or revise **Dolo Plus** YAML. Avoid dumping whole PDFs or whole repos.
-
-4. **Verify.** For at least one substantive Matsya answer, compare against the **source paper** and note what you changed or rejected and why (one short paragraph is enough).
-
-**Turn in (sketch):** (a) the **session name** you used; (b) a **redacted** export or paste of **2–3 representative prompts** and the **corresponding answers** (remove tokens/secrets); (c) your latest **Dolo Plus draft** (or fragment) as a file in the ballpark repo or appendix; (d) the **verification** paragraph. *Exact format to be set when the assignment is published.*
+Draft write-up (timing TBD, due before Class 11): **[Matsya, ballpark, and Dolo Plus draft](https://llorracc.github.io/workspace-course-topics/assignments/matsya-ballpark-dolo-plus-draft.html)** — also listed on [Assignments for Class 11](https://github.com/llorracc/teaching-topics/blob/main/assignments/for-class-11.md). Source in repo: [`assignments/matsya-ballpark-dolo-plus-draft.md`](https://github.com/llorracc/workspace-course-topics/blob/main/assignments/matsya-ballpark-dolo-plus-draft.md).
 
 ### Supplemental resources
 
