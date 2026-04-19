@@ -18,7 +18,8 @@
 | 08-remark-branching-krusell-smith | research-skills, contribution |
 | 09-hark-and-ssj | research-skills, contribution |
 | 10-matsya | research-skills, contribution |
-| 11 | *TBD* — see [classes/index.md](classes/index.md) when added |
+| 11-matsya-session-review | research-skills, contribution |
+| 12-ballpark-and-remark-improvements | research-skills, contribution |
 
 ---
 
@@ -50,6 +51,8 @@ Workspace path is always `assignments/<Source>.md`. **Slug** is the basename (us
 | 130 | matsya-ballpark-dolo-plus-draft | matsya-ballpark-dolo-plus-draft | 11 |
 | 131 | matsya-configure-anthropic-key | matsya-configure-anthropic-key | 11 |
 | 132 | create-a-matsya-session | create-a-matsya-session | 11 |
+| 140 | ask-ai-help-to-formalize-and-finalize-ballpark | ask-ai-help-to-formalize-and-finalize-ballpark | 12 |
+| 141 | ask-ai-help-to-improve-your-remark | ask-ai-help-to-improve-your-remark | 12 |
 
 **Main deliverable for Class 05:** Four notebooks + `myst.yml` + PR URL.
 
