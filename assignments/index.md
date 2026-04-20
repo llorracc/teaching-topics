@@ -21,6 +21,7 @@ Course assignments organized by the Tools → Skills → Artifacts progression.
 | [Class 09](for-class-09.md) | PR to REMARK for your project |
 | [Class 10](for-class-10.md) | Ask AI to assess REMARK compliance; Explore SSJ Tutorial |
 | [Class 11](for-class-11.md) | Matsya Anthropic key; Matsya session; ballpark + Dolo Plus draft |
+| [Class 12](for-class-12.md) | Ask AI help to formalize and finalize your ballpark item; Ask AI help to improve your REMARK (due Thursday morning 2026-04-23) |
 
 ---
 
